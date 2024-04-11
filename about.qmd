@@ -1,0 +1,19 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/Utkarsh736
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/utkarsh736/
+    - icon: github
+      text: Github
+      href: https://github.com/Utkarsh736
+
+---
+
+About this blog

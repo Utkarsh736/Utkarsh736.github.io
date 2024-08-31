@@ -1,14 +1,64 @@
 ---
-title: "Blogs"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "Utkarsh"
+image: assets/display.jpg
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - icon: twitter-x
+      text: Twitter
+      href: https://twitter.com/Utkarsh736
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/utkarsh736/
+    - icon: github
+      text: Github
+      href: https://github.com/Utkarsh736
+    - icon: kaggle
+      text: Kaggle
+      href: https://www.kaggle.com/utkarshtomar736
+    - icon: Dagshub
+      text: Dagshub
+      href: https://dagshub.com/Utkarsh736
+    - icon: blue-sky
+      text: BlueSky
+      href: https://bsky.app/profile/utkarsh736.bsky.social
+
 ---
 
+::: .{column-page}
 
+## Bio
+
+Hello! I'm Utkarsh, a Machine Learning engineer and sports analyst with a focus on cricket. As a polyglot programmer, I code mostly in Python with a growing interest in C, Golang, and Rust. When I'm not crunching data or writing code, you can find me following sports like cricket, hockey, MMA, and NFL, or exploring the world of movies.
+
+
+## Education
+
+**Bachelor of Science in Computer Science**  
+University of Technology, City, Country  
+Graduated: May 2022
+
+- Relevant Coursework: Data Structures, Web Development, Database Management, Software Engineering
+- Honors: Dean's List (2020-2022), Graduated with Distinction
+
+
+## Experience
+
+**Web Developer Intern**  
+Tech Solutions Inc., City, Country  
+June 2022 - Present
+
+- Collaborated with a team of developers to design and implement responsive web applications.
+- Assisted in debugging and troubleshooting issues in existing applications.
+- Participated in code reviews to ensure code quality and best practices.
+
+**Freelance Web Developer**  
+Self-Employed  
+January 2021 - May 2022
+
+- Developed custom websites for small businesses, focusing on user experience and SEO.
+- Managed client communications and project timelines to ensure timely delivery.
+- Utilized HTML, CSS, JavaScript, and various frameworks to create dynamic web applications.
+
+:::

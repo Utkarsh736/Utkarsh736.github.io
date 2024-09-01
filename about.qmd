@@ -33,7 +33,7 @@ about:
 Hello! I'm Utkarsh, a Machine Learning engineer and sports analyst with a focus on cricket. As a polyglot programmer, I code mostly in Python with a growing interest in C, Golang, and Rust. When I'm not crunching data or writing code, you can find me following sports like cricket, hockey, MMA, and NFL, or exploring the world of movies.
 
 
-## Featured Blogs
+## Education
 
 **Bachelor of Science in Computer Science**  
 University of Technology, City, Country  
@@ -43,7 +43,7 @@ Graduated: May 2022
 - Honors: Dean's List (2020-2022), Graduated with Distinction
 
 
-## Featured Projects
+## Experience
 
 **Web Developer Intern**  
 Tech Solutions Inc., City, Country  

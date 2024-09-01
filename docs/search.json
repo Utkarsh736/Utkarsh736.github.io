@@ -1,7 +1,7 @@
 [
   {
-    "objectID": "blogs.html",
-    "href": "blogs.html",
+    "objectID": "blogs/blogs.html",
+    "href": "blogs/blogs.html",
     "title": "Blogs",
     "section": "",
     "text": "No matching items"
@@ -33,5 +33,61 @@
     "title": "Utkarsh",
     "section": "",
     "text": "Web Developer Intern\nTech Solutions Inc., City, Country\nJune 2022 - Present\n\nCollaborated with a team of developers to design and implement responsive web applications.\nAssisted in debugging and troubleshooting issues in existing applications.\nParticipated in code reviews to ensure code quality and best practices.\n\nFreelance Web Developer\nSelf-Employed\nJanuary 2021 - May 2022\n\nDeveloped custom websites for small businesses, focusing on user experience and SEO.\nManaged client communications and project timelines to ensure timely delivery.\nUtilized HTML, CSS, JavaScript, and various frameworks to create dynamic web applications."
+  },
+  {
+    "objectID": "blogs/index.html",
+    "href": "blogs/index.html",
+    "title": "Blogs",
+    "section": "",
+    "text": "Bear Classifier\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nUtkarsh736\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html",
+    "href": "blogs/posts/Bear_Classifier.html",
+    "title": "Bear Classifier",
+    "section": "",
+    "text": "In this notebook, we will use a vision classifer to classfiy bear(teddy, black & grizzly) and deploy the model as web app using huggiface gradio space.\n\nfrom fastai.vision.all import *\n\n\n\nThe data is being imported from Kaggle\nDataset - anirudhg15/bears-fastai-2021\n\nfrom google.colab import userdata\nimport os\n\nos.environ[\"KAGGLE_KEY\"] = userdata.get('KAGGLE_KEY')\nos.environ[\"KAGGLE_USERNAME\"] = userdata.get('KAGGLE_USERNAME')\n\n\n!kaggle datasets download -d anirudhg15/bears-fastai-2021\n! unzip \"bears-fastai-2021\"\n\n\nfrom pathlib import Path\n\n\npath = Path('bears')\n\n\nbl_bear = (path/'black').ls().sorted()\nbl_bear[1]\n\nPath('bears/black/00000001.jpg')\n\n\n\nImage.open(bl_bear[1])\n\n\n\n\n\n\n\n\n\n\n\n\ndef get_dls(bs, size):\n  dblock = DataBlock(blocks=(ImageBlock, CategoryBlock),\n                     get_items=get_image_files,\n                     splitter=RandomSplitter(),\n                     get_y=parent_label,\n                     item_tfms=Resize(size))\n\n  return dblock.dataloaders(path, bs=bs)\n\n\ndls = get_dls(64, 224)\n\n\ndls.show_batch(nrows=1, ncols=3)\n\n\n\n\n\n\n\n\n\nlearn = cnn_learner(dls, resnet18, metrics=error_rate)\nlearn.fine_tune(4)\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n1.629151\n0.250812\n0.122807\n00:21\n\n\n\n\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n0.429806\n0.061032\n0.017544\n00:22\n\n\n1\n0.268742\n0.013778\n0.000000\n00:21\n\n\n2\n0.186102\n0.013141\n0.000000\n00:21\n\n\n3\n0.139788\n0.016549\n0.017544\n00:20\n\n\n\n\n\n\n\n\n\ninterp = ClassificationInterpretation.from_learner(learn)\ninterp.plot_confusion_matrix()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ninterp.plot_top_losses(5, nrows=1, figsize=(17,4))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlearn.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))\n\n\n\n\n\n\nlearn.export(fname='bear_model.pkl', pickle_module=pickle, pickle_protocol=2)\n\n\n\n\n\nreload_model=load_learner('bear_model.pkl', cpu=True, pickle_module=pickle)\nreload_model\n\n&lt;fastai.learner.Learner at 0x7bd9edf06890&gt;\n\n\n\nreload_model.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html#data",
+    "href": "blogs/posts/Bear_Classifier.html#data",
+    "title": "Bear Classifier",
+    "section": "",
+    "text": "The data is being imported from Kaggle\nDataset - anirudhg15/bears-fastai-2021\n\nfrom google.colab import userdata\nimport os\n\nos.environ[\"KAGGLE_KEY\"] = userdata.get('KAGGLE_KEY')\nos.environ[\"KAGGLE_USERNAME\"] = userdata.get('KAGGLE_USERNAME')\n\n\n!kaggle datasets download -d anirudhg15/bears-fastai-2021\n! unzip \"bears-fastai-2021\"\n\n\nfrom pathlib import Path\n\n\npath = Path('bears')\n\n\nbl_bear = (path/'black').ls().sorted()\nbl_bear[1]\n\nPath('bears/black/00000001.jpg')\n\n\n\nImage.open(bl_bear[1])"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html#dls-function-fastai-explaination",
+    "href": "blogs/posts/Bear_Classifier.html#dls-function-fastai-explaination",
+    "title": "Bear Classifier",
+    "section": "",
+    "text": "def get_dls(bs, size):\n  dblock = DataBlock(blocks=(ImageBlock, CategoryBlock),\n                     get_items=get_image_files,\n                     splitter=RandomSplitter(),\n                     get_y=parent_label,\n                     item_tfms=Resize(size))\n\n  return dblock.dataloaders(path, bs=bs)\n\n\ndls = get_dls(64, 224)\n\n\ndls.show_batch(nrows=1, ncols=3)\n\n\n\n\n\n\n\n\n\nlearn = cnn_learner(dls, resnet18, metrics=error_rate)\nlearn.fine_tune(4)\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n1.629151\n0.250812\n0.122807\n00:21\n\n\n\n\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n0.429806\n0.061032\n0.017544\n00:22\n\n\n1\n0.268742\n0.013778\n0.000000\n00:21\n\n\n2\n0.186102\n0.013141\n0.000000\n00:21\n\n\n3\n0.139788\n0.016549\n0.017544\n00:20"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html#interpretting-the-model",
+    "href": "blogs/posts/Bear_Classifier.html#interpretting-the-model",
+    "title": "Bear Classifier",
+    "section": "",
+    "text": "interp = ClassificationInterpretation.from_learner(learn)\ninterp.plot_confusion_matrix()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ninterp.plot_top_losses(5, nrows=1, figsize=(17,4))"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html#prediction",
+    "href": "blogs/posts/Bear_Classifier.html#prediction",
+    "title": "Bear Classifier",
+    "section": "",
+    "text": "learn.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html#saving-the-model",
+    "href": "blogs/posts/Bear_Classifier.html#saving-the-model",
+    "title": "Bear Classifier",
+    "section": "",
+    "text": "learn.export(fname='bear_model.pkl', pickle_module=pickle, pickle_protocol=2)"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html#reload-model",
+    "href": "blogs/posts/Bear_Classifier.html#reload-model",
+    "title": "Bear Classifier",
+    "section": "",
+    "text": "reload_model=load_learner('bear_model.pkl', cpu=True, pickle_module=pickle)\nreload_model\n\n&lt;fastai.learner.Learner at 0x7bd9edf06890&gt;\n\n\n\nreload_model.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
   }
 ]

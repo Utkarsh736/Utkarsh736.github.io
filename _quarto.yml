@@ -10,7 +10,7 @@ website:
     left: 
       - text: "Home"
         href: index.qmd
-      - blogs/index.qmd
+      - blogs/blogs.qmd
     right:
       - icon: github
         href: https://github.com/Utkarsh736

@@ -1,54 +1,5 @@
 [
   {
-    "objectID": "blogs/blogs.html",
-    "href": "blogs/blogs.html",
-    "title": "Blogs",
-    "section": "",
-    "text": "Bear Classifier\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nUtkarsh736\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "apps/apps.html",
-    "href": "apps/apps.html",
-    "title": "Apps",
-    "section": "",
-    "text": "Bear Classifier\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nUtkarsh736\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/projects.html",
-    "href": "projects/projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Utkarsh",
-    "section": "",
-    "text": "Hello! I’m Utkarsh, a Machine Learning engineer and sports analyst with a focus on cricket. As a polyglot programmer, I code mostly in Python with a growing interest in C, Golang, and Rust. When I’m not crunching data or writing code, you can find me following sports like cricket, hockey, MMA, and NFL, or exploring the world of movies.\n\n\n\nBachelor of Science in Computer Science\nUniversity of Technology, City, Country\nGraduated: May 2022\n\nRelevant Coursework: Data Structures, Web Development, Database Management, Software Engineering\nHonors: Dean’s List (2020-2022), Graduated with Distinction\n\n\n\n\nWeb Developer Intern\nTech Solutions Inc., City, Country\nJune 2022 - Present\n\nCollaborated with a team of developers to design and implement responsive web applications.\nAssisted in debugging and troubleshooting issues in existing applications.\nParticipated in code reviews to ensure code quality and best practices.\n\nFreelance Web Developer\nSelf-Employed\nJanuary 2021 - May 2022\n\nDeveloped custom websites for small businesses, focusing on user experience and SEO.\nManaged client communications and project timelines to ensure timely delivery.\nUtilized HTML, CSS, JavaScript, and various frameworks to create dynamic web applications."
-  },
-  {
-    "objectID": "about.html#bio",
-    "href": "about.html#bio",
-    "title": "Utkarsh",
-    "section": "",
-    "text": "Hello! I’m Utkarsh, a Machine Learning engineer and sports analyst with a focus on cricket. As a polyglot programmer, I code mostly in Python with a growing interest in C, Golang, and Rust. When I’m not crunching data or writing code, you can find me following sports like cricket, hockey, MMA, and NFL, or exploring the world of movies."
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "Utkarsh",
-    "section": "",
-    "text": "Bachelor of Science in Computer Science\nUniversity of Technology, City, Country\nGraduated: May 2022\n\nRelevant Coursework: Data Structures, Web Development, Database Management, Software Engineering\nHonors: Dean’s List (2020-2022), Graduated with Distinction"
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "Utkarsh",
-    "section": "",
-    "text": "Web Developer Intern\nTech Solutions Inc., City, Country\nJune 2022 - Present\n\nCollaborated with a team of developers to design and implement responsive web applications.\nAssisted in debugging and troubleshooting issues in existing applications.\nParticipated in code reviews to ensure code quality and best practices.\n\nFreelance Web Developer\nSelf-Employed\nJanuary 2021 - May 2022\n\nDeveloped custom websites for small businesses, focusing on user experience and SEO.\nManaged client communications and project timelines to ensure timely delivery.\nUtilized HTML, CSS, JavaScript, and various frameworks to create dynamic web applications."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome to My Page",
@@ -117,5 +68,54 @@
     "title": "Bear Classifier",
     "section": "",
     "text": "reload_model=load_learner('bear_model.pkl', cpu=True, pickle_module=pickle)\nreload_model\n\n&lt;fastai.learner.Learner at 0x7bd9edf06890&gt;\n\n\n\nreload_model.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Utkarsh",
+    "section": "",
+    "text": "Hello! I’m Utkarsh, a Machine Learning engineer and sports analyst with a focus on cricket. As a polyglot programmer, I code mostly in Python with a growing interest in C, Golang, and Rust. When I’m not crunching data or writing code, you can find me following sports like cricket, hockey, MMA, and NFL, or exploring the world of movies.\n\n\n\nBachelor of Science in Computer Science\nUniversity of Technology, City, Country\nGraduated: May 2022\n\nRelevant Coursework: Data Structures, Web Development, Database Management, Software Engineering\nHonors: Dean’s List (2020-2022), Graduated with Distinction\n\n\n\n\nWeb Developer Intern\nTech Solutions Inc., City, Country\nJune 2022 - Present\n\nCollaborated with a team of developers to design and implement responsive web applications.\nAssisted in debugging and troubleshooting issues in existing applications.\nParticipated in code reviews to ensure code quality and best practices.\n\nFreelance Web Developer\nSelf-Employed\nJanuary 2021 - May 2022\n\nDeveloped custom websites for small businesses, focusing on user experience and SEO.\nManaged client communications and project timelines to ensure timely delivery.\nUtilized HTML, CSS, JavaScript, and various frameworks to create dynamic web applications."
+  },
+  {
+    "objectID": "about.html#bio",
+    "href": "about.html#bio",
+    "title": "Utkarsh",
+    "section": "",
+    "text": "Hello! I’m Utkarsh, a Machine Learning engineer and sports analyst with a focus on cricket. As a polyglot programmer, I code mostly in Python with a growing interest in C, Golang, and Rust. When I’m not crunching data or writing code, you can find me following sports like cricket, hockey, MMA, and NFL, or exploring the world of movies."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Utkarsh",
+    "section": "",
+    "text": "Bachelor of Science in Computer Science\nUniversity of Technology, City, Country\nGraduated: May 2022\n\nRelevant Coursework: Data Structures, Web Development, Database Management, Software Engineering\nHonors: Dean’s List (2020-2022), Graduated with Distinction"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Utkarsh",
+    "section": "",
+    "text": "Web Developer Intern\nTech Solutions Inc., City, Country\nJune 2022 - Present\n\nCollaborated with a team of developers to design and implement responsive web applications.\nAssisted in debugging and troubleshooting issues in existing applications.\nParticipated in code reviews to ensure code quality and best practices.\n\nFreelance Web Developer\nSelf-Employed\nJanuary 2021 - May 2022\n\nDeveloped custom websites for small businesses, focusing on user experience and SEO.\nManaged client communications and project timelines to ensure timely delivery.\nUtilized HTML, CSS, JavaScript, and various frameworks to create dynamic web applications."
+  },
+  {
+    "objectID": "blogs/blogs.html",
+    "href": "blogs/blogs.html",
+    "title": "Blogs",
+    "section": "",
+    "text": "Bear Classifier\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nUtkarsh736\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "apps/apps.html",
+    "href": "apps/apps.html",
+    "title": "Apps",
+    "section": "",
+    "text": "Bear Classifier\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nUtkarsh736\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/projects.html",
+    "href": "projects/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "No matching items"
   }
 ]

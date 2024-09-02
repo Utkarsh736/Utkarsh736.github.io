@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "/blogs/posts/Bear_Classifier.html",
+      "/apps/posts/Bearify.html"
+    ]
+  },
+  {
     "listing": "/blogs/blogs.html",
     "items": [
       "/blogs/posts/Bear_Classifier.html"
@@ -14,12 +21,5 @@
   {
     "listing": "/projects/projects.html",
     "items": []
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/blogs/posts/Bear_Classifier.html",
-      "/apps/posts/Bearify.html"
-    ]
   }
 ]

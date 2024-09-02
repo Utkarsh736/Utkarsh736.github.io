@@ -7,32 +7,18 @@
     "text": "Bear Classifier\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nUtkarsh736\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Utkarsh",
+    "objectID": "apps/apps.html",
+    "href": "apps/apps.html",
+    "title": "Apps",
     "section": "",
-    "text": "Hello! I’m Utkarsh, a Machine Learning engineer and sports analyst with a focus on cricket. As a polyglot programmer, I code mostly in Python with a growing interest in C, Golang, and Rust. When I’m not crunching data or writing code, you can find me following sports like cricket, hockey, MMA, and NFL, or exploring the world of movies.\n\n\n\nBachelor of Science in Computer Science\nUniversity of Technology, City, Country\nGraduated: May 2022\n\nRelevant Coursework: Data Structures, Web Development, Database Management, Software Engineering\nHonors: Dean’s List (2020-2022), Graduated with Distinction\n\n\n\n\nWeb Developer Intern\nTech Solutions Inc., City, Country\nJune 2022 - Present\n\nCollaborated with a team of developers to design and implement responsive web applications.\nAssisted in debugging and troubleshooting issues in existing applications.\nParticipated in code reviews to ensure code quality and best practices.\n\nFreelance Web Developer\nSelf-Employed\nJanuary 2021 - May 2022\n\nDeveloped custom websites for small businesses, focusing on user experience and SEO.\nManaged client communications and project timelines to ensure timely delivery.\nUtilized HTML, CSS, JavaScript, and various frameworks to create dynamic web applications."
+    "text": "Bear Classifier\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nUtkarsh736\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html#bio",
-    "href": "index.html#bio",
-    "title": "Utkarsh",
+    "objectID": "projects/projects.html",
+    "href": "projects/projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "Hello! I’m Utkarsh, a Machine Learning engineer and sports analyst with a focus on cricket. As a polyglot programmer, I code mostly in Python with a growing interest in C, Golang, and Rust. When I’m not crunching data or writing code, you can find me following sports like cricket, hockey, MMA, and NFL, or exploring the world of movies."
-  },
-  {
-    "objectID": "index.html#featured-blogs",
-    "href": "index.html#featured-blogs",
-    "title": "Utkarsh",
-    "section": "",
-    "text": "Bachelor of Science in Computer Science\nUniversity of Technology, City, Country\nGraduated: May 2022\n\nRelevant Coursework: Data Structures, Web Development, Database Management, Software Engineering\nHonors: Dean’s List (2020-2022), Graduated with Distinction"
-  },
-  {
-    "objectID": "index.html#featured-projects",
-    "href": "index.html#featured-projects",
-    "title": "Utkarsh",
-    "section": "",
-    "text": "Web Developer Intern\nTech Solutions Inc., City, Country\nJune 2022 - Present\n\nCollaborated with a team of developers to design and implement responsive web applications.\nAssisted in debugging and troubleshooting issues in existing applications.\nParticipated in code reviews to ensure code quality and best practices.\n\nFreelance Web Developer\nSelf-Employed\nJanuary 2021 - May 2022\n\nDeveloped custom websites for small businesses, focusing on user experience and SEO.\nManaged client communications and project timelines to ensure timely delivery.\nUtilized HTML, CSS, JavaScript, and various frameworks to create dynamic web applications."
+    "text": "No matching items"
   },
   {
     "objectID": "about.html",
@@ -61,6 +47,27 @@
     "title": "Utkarsh",
     "section": "",
     "text": "Web Developer Intern\nTech Solutions Inc., City, Country\nJune 2022 - Present\n\nCollaborated with a team of developers to design and implement responsive web applications.\nAssisted in debugging and troubleshooting issues in existing applications.\nParticipated in code reviews to ensure code quality and best practices.\n\nFreelance Web Developer\nSelf-Employed\nJanuary 2021 - May 2022\n\nDeveloped custom websites for small businesses, focusing on user experience and SEO.\nManaged client communications and project timelines to ensure timely delivery.\nUtilized HTML, CSS, JavaScript, and various frameworks to create dynamic web applications."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Page",
+    "section": "",
+    "text": "“Don’t stop Believin’”\nRead more about me here\nFeel to contact me on any of the links"
+  },
+  {
+    "objectID": "index.html#featured-blogs",
+    "href": "index.html#featured-blogs",
+    "title": "Welcome to My Page",
+    "section": "Featured Blogs",
+    "text": "Featured Blogs\nClick here to check out the latest blogs.\n\n\n\n\n\n\n\n\n\n\nBear Classifier\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nUtkarsh736\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#featured-apps",
+    "href": "index.html#featured-apps",
+    "title": "Welcome to My Page",
+    "section": "Featured Apps",
+    "text": "Featured Apps\nClick here to play more in the playground."
   },
   {
     "objectID": "blogs/posts/Bear_Classifier.html",

@@ -110,5 +110,19 @@
     "title": "Bear Classifier",
     "section": "",
     "text": "reload_model=load_learner('bear_model.pkl', cpu=True, pickle_module=pickle)\nreload_model\n\n&lt;fastai.learner.Learner at 0x7bd9edf06890&gt;\n\n\n\nreload_model.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
+  },
+  {
+    "objectID": "apps/apps.html",
+    "href": "apps/apps.html",
+    "title": "Apps",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "projects/projects.html",
+    "href": "projects/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "No matching items"
   }
 ]

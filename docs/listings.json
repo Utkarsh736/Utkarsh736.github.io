@@ -4,5 +4,13 @@
     "items": [
       "/blogs/posts/Bear_Classifier.html"
     ]
+  },
+  {
+    "listing": "/apps/apps.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/projects.html",
+    "items": []
   }
 ]

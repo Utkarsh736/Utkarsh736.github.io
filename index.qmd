@@ -1,8 +1,24 @@
 ---
 title: "Utkarsh"
 image: assets/display.jpg
+listing:
+  - id: landing-blogs
+    contents: blogs/posts
+    type: default
+    max-items: 3
+    sort: 
+      - "date desc"
+      - "title asc"
+  - id: landing-apps
+    contents: apps/posts
+    type: grid
+    max-items: 6
+    grid-columns: 3
+    sort: 
+      - "date desc"
+      - "title asc"
 about:
-  template: trestles
+  template: jolla
   image-shape: round
   links:
     - icon: twitter-x
@@ -26,7 +42,6 @@ about:
 
 ---
 
-::: .{column-page}
 
 ## Bio
 
@@ -35,30 +50,19 @@ Hello! I'm Utkarsh, a Machine Learning engineer and sports analyst with a focus 
 
 ## Featured Blogs
 
-**Bachelor of Science in Computer Science**  
-University of Technology, City, Country  
-Graduated: May 2022
+Click [here](blogs/blogs.qmd) to check out the latest blogs.
 
-- Relevant Coursework: Data Structures, Web Development, Database Management, Software Engineering
-- Honors: Dean's List (2020-2022), Graduated with Distinction
+
+:::{#landing-blogs}
+
+:::
+
 
 
 ## Featured Projects
+Click [here](apps/apps.qmd) to play more in the playground.
 
-**Web Developer Intern**  
-Tech Solutions Inc., City, Country  
-June 2022 - Present
-
-- Collaborated with a team of developers to design and implement responsive web applications.
-- Assisted in debugging and troubleshooting issues in existing applications.
-- Participated in code reviews to ensure code quality and best practices.
-
-**Freelance Web Developer**  
-Self-Employed  
-January 2021 - May 2022
-
-- Developed custom websites for small businesses, focusing on user experience and SEO.
-- Managed client communications and project timelines to ensure timely delivery.
-- Utilized HTML, CSS, JavaScript, and various frameworks to create dynamic web applications.
+:::{landing-apps}
 
 :::
+

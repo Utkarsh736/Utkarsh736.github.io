@@ -105,9 +105,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -237,8 +237,6 @@ window.Quarto = {
 <li>Feel to contact me on any of the links</li>
 </ul>
 </div>
-<div class="grid">
-</div>
 <p><br><br></p>
 <section id="featured-blogs" class="level2">
 <h2 data-anchor-id="featured-blogs">Featured Blogs</h2>
@@ -279,8 +277,8 @@ No matching items
 </div>
 </div>
 </section>
-<section id="featured-projects" class="level2">
-<h2 data-anchor-id="featured-projects">Featured Projects</h2>
+<section id="featured-apps" class="level2">
+<h2 data-anchor-id="featured-apps">Featured Apps</h2>
 <p>Click <a href="./apps/apps.html">here</a> to play more in the playground.</p>
 <div class="{landing-apps}">
 </div>
@@ -289,6 +287,32 @@ No matching items
 </section>
 <div class="quarto-listing quarto-listing-container-grid" id="listing-landing-apps">
 <div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1759689000000" data-listing-file-modified-sort="1725284054090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./apps/posts/Bearify.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Bear Classifier
+</h5>
+<div class="card-text listing-description">
+
+<iframe src="https://utkarsh736-bearify.hf.space" frameborder="0" width="850" height="450">
+</iframe>
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Utkarsh736
+</div>
+<div class="listing-date">
+Oct 6, 2025
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items

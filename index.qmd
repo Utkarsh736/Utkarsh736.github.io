@@ -66,7 +66,7 @@ Click [here](blogs/blogs.qmd) to check out the latest blogs.
 
 
 
-## Featured Projects
+## Featured Apps
 Click [here](apps/apps.qmd) to play more in the playground.
 
 :::{landing-apps}

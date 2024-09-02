@@ -1,0 +1,28 @@
+---
+title: "Bear Classifier"
+author: "Utkarsh736"
+date: "22/06/2024"
+format:
+  html:
+    other-links:
+      - text: Dataset Bears FastAI
+        href: https://www.kaggle.com/datasets/anirudhg15/bears-fastai-2021
+    code-links:
+      - text: Data Import Code
+        icon: file-code
+        href: data-import.py
+    toc: true
+    html-math-method: katex
+    smooth-scroll: true
+    css: ../styles.css
+---
+
+:::{.column-screen}
+<iframe
+	src="https://utkarsh736-bearify.hf.space"
+	frameborder="0"
+	width="850"
+	height="450"
+></iframe>
+
+:::

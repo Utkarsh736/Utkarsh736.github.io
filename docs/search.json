@@ -116,7 +116,7 @@
     "href": "apps/apps.html",
     "title": "Apps",
     "section": "",
-    "text": "No matching items"
+    "text": "Bear Classifier\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2025\n\n\nUtkarsh736\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/projects.html",
@@ -124,5 +124,19 @@
     "title": "Projects",
     "section": "",
     "text": "No matching items"
+  },
+  {
+    "objectID": "apps/posts/Bearify.html",
+    "href": "apps/posts/Bearify.html",
+    "title": "Bear Classifier",
+    "section": "",
+    "text": "https://utkarsh736-bearify.hf.space"
+  },
+  {
+    "objectID": "index.html#featured-apps",
+    "href": "index.html#featured-apps",
+    "title": "Welcome to My Page",
+    "section": "Featured Apps",
+    "text": "Featured Apps\nClick here to play more in the playground."
   }
 ]

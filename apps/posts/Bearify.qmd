@@ -2,6 +2,7 @@
 title: "Bear Classifier"
 author: "Utkarsh736"
 date: "22/06/2024"
+image: ../../assets/bear_classifier_display.jpg
 format:
   html:
     other-links:
@@ -14,7 +15,7 @@ format:
     toc: true
     html-math-method: katex
     smooth-scroll: true
-    css: ../styles.css
+    css: ../../styles.css
 ---
 
 :::{.column-screen}
@@ -24,5 +25,5 @@ format:
 	width="850"
 	height="450"
 ></iframe>
-
+<gradio-app space="Utkarsh736/Bearify"></gradio-app>
 :::

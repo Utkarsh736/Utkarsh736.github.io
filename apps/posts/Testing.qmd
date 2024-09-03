@@ -1,0 +1,19 @@
+---
+title: "Testing App"
+author: "Utkarsh736"
+date: "22/06/2024"
+image: ../../assets/bear_classifier_display.jpg
+format:
+  html:
+    page-layout: full
+---
+
+:::{.column-screen}
+<iframe
+	src="https://utkarsh736-docker-gradio-demo.hf.space"
+	frameborder="0"
+	width="850"
+	height="450"
+></iframe>
+<gradio-app space="Utkarsh736/Docker-gradio-demo"></gradio-app>
+:::

@@ -1,8 +1,9 @@
 ---
 title: "Bear Classifier"
 author: "Utkarsh736"
-date: "22/06/2024"
-image: ../../assets/bear_classifier_display.jpg
+date: "06/22/2024"
+image: ../../assets/Bear_Classifier/thumbnail.jpg
+description: "A Gradio app to classify bears into either of 3 categories, 'Teddy', 'Grizzly', 'Black'."
 format:
   html:
     other-links:

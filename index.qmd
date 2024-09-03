@@ -18,7 +18,7 @@ listing:
       - "date desc"
       - "title asc"
 about:
-  id: card
+  id: hero-card
   template: jolla
   image-shape: round
   links:
@@ -44,12 +44,12 @@ about:
 ---
 
 
-:::{card}
+:::{#hero-card}
 
 
 * "Don't stop Believin'"
 * Read more about me [here](about.qmd)
-* Feel to contact me on any of the links
+* Feel free to contact me on any of the links
 
 :::
 

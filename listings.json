@@ -1,10 +1,8 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/blogs/blogs.html",
     "items": [
-      "/blogs/posts/Bear_Classifier.html",
-      "/apps/posts/Bearify.html",
-      "/apps/posts/Testing.html"
+      "/blogs/posts/Bear_Classifier.html"
     ]
   },
   {
@@ -15,13 +13,11 @@
     ]
   },
   {
-    "listing": "/blogs/blogs.html",
+    "listing": "/index.html",
     "items": [
-      "/blogs/posts/Bear_Classifier.html"
+      "/blogs/posts/Bear_Classifier.html",
+      "/apps/posts/Bearify.html",
+      "/apps/posts/Testing.html"
     ]
-  },
-  {
-    "listing": "/projects/projects.html",
-    "items": []
   }
 ]

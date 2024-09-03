@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Utkarsh736.github.io/index.html</loc>
-    <lastmod>2024-09-03T14:22:43.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Utkarsh736.github.io/apps/posts/Testing.html</loc>
-    <lastmod>2024-09-03T14:22:43.200Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Utkarsh736.github.io/apps/apps.html</loc>
-    <lastmod>2024-09-03T14:22:43.200Z</lastmod>
+    <loc>https://Utkarsh736.github.io/about.html</loc>
+    <lastmod>2024-09-03T17:22:35.826Z</lastmod>
   </url>
   <url>
     <loc>https://Utkarsh736.github.io/blogs/blogs.html</loc>
-    <lastmod>2024-09-03T14:22:43.200Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Utkarsh736.github.io/about.html</loc>
-    <lastmod>2024-09-03T14:22:43.200Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Utkarsh736.github.io/blogs/posts/Bear_Classifier.html</loc>
-    <lastmod>2024-09-03T14:22:43.216Z</lastmod>
+    <lastmod>2024-09-03T17:22:35.830Z</lastmod>
   </url>
   <url>
     <loc>https://Utkarsh736.github.io/apps/posts/Bearify.html</loc>
-    <lastmod>2024-09-03T14:22:43.200Z</lastmod>
+    <lastmod>2024-09-03T17:22:35.830Z</lastmod>
   </url>
   <url>
-    <loc>https://Utkarsh736.github.io/projects/projects.html</loc>
-    <lastmod>2024-09-03T14:22:43.240Z</lastmod>
+    <loc>https://Utkarsh736.github.io/apps/apps.html</loc>
+    <lastmod>2024-09-03T17:22:35.830Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Utkarsh736.github.io/apps/posts/Testing.html</loc>
+    <lastmod>2024-09-03T17:22:35.830Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Utkarsh736.github.io/index.html</loc>
+    <lastmod>2024-09-03T17:22:35.866Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Utkarsh736.github.io/blogs/posts/Bear_Classifier.html</loc>
+    <lastmod>2024-09-03T17:22:35.846Z</lastmod>
   </url>
 </urlset>

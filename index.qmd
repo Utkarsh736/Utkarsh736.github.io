@@ -31,6 +31,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com/Utkarsh736
+    - icon: emoji-smile
+      text: HuggingFace
+      href: https://huggingface.co/Utkarsh736
     - icon: kaggle
       text: Kaggle
       href: https://www.kaggle.com/utkarshtomar736

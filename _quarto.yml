@@ -11,7 +11,6 @@ website:
       - text: "Home"
         href: index.qmd
       - blogs/blogs.qmd
-      - projects/projects.qmd
       - apps/apps.qmd
       - text: "About"
         href: about.qmd
@@ -20,6 +19,8 @@ website:
         href: https://github.com/Utkarsh736
       - icon: twitter
         href: https://twitter.com/Utkarsh736
+      - icon: emoji-smile
+        href: https://huggingface.co/Utkarsh736
 format:
   html:
     theme: cosmo

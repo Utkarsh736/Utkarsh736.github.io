@@ -3,6 +3,14 @@
     "listing": "/index.html",
     "items": [
       "/blogs/posts/Bear_Classifier.html",
+      "/apps/posts/Bearify.html",
+      "/apps/posts/Testing.html"
+    ]
+  },
+  {
+    "listing": "/apps/apps.html",
+    "items": [
+      "/apps/posts/Testing.html",
       "/apps/posts/Bearify.html"
     ]
   },
@@ -10,12 +18,6 @@
     "listing": "/blogs/blogs.html",
     "items": [
       "/blogs/posts/Bear_Classifier.html"
-    ]
-  },
-  {
-    "listing": "/apps/apps.html",
-    "items": [
-      "/apps/posts/Bearify.html"
     ]
   },
   {

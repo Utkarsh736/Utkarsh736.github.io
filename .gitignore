@@ -1,5 +1,23 @@
-
+# Quarto internal files
 /.quarto/
+
+# Quarto preview/build directory (if generated)
 /_site/
-/assets/
+
+# Quarto-generated notebook intermediates
 **/*.quarto_ipynb
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Environment / secrets
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db

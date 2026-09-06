@@ -1,0 +1,26 @@
+---
+title: "Post Title Here"
+subtitle: "A one-line hook shown under the title."
+author: "Utkarsh736"
+date: 2025-01-01
+date-modified: last-modified
+image: /assets/Bear_Classifier/thumbnail.jpg
+description: "One-sentence summary used on listing cards and link previews."
+categories:
+  - machine learning
+format:
+  html:
+    toc: true
+---
+
+Start writing here. This file lives in `blogs/posts/` — once saved with a
+`.qmd` (or `.ipynb`) extension it automatically appears on the Blogs page and
+the homepage "Latest Writing" section on the next render.
+
+Tips:
+
+- `date` controls ordering (newest first). Use ISO format: `2025-01-01`.
+- `image` is the thumbnail on listing cards — path relative to this file, or
+  absolute from the site root with a leading `/`.
+- `categories` become the filterable tags shown on cards.
+- Delete the `image:` line if the post has no thumbnail.

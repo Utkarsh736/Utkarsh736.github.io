@@ -1,34 +1,84 @@
-# My Portfolio Website
+# Utkarsh736 — Portfolio
 
-Welcome to my personal portfolio website! This website showcases my projects, blog posts, and a brief introduction about myself.
+A fresh, light, clear portfolio built with [Quarto](https://quarto.org). Light "paper" theme with a teal accent, automatic dark mode, and a workflow that stays entirely in Markdown.
 
-## Sections
+Live site: <https://utkarsh736.github.io/>
 
-### Index
+## How the site is organised
 
-The index page serves as the homepage of the website. It provides a brief overview of who I am and highlights some of my key projects.
+```text
+_quarto.yml            Site config: pages, navbar, footer, theme, colors
+theme-light.scss       Light theme design tokens (colors, fonts, radii)
+theme-dark.scss        Dark theme design tokens (auto-paired toggle)
+styles.css             All component styling (hero, cards, chips, timeline...)
+index.qmd              Homepage: hero + featured apps + latest writing
+about.qmd              Bio, skills, experience timeline, contact block
+blogs/
+  blogs.qmd            Blog listing page (renders automatically)
+  posts/               Drop .qmd or .ipynb files here — done, they're live
+apps/
+  apps.qmd             Apps grid page (renders automatically)
+  posts/               One .qmd per app (Bearify, Docker demo)
+_templates/            Copy-paste starting points (ignored by Quarto)
+assets/                Images, resume, thumbnails (kept out of git — see below)
+docs/                  Rendered site (this is what GitHub Pages serves)
+.github/workflows/     Optional CI publish workflow
+```
 
-### Blogs
+## Everyday edits
 
-The blogs section features my latest blog posts on various topics related to my interests and expertise. Each blog post includes a title, author, date, and the actual content.
+**Update the bio / role / experience** — edit `about.qmd`. The bio is plain
+paragraphs; jobs are entries inside the `.timeline` block; skill chips are
+single words in `[brackets]{.chip}`. Text only, no HTML needed.
 
-### About
+**Publish a blog post** — copy `_templates/blog-post-template.qmd` into
+`blogs/posts/`, rename it, fill in the title/date/description, write your post,
+run `quarto render`, commit. New posts appear on the Blogs page and in the
+homepage "Latest Writing" list automatically.
 
-The about section offers a more detailed introduction to myself, including my background, skills, and interests. It gives visitors a better understanding of who I am and what I do.
+**Publish an app** — copy `_templates/app-post-template.qmd` into
+`apps/posts/`, swap in your Hugging Face Space URL in the iframe, add a
+thumbnail under `assets/`. It joins the Apps grid and the homepage "Featured
+Apps" section on its own.
 
-## Getting Started
+**Change the accent color / fonts** — open `theme-light.scss` and
+`theme-dark.scss`. Every color is a small set of variables at the top plus the
+matching `--token` list below it (e.g. change all `#0d9488` to your new hue).
+Component styling in `styles.css` only references those tokens, so a palette
+swap touches two files and nothing else.
 
-To view the website locally, you can follow these steps:
+**Add a link everywhere at once** — the social chips are plain HTML anchors
+repeated in `index.qmd` and `about.qmd`; search for `chip-link` and edit the
+URLs.
 
-1. Clone the repository to your local machine.
-2. Install Quarto if you haven't already.
-3. Run `quarto preview` in your terminal to start the local server.
-4. Open your web browser and navigate to `http://localhost:3000`.
+## Running locally
 
-## Contributing
+1. Install Quarto: <https://quarto.org/docs/get-started/>
+2. From the repo root: `quarto preview` — opens the site with live reload.
 
-If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request. I welcome feedback and contributions to enhance the website.
+## Publishing
+
+The rendered site lives in `docs/` and GitHub Pages serves it from the `main`
+branch. After making changes:
+
+```bash
+quarto render
+git add .
+git commit -m "update site"
+git push
+```
+
+A `Quarto Publish` GitHub Actions workflow is also included: if you prefer
+CI-based publishing, switch the repo's Pages source to the `gh-pages` branch
+(Settings → Pages) and the workflow takes over on every push.
+
+> **Note on `assets/`:** this folder is listed in `.gitignore`, so your photo,
+> thumbnails, and resume are NOT pushed to the public repo. The committed
+> `docs/` folder is what visitors see. If you ever switch to CI-only
+> publishing, remove `/assets/` from `.gitignore` so the render can find your
+> images — and keep `assets/Resources/resume.pdf` in mind when linking your CV
+> from the About page.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+[MIT](LICENSE)

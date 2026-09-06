@@ -1,78 +1,89 @@
 ---
-title: "Welcome to My Page"
+title: "Utkarsh736 — Machine Learning Engineer & Sports Analyst"
 image: assets/display.jpg
 listing:
+  - id: landing-apps
+    contents: apps/posts
+    type: grid
+    max-items: 2
+    grid-columns: 2
+    sort:
+      - "date desc"
+    date-format: "MMMM D, YYYY"
   - id: landing-blogs
     contents: blogs/posts
     type: default
     max-items: 3
-    sort: 
+    sort:
       - "date desc"
-      - "title asc"
-  - id: landing-apps
-    contents: apps/posts
-    type: grid
-    max-items: 6
-    grid-columns: 3
-    sort: 
-      - "date desc"
-      - "title asc"
-about:
-  id: hero-card
-  template: jolla
-  image-shape: round
-  links:
-    - icon: twitter-x
-      text: Twitter
-      href: https://twitter.com/Utkarsh736
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/utkarsh736/
-    - icon: github
-      text: Github
-      href: https://github.com/Utkarsh736
-    - icon: emoji-smile
-      text: HuggingFace
-      href: https://huggingface.co/Utkarsh736
-    - icon: kaggle
-      text: Kaggle
-      href: https://www.kaggle.com/utkarshtomar736
-    - icon: Dagshub
-      text: Dagshub
-      href: https://dagshub.com/Utkarsh736
-    - icon: blue-sky
-      text: BlueSky
-      href: https://bsky.app/profile/utkarsh736.bsky.social
-
+    date-format: "MMMM D, YYYY"
 ---
 
+::: {.hero}
+::: {.hero-copy}
 
-:::{#hero-card}
+[Hi, I'm Utkarsh]{.kicker}
 
+# Building useful ML — and writing about it.
 
-* "Don't stop Believin'"
-* Read more about me [here](about.qmd)
-* Feel free to contact me on any of the links
+I'm a machine learning engineer at Omdena and a sports analyst focused on cricket. By day I turn messy data into models that actually work — the rest of the time I'm following cricket, hockey, MMA, and the NFL.
 
-:::
+::: {.hero-actions}
 
-<br></br>
-
-## Featured Blogs
-
-Click [here](blogs/blogs.qmd) to check out the latest blogs.
-
-
-:::{#landing-blogs}
+[About me](about.qmd){.btn .btn-primary} [Explore apps](apps/apps.qmd){.btn .btn-outline-secondary}
 
 :::
 
+::: {.social-chips}
 
+<a class="chip-link" href="https://github.com/Utkarsh736"><i class="bi bi-github"></i>GitHub</a>
+<a class="chip-link" href="https://www.linkedin.com/in/utkarsh736/"><i class="bi bi-linkedin"></i>LinkedIn</a>
+<a class="chip-link" href="https://twitter.com/Utkarsh736"><i class="bi bi-twitter-x"></i>Twitter</a>
+<a class="chip-link" href="https://huggingface.co/Utkarsh736"><i class="bi bi-emoji-smile"></i>HuggingFace</a>
+<a class="chip-link" href="https://www.kaggle.com/utkarshtomar736"><i class="bi bi-bar-chart-line"></i>Kaggle</a>
+<a class="chip-link" href="https://bsky.app/profile/utkarsh736.bsky.social"><i class="bi bi-bluesky"></i>Bluesky</a>
+<a class="chip-link" href="https://dagshub.com/Utkarsh736"><i class="bi bi-diagram-3"></i>DagsHub</a>
+
+:::
+
+:::
+
+::: {.hero-side}
+
+::: {.hero-photo}
+![ML Engineer · Cricket Analyst](assets/display.jpg)
+:::
+
+:::
+
+:::
+
+::: {.section-head}
+::: {}
 
 ## Featured Apps
-Click [here](apps/apps.qmd) to play more in the playground.
 
-:::{landing-apps}
+Small, useful tools — mostly Gradio apps deployed on Hugging Face Spaces.
 
 :::
 
+[All apps <i class="bi bi-arrow-right"></i>](apps/apps.qmd){.section-more}
+:::
+
+::: {#landing-apps}
+:::
+
+::: {.section-head}
+::: {}
+
+## Latest Writing
+
+Notes on machine learning, experiments, and sports analytics.
+
+:::
+
+[All posts <i class="bi bi-arrow-right"></i>](blogs/blogs.qmd){.section-more}
+:::
+
+::: {#landing-blogs}
+:::

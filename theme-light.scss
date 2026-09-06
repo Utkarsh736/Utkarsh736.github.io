@@ -1,0 +1,52 @@
+/* ============================================================
+   Light theme — "Teal on paper"
+   Change the brand in one place: the variables below.
+   ============================================================ */
+
+/*-- scss:defaults --*/
+
+// Brand accent (teal)
+$primary: #0d9488;
+$link-color: #0d9488;
+$link-hover-color: #0f766e;
+$link-decoration: none;
+
+// Paper canvas & ink
+$body-bg: #fafaf8;
+$body-color: #22303a;
+
+// Typography
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: "Sora", "Inter", system-ui, sans-serif;
+$headings-font-weight: 700;
+
+// Shape
+$border-radius: 0.625rem;
+$border-radius-lg: 1rem;
+
+// Navbar (translucent paper, blur applied in styles.css)
+$navbar-bg: #fafaf8;
+$navbar-fg: #43535f;
+$navbar-hl: #0d9488;
+
+// Footer
+$footer-bg: #fafaf8;
+$footer-fg: #7a8894;
+
+/*-- scss:rules --*/
+
+:root {
+  --paper: #fafaf8;
+  --surface: #ffffff;
+  --surface-2: #f4f4f1;
+  --ink: #22303a;
+  --muted: #64748b;
+  --line: #e8e6e0;
+  --accent: #0d9488;
+  --accent-strong: #0f766e;
+  --accent-soft: rgba(13, 148, 136, 0.08);
+  --accent-soft-2: rgba(13, 148, 136, 0.14);
+  --halo: rgba(13, 148, 136, 0.16);
+  --shadow-sm: 0 1px 2px rgba(34, 48, 58, 0.05);
+  --shadow-md: 0 2px 6px rgba(34, 48, 58, 0.06), 0 12px 32px rgba(34, 48, 58, 0.08);
+}

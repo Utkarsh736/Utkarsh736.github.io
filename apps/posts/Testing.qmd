@@ -1,19 +1,17 @@
 ---
-title: "Testing App"
+title: "Gradio Docker Demo"
+subtitle: "A minimal Gradio app served from Docker — my playground for deployment experiments."
 author: "Utkarsh736"
-date: "06/22/2024"
+date: 2024-06-22
 image: ../../assets/Bear_Classifier/thumbnail.jpg
-format:
-  html:
-    page-layout: full
+description: "A minimal Gradio app packed in Docker and served on Hugging Face Spaces — a sandbox for deployment experiments."
+categories:
+  - docker
+  - gradio
 ---
 
-:::{.column-screen}
-<iframe
-	src="https://utkarsh736-docker-gradio-demo.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
-<gradio-app space="Utkarsh736/Docker-gradio-demo"></gradio-app>
+This app is the same Gradio experience, but packaged with Docker instead of the standard Space setup — a clean sandbox for testing how containerized ML apps behave on Hugging Face infrastructure. Give it a spin below.
+
+::: {.app-frame}
+<iframe src="https://utkarsh736-docker-gradio-demo.hf.space" height="520" loading="lazy" title="Docker Gradio demo — live"></iframe>
 :::

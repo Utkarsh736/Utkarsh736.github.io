@@ -1,121 +1,135 @@
 [
   {
-    "objectID": "blogs/blogs.html",
-    "href": "blogs/blogs.html",
-    "title": "Blogs",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Utkarsh — About",
     "section": "",
-    "text": "Bear Classifier\n\n\n\n\n\n Using a pre-trained classifier to classify bears into ‘Teddy’, ‘Black’, and ‘Grizzly’ bears.\n\n\n\n\n\nJun 22, 2024\n\n\nUtkarsh736\n\n\n\n\n\n\nNo matching items"
+    "text": "Machine Learning Engineer @ Omdena · Cricket Analyst\n\nGitHub LinkedIn Twitter HuggingFace Kaggle Bluesky DagsHub"
+  },
+  {
+    "objectID": "about.html#bio",
+    "href": "about.html#bio",
+    "title": "Utkarsh — About",
+    "section": "Bio",
+    "text": "Bio\nHello! I’m a machine learning engineer and sports analyst with a focus on cricket. At Omdena I build and ship models for real business problems — from computer vision and object detection to tabular learning and ensemble methods. I care about the whole lifecycle: clean data pipelines, honest experiments, and models that survive contact with production.\nI’m a polyglot programmer at heart. Python is home, with C, Golang, and Rust next on the bench — I enjoy learning how different languages think about the same problem. Away from the keyboard you’ll find me following cricket, hockey, MMA, and the NFL, or exploring the world of movies. Sports are where my two worlds meet: data that moves, and stories that numbers can tell."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "Utkarsh — About",
+    "section": "Skills",
+    "text": "Skills\n\n\nLanguages\n\n\nPython C Golang Rust\n\n\n\n\nMachine Learning & Data\n\n\nPyTorch TensorFlow Keras scikit-learn XGBoost YOLOv5 Pandas NumPy Matplotlib Seaborn\n\n\n\n\nMLOps & Tooling\n\n\nGit DVC MLflow Tableau Gradio\n\n\n\n\nDomains\n\n\nComputer Vision Object Detection Cricket Analytics Video Analytics Ensemble Modeling"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Utkarsh — About",
+    "section": "Experience",
+    "text": "Experience\n\n\nMachine Learning Engineer — Omdena\nOmdena May 2022 — Present\n\nDeveloped and deployed machine learning models — Random Forest, XGBoost, and deep learning architectures like YOLOv5 and YOLT — across diverse business applications.\nImplemented computer vision neural networks for object detection, strengthening image-processing pipelines end to end.\nEngineered data pipelines with Python, Pandas, and NumPy to process large datasets and surface actionable insights.\nBuilt and optimized neural architectures with PyTorch, TensorFlow, and Keras; applied ensemble techniques to push model performance further.\nEstablished model versioning and experiment tracking with Git, DVC, and MLflow, and visualized results with Matplotlib and Seaborn for stakeholders.\nPartnered with cross-functional teams to propose and implement AI-driven solutions to business challenges.\n\n\n\nCricket Video Analyst — Mad About Sports\nMad About Sports · Intern Video & Performance Analytics\n\nConducted in-depth analysis of batsmen and bowlers using video analytics and data visualization, identifying strengths, weaknesses, and strategic matchups.\nProcessed and visualized complex cricket performance data with the Python ecosystem and Tableau.\nDeveloped and presented data-driven recommendations that contributed to improved player performance and team strategy.\nApplied machine learning to predict player performance trends and inform training regimens.\nCollaborated with analysts and coaches to produce high-quality analytical reports and presentations."
+  },
+  {
+    "objectID": "about.html#off-the-clock",
+    "href": "about.html#off-the-clock",
+    "title": "Utkarsh — About",
+    "section": "Off the clock",
+    "text": "Off the clock\n\nCricket Hockey MMA NFL Movies\n\n\nGet in touch\nThe fastest way to reach me is LinkedIn — or say hi on any platform below. Always happy to talk machine learning, cricket analytics, or trade movie recommendations.\n\nGitHub LinkedIn Twitter HuggingFace Bluesky\n\n Download resume"
   },
   {
     "objectID": "apps/apps.html",
     "href": "apps/apps.html",
     "title": "Apps",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nTesting App\n\n\n\n\n\n\nUtkarsh736\n\n\nSaturday, 22 June 2024 | 2024-06-22\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBear Classifier\n\n\nA Gradio app to classify bears into either of 3 categories, ‘Teddy’, ‘Grizzly’, ‘Black’.\n\n\n\nUtkarsh736\n\n\nSaturday, 22 June 2024 | 2024-06-22\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Gradio Docker Demo\n\n\n\ndocker\n\ngradio\n\n\n\nA minimal Gradio app packed in Docker and served on Hugging Face Spaces — a sandbox for deployment experiments.\n\n\n\nUtkarsh736\n\n\nJune 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nBear Classifier\n\n\n\ncomputer vision\n\ngradio\n\n\n\nA Gradio app to classify bears into ‘Teddy’, ‘Grizzly’, or ‘Black’ — served live from Hugging Face Spaces.\n\n\n\nUtkarsh736\n\n\nJune 22, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "projects/projects.html",
-    "href": "projects/projects.html",
-    "title": "Projects",
+    "objectID": "apps/posts/Testing.html",
+    "href": "apps/posts/Testing.html",
+    "title": "Gradio Docker Demo",
     "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Utkarsh",
-    "section": "",
-    "text": "Hello! I’m Utkarsh, a Machine Learning engineer and sports analyst with a focus on cricket. As a polyglot programmer, I code mostly in Python with a growing interest in C, Golang, and Rust. When I’m not crunching data or writing code, you can find me following sports like cricket, hockey, MMA, and NFL, or exploring the world of movies.\n\n\n\nMachine Learning Engineer\nOmdena\nMay 2022 - Present\n\nDeveloped and deployed various machine learning models including Random Forest, XGBoost, and deep learning models (Yolov5, YOLT) for diverse business applications.\nImplemented computer vision deep neural networks for object detection, enhancing image processing capabilities.\nEngineered data pipelines using Python, Pandas, and NumPy to process and analyze large datasets, uncovering actionable insights.\nUtilized PyTorch, TensorFlow, and Keras to build and optimize neural network architectures.\nEstablished model versioning and experiment tracking practices using Git, DVC, and MLFlow.\nCreated data visualizations with Matplotlib and Seaborn to effectively communicate findings to stakeholders.\nCollaborated with cross-functional teams to propose and implement AI-driven solutions for business challenges.\nApplied ensemble modeling techniques to combine multiple algorithms for improved model performance.\n\nSports(Cricket) Video Analyst\nMad About Sports\nIntern\n\nConducted in-depth analysis of batsmen and bowlers’ techniques using advanced video analytics and data visualization tools, identifying key strengths, weaknesses, and strategic matchups.\nLeveraged Python ecosystem (Pandas, NumPy, Matplotlib, Seaborn) and Tableau to process and visualize complex cricket performance data from multiple sources.\nDeveloped and presented actionable insights and data-driven recommendations, contributing to improved player performance and team strategy.\nCollaborated with a multidisciplinary team of analysts and coaches to produce high-quality analytical reports and strategic presentations.\nApplied machine learning techniques to predict player performance trends and identify areas for improvement in training regimens."
-  },
-  {
-    "objectID": "about.html#bio",
-    "href": "about.html#bio",
-    "title": "Utkarsh",
-    "section": "",
-    "text": "Hello! I’m Utkarsh, a Machine Learning engineer and sports analyst with a focus on cricket. As a polyglot programmer, I code mostly in Python with a growing interest in C, Golang, and Rust. When I’m not crunching data or writing code, you can find me following sports like cricket, hockey, MMA, and NFL, or exploring the world of movies."
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "Utkarsh",
-    "section": "",
-    "text": "Bachelor of Science in Computer Science\nUniversity of Technology, City, Country\nGraduated: May 2022\n\nRelevant Coursework: Data Structures, Web Development, Database Management, Software Engineering\nHonors: Dean’s List (2020-2022), Graduated with Distinction"
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "Utkarsh",
-    "section": "",
-    "text": "Machine Learning Engineer\nOmdena\nMay 2022 - Present\n\nDeveloped and deployed various machine learning models including Random Forest, XGBoost, and deep learning models (Yolov5, YOLT) for diverse business applications.\nImplemented computer vision deep neural networks for object detection, enhancing image processing capabilities.\nEngineered data pipelines using Python, Pandas, and NumPy to process and analyze large datasets, uncovering actionable insights.\nUtilized PyTorch, TensorFlow, and Keras to build and optimize neural network architectures.\nEstablished model versioning and experiment tracking practices using Git, DVC, and MLFlow.\nCreated data visualizations with Matplotlib and Seaborn to effectively communicate findings to stakeholders.\nCollaborated with cross-functional teams to propose and implement AI-driven solutions for business challenges.\nApplied ensemble modeling techniques to combine multiple algorithms for improved model performance.\n\nSports(Cricket) Video Analyst\nMad About Sports\nIntern\n\nConducted in-depth analysis of batsmen and bowlers’ techniques using advanced video analytics and data visualization tools, identifying key strengths, weaknesses, and strategic matchups.\nLeveraged Python ecosystem (Pandas, NumPy, Matplotlib, Seaborn) and Tableau to process and visualize complex cricket performance data from multiple sources.\nDeveloped and presented actionable insights and data-driven recommendations, contributing to improved player performance and team strategy.\nCollaborated with a multidisciplinary team of analysts and coaches to produce high-quality analytical reports and strategic presentations.\nApplied machine learning techniques to predict player performance trends and identify areas for improvement in training regimens."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to My Page",
-    "section": "",
-    "text": "“Don’t stop Believin’”\nRead more about me here\nFeel free to contact me on any of the links\n\n \n  \n   \n  \n    \n     Twitter\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github\n  \n  \n    \n     HuggingFace\n  \n  \n    \n     Kaggle\n  \n  \n    \n     Dagshub\n  \n  \n    \n     BlueSky"
-  },
-  {
-    "objectID": "index.html#featured-blogs",
-    "href": "index.html#featured-blogs",
-    "title": "Welcome to My Page",
-    "section": "Featured Blogs",
-    "text": "Featured Blogs\nClick here to check out the latest blogs.\n\n\n\n\n\n\n\n\n\n\nBear Classifier\n\n\n\n\n\n Using a pre-trained classifier to classify bears into ‘Teddy’, ‘Black’, and ‘Grizzly’ bears.\n\n\n\n\n\nJun 22, 2024\n\n\nUtkarsh736\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#featured-apps",
-    "href": "index.html#featured-apps",
-    "title": "Welcome to My Page",
-    "section": "Featured Apps",
-    "text": "Featured Apps\nClick here to play more in the playground."
+    "text": "This app is the same Gradio experience, but packaged with Docker instead of the standard Space setup — a clean sandbox for testing how containerized ML apps behave on Hugging Face infrastructure. Give it a spin below.\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "blogs/posts/Bear_Classifier.html",
     "href": "blogs/posts/Bear_Classifier.html",
     "title": "Bear Classifier",
     "section": "",
-    "text": "In this notebook, we will use a vision classifer to classfiy bear(teddy, black & grizzly) and deploy the model as web app using huggiface gradio space.\n\nfrom fastai.vision.all import *\n\n\n\nThe data is being imported from Kaggle\nDataset - anirudhg15/bears-fastai-2021\n\nfrom google.colab import userdata\nimport os\n\nos.environ[\"KAGGLE_KEY\"] = userdata.get('KAGGLE_KEY')\nos.environ[\"KAGGLE_USERNAME\"] = userdata.get('KAGGLE_USERNAME')\n\n\n!kaggle datasets download -d anirudhg15/bears-fastai-2021\n! unzip \"bears-fastai-2021\"\n\n\nfrom pathlib import Path\n\n\npath = Path('bears')\n\n\nbl_bear = (path/'black').ls().sorted()\nbl_bear[1]\n\nPath('bears/black/00000001.jpg')\n\n\n\nImage.open(bl_bear[1])\n\n\n\n\n\n\n\n\n\n\n\n\ndef get_dls(bs, size):\n  dblock = DataBlock(blocks=(ImageBlock, CategoryBlock),\n                     get_items=get_image_files,\n                     splitter=RandomSplitter(),\n                     get_y=parent_label,\n                     item_tfms=Resize(size))\n\n  return dblock.dataloaders(path, bs=bs)\n\n\ndls = get_dls(64, 224)\n\n\ndls.show_batch(nrows=1, ncols=3)\n\n\n\n\n\n\n\n\n\nlearn = cnn_learner(dls, resnet18, metrics=error_rate)\nlearn.fine_tune(4)\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n1.629151\n0.250812\n0.122807\n00:21\n\n\n\n\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n0.429806\n0.061032\n0.017544\n00:22\n\n\n1\n0.268742\n0.013778\n0.000000\n00:21\n\n\n2\n0.186102\n0.013141\n0.000000\n00:21\n\n\n3\n0.139788\n0.016549\n0.017544\n00:20\n\n\n\n\n\n\n\n\n\ninterp = ClassificationInterpretation.from_learner(learn)\ninterp.plot_confusion_matrix()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ninterp.plot_top_losses(5, nrows=1, figsize=(17,4))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlearn.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))\n\n\n\n\n\n\nlearn.export(fname='bear_model.pkl', pickle_module=pickle, pickle_protocol=2)\n\n\n\n\n\nreload_model=load_learner('bear_model.pkl', cpu=True, pickle_module=pickle)\nreload_model\n\n&lt;fastai.learner.Learner at 0x7bd9edf06890&gt;\n\n\n\nreload_model.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
+    "text": "In this notebook, we will use a vision classifer to classfiy bear(teddy, black & grizzly) and deploy the model as web app using huggiface gradio space.\nfrom fastai.vision.all import *"
   },
   {
     "objectID": "blogs/posts/Bear_Classifier.html#data",
     "href": "blogs/posts/Bear_Classifier.html#data",
     "title": "Bear Classifier",
-    "section": "",
-    "text": "The data is being imported from Kaggle\nDataset - anirudhg15/bears-fastai-2021\n\nfrom google.colab import userdata\nimport os\n\nos.environ[\"KAGGLE_KEY\"] = userdata.get('KAGGLE_KEY')\nos.environ[\"KAGGLE_USERNAME\"] = userdata.get('KAGGLE_USERNAME')\n\n\n!kaggle datasets download -d anirudhg15/bears-fastai-2021\n! unzip \"bears-fastai-2021\"\n\n\nfrom pathlib import Path\n\n\npath = Path('bears')\n\n\nbl_bear = (path/'black').ls().sorted()\nbl_bear[1]\n\nPath('bears/black/00000001.jpg')\n\n\n\nImage.open(bl_bear[1])"
+    "section": "Data",
+    "text": "Data\nThe data is being imported from Kaggle\nDataset - anirudhg15/bears-fastai-2021\n\nfrom google.colab import userdata\nimport os\n\nos.environ[\"KAGGLE_KEY\"] = userdata.get('KAGGLE_KEY')\nos.environ[\"KAGGLE_USERNAME\"] = userdata.get('KAGGLE_USERNAME')\n\n\n!kaggle datasets download -d anirudhg15/bears-fastai-2021\n! unzip \"bears-fastai-2021\"\n\n\nfrom pathlib import Path\n\n\npath = Path('bears')\n\n\nbl_bear = (path/'black').ls().sorted()\nbl_bear[1]\n\nPath('bears/black/00000001.jpg')\n\n\n\nImage.open(bl_bear[1])"
   },
   {
     "objectID": "blogs/posts/Bear_Classifier.html#dls-function-fastai-explaination",
     "href": "blogs/posts/Bear_Classifier.html#dls-function-fastai-explaination",
     "title": "Bear Classifier",
-    "section": "",
-    "text": "def get_dls(bs, size):\n  dblock = DataBlock(blocks=(ImageBlock, CategoryBlock),\n                     get_items=get_image_files,\n                     splitter=RandomSplitter(),\n                     get_y=parent_label,\n                     item_tfms=Resize(size))\n\n  return dblock.dataloaders(path, bs=bs)\n\n\ndls = get_dls(64, 224)\n\n\ndls.show_batch(nrows=1, ncols=3)\n\n\n\n\n\n\n\n\n\nlearn = cnn_learner(dls, resnet18, metrics=error_rate)\nlearn.fine_tune(4)\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n1.629151\n0.250812\n0.122807\n00:21\n\n\n\n\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n0.429806\n0.061032\n0.017544\n00:22\n\n\n1\n0.268742\n0.013778\n0.000000\n00:21\n\n\n2\n0.186102\n0.013141\n0.000000\n00:21\n\n\n3\n0.139788\n0.016549\n0.017544\n00:20"
+    "section": "DLS function fastai explaination",
+    "text": "DLS function fastai explaination\n\ndef get_dls(bs, size):\n  dblock = DataBlock(blocks=(ImageBlock, CategoryBlock),\n                     get_items=get_image_files,\n                     splitter=RandomSplitter(),\n                     get_y=parent_label,\n                     item_tfms=Resize(size))\n\n  return dblock.dataloaders(path, bs=bs)\n\n\ndls = get_dls(64, 224)\n\n\ndls.show_batch(nrows=1, ncols=3)\n\n\n\n\n\n\n\n\n\nlearn = cnn_learner(dls, resnet18, metrics=error_rate)\nlearn.fine_tune(4)\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n1.629151\n0.250812\n0.122807\n00:21\n\n\n\n\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n0.429806\n0.061032\n0.017544\n00:22\n\n\n1\n0.268742\n0.013778\n0.000000\n00:21\n\n\n2\n0.186102\n0.013141\n0.000000\n00:21\n\n\n3\n0.139788\n0.016549\n0.017544\n00:20"
   },
   {
     "objectID": "blogs/posts/Bear_Classifier.html#interpretting-the-model",
     "href": "blogs/posts/Bear_Classifier.html#interpretting-the-model",
     "title": "Bear Classifier",
-    "section": "",
-    "text": "interp = ClassificationInterpretation.from_learner(learn)\ninterp.plot_confusion_matrix()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ninterp.plot_top_losses(5, nrows=1, figsize=(17,4))"
+    "section": "Interpretting the model",
+    "text": "Interpretting the model\n\ninterp = ClassificationInterpretation.from_learner(learn)\ninterp.plot_confusion_matrix()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ninterp.plot_top_losses(5, nrows=1, figsize=(17,4))"
   },
   {
     "objectID": "blogs/posts/Bear_Classifier.html#prediction",
     "href": "blogs/posts/Bear_Classifier.html#prediction",
     "title": "Bear Classifier",
-    "section": "",
-    "text": "learn.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
+    "section": "Prediction",
+    "text": "Prediction\n\nlearn.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
   },
   {
     "objectID": "blogs/posts/Bear_Classifier.html#saving-the-model",
     "href": "blogs/posts/Bear_Classifier.html#saving-the-model",
     "title": "Bear Classifier",
-    "section": "",
-    "text": "learn.export(fname='bear_model.pkl', pickle_module=pickle, pickle_protocol=2)"
+    "section": "Saving the Model",
+    "text": "Saving the Model\n\nlearn.export(fname='bear_model.pkl', pickle_module=pickle, pickle_protocol=2)"
   },
   {
     "objectID": "blogs/posts/Bear_Classifier.html#reload-model",
     "href": "blogs/posts/Bear_Classifier.html#reload-model",
     "title": "Bear Classifier",
+    "section": "Reload Model",
+    "text": "Reload Model\n\nreload_model=load_learner('bear_model.pkl', cpu=True, pickle_module=pickle)\nreload_model\n\n&lt;fastai.learner.Learner at 0x7bd9edf06890&gt;\n\n\n\nreload_model.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
+  },
+  {
+    "objectID": "blogs/blogs.html",
+    "href": "blogs/blogs.html",
+    "title": "Blogs",
     "section": "",
-    "text": "reload_model=load_learner('bear_model.pkl', cpu=True, pickle_module=pickle)\nreload_model\n\n&lt;fastai.learner.Learner at 0x7bd9edf06890&gt;\n\n\n\nreload_model.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
+    "text": "Bear Classifier\n\n\nUsing a pre-trained classifier to classify bears into ‘Teddy’, ‘Black’, and ‘Grizzly’ bears.\n\n\n\n\n\nJune 22, 2024\n\n\nUtkarsh736\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "apps/posts/Bearify.html",
+    "href": "apps/posts/Bearify.html",
+    "title": "Bear Classifier",
+    "section": "",
+    "text": "Bearify is a lightweight image classifier built with fastai and deployed as a Gradio web app on Hugging Face Spaces. Pick or drop a photo of a bear and the model will call it a teddy, grizzly, or black bear — try it live below, then read the blog post for the full build.\n\n\n\n\nThe model behind the app is trained on the Bears FastAI dataset.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Utkarsh736 — Machine Learning Engineer & Sports Analyst",
+    "section": "",
+    "text": "Hi, I’m Utkarsh\n\n\nI’m a machine learning engineer at Omdena and a sports analyst focused on cricket. By day I turn messy data into models that actually work — the rest of the time I’m following cricket, hockey, MMA, and the NFL.\n\nAbout me Explore apps\n\n\nGitHub LinkedIn Twitter HuggingFace Kaggle Bluesky DagsHub\n\n\n\n\n\n\n\n\nML Engineer · Cricket Analyst"
+  },
+  {
+    "objectID": "index.html#featured-apps",
+    "href": "index.html#featured-apps",
+    "title": "Utkarsh736 — Machine Learning Engineer & Sports Analyst",
+    "section": "Featured Apps",
+    "text": "Featured Apps\nSmall, useful tools — mostly Gradio apps deployed on Hugging Face Spaces."
+  },
+  {
+    "objectID": "index.html#latest-writing",
+    "href": "index.html#latest-writing",
+    "title": "Utkarsh736 — Machine Learning Engineer & Sports Analyst",
+    "section": "Latest Writing",
+    "text": "Latest Writing\nNotes on machine learning, experiments, and sports analytics."
   }
 ]

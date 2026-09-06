@@ -4,30 +4,54 @@ project:
 
 website:
   title: "Utkarsh736"
+  site-url: https://utkarsh736.github.io/
+  description: "Utkarsh — Machine Learning Engineer & cricket analytics enthusiast. I build useful models and write about what I learn."
+  image: assets/display.jpg
+  open-graph: true
+  back-to-top-navigation: true
+
   navbar:
-    background: primary
-    search: true
-    left: 
+    search: false
+    left:
       - text: "Home"
         href: index.qmd
-      - blogs/blogs.qmd
-      - apps/apps.qmd
+      - text: "Blogs"
+        href: blogs/blogs.qmd
+      - text: "Apps"
+        href: apps/apps.qmd
       - text: "About"
         href: about.qmd
     right:
       - icon: github
         href: https://github.com/Utkarsh736
-      - icon: twitter
+        aria-label: "GitHub"
+      - icon: twitter-x
         href: https://twitter.com/Utkarsh736
-      - icon: emoji-smile
-        href: https://huggingface.co/Utkarsh736
+        aria-label: "Twitter / X"
+      - icon: linkedin
+        href: https://www.linkedin.com/in/utkarsh736/
+        aria-label: "LinkedIn"
+
+  page-footer:
+    left: "© 2026 Utkarsh"
+    center:
+      - text: "Built with Quarto"
+        href: https://quarto.org
+    right:
+      - icon: github
+        href: https://github.com/Utkarsh736/Utkarsh736.github.io
+        aria-label: "Site source on GitHub"
+
 format:
   html:
-    theme: cosmo
+    theme:
+      light: [litera, theme-light.scss]
+      dark: [slate, theme-dark.scss]
     css: styles.css
+    toc: false
+    grid:
+      body-width: 920px
+    link-external-newwindow: true
 
 execute:
   freeze: auto
-
-
-

@@ -1,0 +1,20 @@
+---
+title: "App Name"
+subtitle: "One line describing what the app does."
+author: "Utkarsh736"
+date: 2025-01-01
+date-modified: last-modified
+image: /assets/Bear_Classifier/thumbnail.jpg
+description: "One-sentence summary used on the Apps grid card."
+categories:
+  - gradio
+---
+
+One or two sentences introducing the app: what it does, what powers it, and
+where it runs.
+
+::: {.app-frame}
+<iframe src="https://YOUR_HF_SPACE_URL.hf.space" height="520" loading="lazy" title="App live demo"></iframe>
+:::
+
+Optional closing notes — dataset link, how it was trained, known limitations.

@@ -1,0 +1,47 @@
+/* ============================================================
+   Dark theme — teal on charcoal (auto-paired with theme-light.scss)
+   ============================================================ */
+
+/*-- scss:defaults --*/
+
+$primary: #2dd4bf;
+$link-color: #2dd4bf;
+$link-hover-color: #5eead4;
+$link-decoration: none;
+
+$body-bg: #0f1519;
+$body-color: #d7e0e4;
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: "Sora", "Inter", system-ui, sans-serif;
+$headings-font-weight: 700;
+
+$border-radius: 0.625rem;
+$border-radius-lg: 1rem;
+
+$navbar-bg: #0f1519;
+$navbar-fg: #9fb0b8;
+$navbar-hl: #2dd4bf;
+
+$footer-bg: #0f1519;
+$footer-fg: #7a8894;
+
+/*-- scss:rules --*/
+
+/* Quarto's dark-mode toggle adds .quarto-dark to <body>, so tokens are
+   scoped there. Everything inside the body (navbar included) inherits. */
+body.quarto-dark {
+  --paper: #0f1519;
+  --surface: #172026;
+  --surface-2: #1c262d;
+  --ink: #e6edf0;
+  --muted: #93a4ad;
+  --line: #24313a;
+  --accent: #2dd4bf;
+  --accent-strong: #5eead4;
+  --accent-soft: rgba(45, 212, 191, 0.09);
+  --accent-soft-2: rgba(45, 212, 191, 0.16);
+  --halo: rgba(45, 212, 191, 0.12);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.35), 0 12px 32px rgba(0, 0, 0, 0.4);
+}

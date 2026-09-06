@@ -1,30 +1,26 @@
 ---
 title: "Bear Classifier"
+subtitle: "Bearify — a Gradio app that tells teddy, grizzly, and black bears apart."
 author: "Utkarsh736"
-date: "06/22/2024"
+date: 2024-06-22
 image: ../../assets/Bear_Classifier/thumbnail.jpg
-description: "A Gradio app to classify bears into either of 3 categories, 'Teddy', 'Grizzly', 'Black'."
+description: "A Gradio app to classify bears into 'Teddy', 'Grizzly', or 'Black' — served live from Hugging Face Spaces."
+categories:
+  - computer vision
+  - gradio
 format:
   html:
     other-links:
-      - text: Dataset Bears FastAI
+      - text: Dataset — Bears FastAI
         href: https://www.kaggle.com/datasets/anirudhg15/bears-fastai-2021
-    code-links:
-      - text: Data Import Code
-        icon: file-code
-        href: data-import.py
     toc: true
-    html-math-method: katex
     smooth-scroll: true
-    css: ../../styles.css
 ---
 
-:::{.column-screen}
-<iframe
-	src="https://utkarsh736-bearify.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
-<gradio-app space="Utkarsh736/Bearify"></gradio-app>
+Bearify is a lightweight image classifier built with fastai and deployed as a Gradio web app on Hugging Face Spaces. Pick or drop a photo of a bear and the model will call it a teddy, grizzly, or black bear — try it live below, then read the [blog post](../../blogs/posts/Bear_Classifier.html) for the full build.
+
+::: {.app-frame}
+<iframe src="https://utkarsh736-bearify.hf.space" height="520" loading="lazy" title="Bearify — live demo"></iframe>
 :::
+
+The model behind the app is trained on the [Bears FastAI dataset](https://www.kaggle.com/datasets/anirudhg15/bears-fastai-2021).

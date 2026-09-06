@@ -1,25 +1,17 @@
 ---
 title: "Apps"
+subtitle: "Small tools I've built — mostly Gradio apps deployed on Hugging Face Spaces."
 listing:
   - id: apps
     contents: posts
-    sort:
-      - "title desc"
-      - "date desc"
-    categories: true
-    sort-ui: [date, author]
-    filter-ui: [title, date, author]
     type: grid
     grid-columns: 3
-    grid-item-border: true
-    grid-item-align: left
-    image-height: 100%
-    date-format: "dddd, DD MMMM YYYY | YYYY-MM-DD"
-format: 
-  html: 
-    page-layout: full
-    gradio: false
+    sort:
+      - "date desc"
+    categories: true
+    date-format: "MMMM D, YYYY"
+title-block-banner: body
 ---
 
-:::{#apps}
+::: {#apps}
 :::

@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://utkarsh736.github.io/apps/posts/Bearify.html</loc>
-    <lastmod>2026-09-06T17:59:19.159Z</lastmod>
+    <lastmod>2026-09-09T15:46:49.946Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/apps/apps.html</loc>
-    <lastmod>2026-09-06T17:59:19.159Z</lastmod>
+    <lastmod>2026-09-09T15:46:49.946Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/blogs/posts/Bear_Classifier.html</loc>
-    <lastmod>2026-09-06T17:59:19.182Z</lastmod>
-  </url>
-  <url>
-    <loc>https://utkarsh736.github.io/index.html</loc>
-    <lastmod>2026-09-06T17:59:19.201Z</lastmod>
+    <lastmod>2026-09-09T15:46:49.971Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/blogs/blogs.html</loc>
-    <lastmod>2026-09-06T17:59:19.165Z</lastmod>
+    <lastmod>2026-09-09T15:46:49.951Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/index.html</loc>
+    <lastmod>2026-09-09T15:46:49.993Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/blogs/posts/Transformer_From_Scratch.html</loc>
+    <lastmod>2026-09-09T15:46:49.971Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/about.html</loc>
-    <lastmod>2026-09-06T17:59:19.159Z</lastmod>
+    <lastmod>2026-09-09T15:46:49.946Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/apps/posts/Testing.html</loc>
-    <lastmod>2026-09-06T17:59:19.160Z</lastmod>
+    <lastmod>2026-09-09T15:46:49.946Z</lastmod>
   </url>
 </urlset>

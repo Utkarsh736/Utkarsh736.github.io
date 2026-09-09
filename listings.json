@@ -7,16 +7,18 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/blogs/blogs.html",
     "items": [
-      "/apps/posts/Testing.html",
-      "/apps/posts/Bearify.html",
+      "/blogs/posts/Transformer_From_Scratch.html",
       "/blogs/posts/Bear_Classifier.html"
     ]
   },
   {
-    "listing": "/blogs/blogs.html",
+    "listing": "/index.html",
     "items": [
+      "/apps/posts/Testing.html",
+      "/apps/posts/Bearify.html",
+      "/blogs/posts/Transformer_From_Scratch.html",
       "/blogs/posts/Bear_Classifier.html"
     ]
   }

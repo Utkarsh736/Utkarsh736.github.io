@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://utkarsh736.github.io/apps/posts/Bearify.html</loc>
-    <lastmod>2026-09-09T15:46:49.946Z</lastmod>
-  </url>
-  <url>
-    <loc>https://utkarsh736.github.io/apps/apps.html</loc>
-    <lastmod>2026-09-09T15:46:49.946Z</lastmod>
-  </url>
-  <url>
-    <loc>https://utkarsh736.github.io/blogs/posts/Bear_Classifier.html</loc>
-    <lastmod>2026-09-09T15:46:49.971Z</lastmod>
-  </url>
-  <url>
-    <loc>https://utkarsh736.github.io/blogs/blogs.html</loc>
-    <lastmod>2026-09-09T15:46:49.951Z</lastmod>
-  </url>
-  <url>
-    <loc>https://utkarsh736.github.io/index.html</loc>
-    <lastmod>2026-09-09T15:46:49.993Z</lastmod>
-  </url>
-  <url>
-    <loc>https://utkarsh736.github.io/blogs/posts/Transformer_From_Scratch.html</loc>
-    <lastmod>2026-09-09T15:46:49.971Z</lastmod>
-  </url>
-  <url>
-    <loc>https://utkarsh736.github.io/about.html</loc>
-    <lastmod>2026-09-09T15:46:49.946Z</lastmod>
+    <lastmod>2026-09-15T06:57:56.695Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/apps/posts/Testing.html</loc>
-    <lastmod>2026-09-09T15:46:49.946Z</lastmod>
+    <lastmod>2026-09-15T06:57:56.695Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/about.html</loc>
+    <lastmod>2026-09-15T06:57:56.695Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/blogs/posts/Transformer_From_Scratch.html</loc>
+    <lastmod>2026-09-15T06:57:56.715Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/index.html</loc>
+    <lastmod>2026-09-15T06:57:56.734Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/blogs/blogs.html</loc>
+    <lastmod>2026-09-15T06:57:56.700Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/blogs/posts/Bear_Classifier.html</loc>
+    <lastmod>2026-09-15T06:57:56.715Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/apps/apps.html</loc>
+    <lastmod>2026-09-15T06:57:56.695Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/apps/posts/Asteroids.html</loc>
+    <lastmod>2026-09-15T06:57:56.695Z</lastmod>
   </url>
 </urlset>

@@ -1,12 +1,11 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/apps/apps.html",
     "items": [
       "/apps/posts/Asteroids.html",
+      "/apps/posts/StaticSiteGenerator.html",
       "/apps/posts/Testing.html",
-      "/apps/posts/Bearify.html",
-      "/blogs/posts/Transformer_From_Scratch.html",
-      "/blogs/posts/Bear_Classifier.html"
+      "/apps/posts/Bearify.html"
     ]
   },
   {
@@ -17,11 +16,14 @@
     ]
   },
   {
-    "listing": "/apps/apps.html",
+    "listing": "/index.html",
     "items": [
       "/apps/posts/Asteroids.html",
+      "/apps/posts/StaticSiteGenerator.html",
       "/apps/posts/Testing.html",
-      "/apps/posts/Bearify.html"
+      "/apps/posts/Bearify.html",
+      "/blogs/posts/Transformer_From_Scratch.html",
+      "/blogs/posts/Bear_Classifier.html"
     ]
   }
 ]

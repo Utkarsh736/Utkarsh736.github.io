@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img">
+  <title>Utkarsh736 — ML Engineer &amp; Sports Analyst</title>
+  <desc>Hexagonal badge with neural network U-shape in purple and gold, with cricket seam accent in amber</desc>
+
+  <!-- Hex background -->
+  <polygon fill="#3C3489" points="100,14 174,57 174,143 100,186 26,143 26,57"/>
+  <!-- Hex border -->
+  <polygon fill="none" stroke="#7F77DD" stroke-width="1.5" points="100,14 174,57 174,143 100,186 26,143 26,57"/>
+
+  <!-- Network edges (dim) -->
+  <line stroke="#AFA9EC" stroke-width="0.9" opacity="0.5" x1="63" y1="40" x2="61" y2="62"/>
+  <line stroke="#AFA9EC" stroke-width="0.9" opacity="0.5" x1="61" y1="62" x2="60" y2="86"/>
+  <line stroke="#AFA9EC" stroke-width="0.9" opacity="0.5" x1="60" y1="86" x2="62" y2="110"/>
+  <line stroke="#AFA9EC" stroke-width="0.9" opacity="0.5" x1="62" y1="110" x2="74" y2="135"/>
+  <line stroke="#AFA9EC" stroke-width="0.9" opacity="0.5" x1="74" y1="135" x2="100" y2="144"/>
+  <line stroke="#AFA9EC" stroke-width="0.9" opacity="0.5" x1="100" y1="144" x2="126" y2="135"/>
+  <line stroke="#AFA9EC" stroke-width="0.9" opacity="0.5" x1="126" y1="135" x2="138" y2="110"/>
+  <line stroke="#AFA9EC" stroke-width="0.9" opacity="0.5" x1="138" y1="110" x2="140" y2="86"/>
+  <line stroke="#AFA9EC" stroke-width="0.9" opacity="0.5" x1="140" y1="86" x2="139" y2="62"/>
+  <line stroke="#AFA9EC" stroke-width="0.9" opacity="0.5" x1="139" y1="62" x2="137" y2="40"/>
+  <!-- Cross edges -->
+  <line stroke="#AFA9EC" stroke-width="0.8" opacity="0.35" x1="63" y1="40" x2="137" y2="40"/>
+  <line stroke="#AFA9EC" stroke-width="0.8" opacity="0.35" x1="61" y1="62" x2="139" y2="62"/>
+  <line stroke="#AFA9EC" stroke-width="0.7" opacity="0.25" x1="100" y1="52" x2="100" y2="144"/>
+  <line stroke="#AFA9EC" stroke-width="0.7" opacity="0.2" x1="61" y1="62" x2="100" y2="52"/>
+  <line stroke="#AFA9EC" stroke-width="0.7" opacity="0.2" x1="139" y1="62" x2="100" y2="52"/>
+
+  <!-- Glowing U-path edges (amber) -->
+  <line stroke="#FCDE5A" stroke-width="1.5" opacity="0.9" x1="63" y1="40" x2="61" y2="62"/>
+  <line stroke="#FCDE5A" stroke-width="1.5" opacity="0.9" x1="61" y1="62" x2="60" y2="86"/>
+  <line stroke="#FCDE5A" stroke-width="1.5" opacity="0.9" x1="60" y1="86" x2="62" y2="110"/>
+  <line stroke="#FCDE5A" stroke-width="1.5" opacity="0.9" x1="62" y1="110" x2="74" y2="135"/>
+  <line stroke="#FCDE5A" stroke-width="1.5" opacity="0.9" x1="74" y1="135" x2="100" y2="144"/>
+  <line stroke="#FCDE5A" stroke-width="1.5" opacity="0.9" x1="100" y1="144" x2="126" y2="135"/>
+  <line stroke="#FCDE5A" stroke-width="1.5" opacity="0.9" x1="126" y1="135" x2="138" y2="110"/>
+  <line stroke="#FCDE5A" stroke-width="1.5" opacity="0.9" x1="138" y1="110" x2="140" y2="86"/>
+  <line stroke="#FCDE5A" stroke-width="1.5" opacity="0.9" x1="140" y1="86" x2="139" y2="62"/>
+  <line stroke="#FCDE5A" stroke-width="1.5" opacity="0.9" x1="139" y1="62" x2="137" y2="40"/>
+
+  <!-- Primary U nodes (gold) -->
+  <circle fill="#FCDE5A" cx="63" cy="40" r="4.5"/>
+  <circle fill="#FCDE5A" cx="137" cy="40" r="4.5"/>
+  <circle fill="#FCDE5A" cx="61" cy="62" r="3.8"/>
+  <circle fill="#FCDE5A" cx="139" cy="62" r="3.8"/>
+  <circle fill="#FCDE5A" cx="60" cy="86" r="3.8"/>
+  <circle fill="#FCDE5A" cx="140" cy="86" r="3.8"/>
+  <circle fill="#FCDE5A" cx="62" cy="110" r="3.8"/>
+  <circle fill="#FCDE5A" cx="138" cy="110" r="3.8"/>
+  <circle fill="#FCDE5A" cx="74" cy="135" r="4"/>
+  <circle fill="#FCDE5A" cx="126" cy="135" r="4"/>
+  <circle fill="#FCDE5A" cx="100" cy="144" r="5.5"/>
+
+  <!-- Inner nodes (soft purple) -->
+  <circle fill="#AFA9EC" cx="100" cy="52" r="3"/>
+  <circle fill="#AFA9EC" cx="100" cy="86" r="2.5"/>
+
+  <!-- Cricket seam accent (bottom-right of hex) -->
+  <path stroke="#EF9F27" stroke-width="1.6" fill="none" stroke-linecap="round" d="M122,128 Q133,138 126,152"/>
+  <path stroke="#EF9F27" stroke-width="1.6" fill="none" stroke-linecap="round" d="M135,127 Q124,137 131,151"/>
+  <!-- Seam stitches -->
+  <line stroke="#EF9F27" stroke-width="1" stroke-linecap="round" x1="125" y1="133" x2="128" y2="136"/>
+  <line stroke="#EF9F27" stroke-width="1" stroke-linecap="round" x1="127" y1="140" x2="130" y2="143"/>
+  <line stroke="#EF9F27" stroke-width="1" stroke-linecap="round" x1="127" y1="147" x2="130" y2="150"/>
+</svg>

@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Utkarsh736"
+  favicon: assets/favicon.svg
   site-url: https://utkarsh736.github.io/
   description: "Utkarsh — Machine Learning Engineer & cricket analytics enthusiast. I build useful models and write about what I learn."
   image: assets/display.jpg

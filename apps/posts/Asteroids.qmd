@@ -1,0 +1,32 @@
+---
+title: "Asteroids"
+subtitle: "Classic arcade shooter in the browser — Python, Pygame, and pygbag."
+author: "Utkarsh736"
+date: 2026-09-15
+image: ../../assets/Asteroids/thumbnail.jpg
+description: "Play a classic Asteroids clone in the browser, built with Python and Pygame and deployed with pygbag on GitHub Pages."
+categories:
+  - pygame
+  - game
+  - webassembly
+format:
+  html:
+    other-links:
+      - text: Source on GitHub
+        href: https://github.com/Utkarsh736/asteroids
+    toc: false
+---
+
+A classic Asteroids arcade game written in Python and Pygame, packaged for the web with [pygbag](https://pygame-web.github.io/) so it runs entirely in the browser via WebAssembly. Use **W/A/S/D** to move and **Space** to shoot.
+
+::: {.app-frame}
+<iframe
+  src="https://utkarsh736.github.io/asteroids/"
+  height="720"
+  loading="lazy"
+  title="Asteroids — live demo"
+  style="width: 100%; border: none; aspect-ratio: 16 / 9;">
+</iframe>
+:::
+
+Built as part of learning game loops, sprite groups, and collision handling in Pygame. Source: [Utkarsh736/asteroids](https://github.com/Utkarsh736/asteroids).

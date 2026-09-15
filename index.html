@@ -118,9 +118,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -455,7 +455,7 @@ window.Quarto = {
 </div>
 <div id="listing-landing-apps" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-categories="cHlnYW1lJTJDZ2FtZSUyQ3dlYmFzc2VtYmx5" data-listing-date-sort="1789430400000" data-listing-file-modified-sort="1789483347398" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<div class="g-col-1" data-index="0" data-categories="cHlnYW1lJTJDZ2FtZSUyQ3dlYmFzc2VtYmx5" data-listing-date-sort="1789430400000" data-listing-file-modified-sort="1789492234209" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
 <a href="./apps/posts/Asteroids.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -479,7 +479,7 @@ September 15, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="cHl0aG9uJTJDc3RhdGljLXNpdGUlMkNtYXJrZG93bg==" data-listing-date-sort="1769385600000" data-listing-file-modified-sort="1789483347398" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="95">
+<div class="g-col-1" data-index="1" data-categories="cHl0aG9uJTJDc3RhdGljLXNpdGUlMkNtYXJrZG93bg==" data-listing-date-sort="1769385600000" data-listing-file-modified-sort="1789492234209" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="95">
 <a href="./apps/posts/StaticSiteGenerator.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -515,7 +515,35 @@ January 26, 2026
 </div>
 <div id="listing-landing-blogs" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDdHJhbnNmb3JtZXJzJTJDcHl0b3JjaA==" data-listing-date-sort="1788912000000" data-listing-file-modified-sort="1789483347422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1856">
+<div class="quarto-post image-right" data-index="0" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDY29tcHV0ZXIlMjB2aXNpb24lMkN0cmFuc2Zvcm1lcnM=" data-listing-date-sort="1789430400000" data-listing-file-modified-sort="1789492234232" data-listing-date-modified-sort="1789492234000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1216">
+<div class="thumbnail"><a href="./blogs/posts/ViT_From_Scratch.html" class="no-external">
+
+<img loading="lazy" src="./assets/images/vit_display.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./blogs/posts/ViT_From_Scratch.html" class="no-external">Vision Transformer from Scratch</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./blogs/posts/ViT_From_Scratch.html" class="no-external">Implementing ViT end-to-end and walking through the pieces that matter.</a>
+</div>
+<div class="delink listing-description"><a href="./blogs/posts/ViT_From_Scratch.html" class="no-external">
+<p>A from-scratch walkthrough of the Vision Transformer architecture in a notebook.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./blogs/posts/ViT_From_Scratch.html" class="no-external">
+<div class="listing-date">
+September 15, 2026
+</div>
+<div class="listing-author">
+Utkarsh736
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDdHJhbnNmb3JtZXJzJTJDcHl0b3JjaA==" data-listing-date-sort="1788912000000" data-listing-file-modified-sort="1789492234231" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1856">
 <div class="thumbnail"><a href="./blogs/posts/Transformer_From_Scratch.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -525,6 +553,9 @@ January 26, 2026
 <h3 class="no-anchor listing-title">
 <a href="./blogs/posts/Transformer_From_Scratch.html" class="no-external">Building a Transformer From Scratch</a>
 </h3>
+<div class="listing-subtitle">
+<a href="./blogs/posts/Transformer_From_Scratch.html" class="no-external"></a>
+</div>
 <div class="delink listing-description"><a href="./blogs/posts/Transformer_From_Scratch.html" class="no-external">
 <p>A readable, from-scratch GPT-style Transformer in PyTorch — embeddings, causal attention, multi-head, MLP, residual blocks, training and generation.</p>
 </a></div>
@@ -540,7 +571,7 @@ Utkarsh736
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1719014400000" data-listing-file-modified-sort="1789483347422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1719014400000" data-listing-file-modified-sort="1789492234230" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
 <div class="thumbnail"><a href="./blogs/posts/Bear_Classifier.html" class="no-external">
 
 <img loading="lazy" src="./assets/Bear_Classifier/thumbnail.jpg" class="thumbnail-image">
@@ -550,6 +581,9 @@ Utkarsh736
 <h3 class="no-anchor listing-title">
 <a href="./blogs/posts/Bear_Classifier.html" class="no-external">Bear Classifier</a>
 </h3>
+<div class="listing-subtitle">
+<a href="./blogs/posts/Bear_Classifier.html" class="no-external"></a>
+</div>
 <div class="delink listing-description"><a href="./blogs/posts/Bear_Classifier.html" class="no-external">
 <p>Using a pre-trained classifier to classify bears into ‘Teddy’, ‘Black’, and ‘Grizzly’ bears.</p>
 </a></div>

@@ -90,9 +90,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -394,7 +394,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHl0b3JjaA==">pytorch <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJhbnNmb3JtZXJz">transformers <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Y29tcHV0ZXIlMjB2aXNpb24=">computer vision <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cHl0b3JjaA==">pytorch <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJhbnNmb3JtZXJz">transformers <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -409,7 +409,44 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDdHJhbnNmb3JtZXJzJTJDcHl0b3JjaA==" data-listing-date-sort="1788912000000" data-listing-file-modified-sort="1789483347422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1856">
+<div class="quarto-post image-right" data-index="0" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDY29tcHV0ZXIlMjB2aXNpb24lMkN0cmFuc2Zvcm1lcnM=" data-listing-date-sort="1789430400000" data-listing-file-modified-sort="1789492234232" data-listing-date-modified-sort="1789492234000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1216">
+<div class="thumbnail"><a href="../blogs/posts/ViT_From_Scratch.html" class="no-external">
+
+<img loading="lazy" src="../assets/images/vit_display.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blogs/posts/ViT_From_Scratch.html" class="no-external">Vision Transformer from Scratch</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../blogs/posts/ViT_From_Scratch.html" class="no-external">Implementing ViT end-to-end and walking through the pieces that matter.</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">computer vision</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHJhbnNmb3JtZXJz'); return false;">transformers</div>
+
+</div>
+<div class="delink listing-description"><a href="../blogs/posts/ViT_From_Scratch.html" class="no-external">
+<p>A from-scratch walkthrough of the Vision Transformer architecture in a notebook.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../blogs/posts/ViT_From_Scratch.html" class="no-external">
+<div class="listing-date">
+September 15, 2026
+</div>
+<div class="listing-author">
+Utkarsh736
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDdHJhbnNmb3JtZXJzJTJDcHl0b3JjaA==" data-listing-date-sort="1788912000000" data-listing-file-modified-sort="1789492234231" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1856">
 <div class="thumbnail"><a href="../blogs/posts/Transformer_From_Scratch.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -419,6 +456,9 @@ window.Quarto = {
 <h3 class="no-anchor listing-title">
 <a href="../blogs/posts/Transformer_From_Scratch.html" class="no-external">Building a Transformer From Scratch</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../blogs/posts/Transformer_From_Scratch.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
@@ -443,7 +483,7 @@ Utkarsh736
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1719014400000" data-listing-file-modified-sort="1789483347422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1719014400000" data-listing-file-modified-sort="1789492234230" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
 <div class="thumbnail"><a href="../blogs/posts/Bear_Classifier.html" class="no-external">
 
 <img loading="lazy" src="../assets/Bear_Classifier/thumbnail.jpg" class="thumbnail-image">
@@ -453,6 +493,9 @@ Utkarsh736
 <h3 class="no-anchor listing-title">
 <a href="../blogs/posts/Bear_Classifier.html" class="no-external">Bear Classifier</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../blogs/posts/Bear_Classifier.html" class="no-external"></a>
+</div>
 <div class="delink listing-description"><a href="../blogs/posts/Bear_Classifier.html" class="no-external">
 <p>Using a pre-trained classifier to classify bears into ‘Teddy’, ‘Black’, and ‘Grizzly’ bears.</p>
 </a></div>

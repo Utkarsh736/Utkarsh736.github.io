@@ -11,6 +11,7 @@
   {
     "listing": "/blogs/blogs.html",
     "items": [
+      "/blogs/posts/ViT_From_Scratch.html",
       "/blogs/posts/Transformer_From_Scratch.html",
       "/blogs/posts/Bear_Classifier.html"
     ]
@@ -22,6 +23,7 @@
       "/apps/posts/StaticSiteGenerator.html",
       "/apps/posts/Testing.html",
       "/apps/posts/Bearify.html",
+      "/blogs/posts/ViT_From_Scratch.html",
       "/blogs/posts/Transformer_From_Scratch.html",
       "/blogs/posts/Bear_Classifier.html"
     ]

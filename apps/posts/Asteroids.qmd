@@ -3,7 +3,7 @@ title: "Asteroids"
 subtitle: "Classic arcade shooter in the browser — Python, Pygame, and pygbag."
 author: "Utkarsh736"
 date: 2026-09-15
-image: ../../assets/Asteroids/thumbnail.jpg
+image: ../../assets/asteroids_display.png
 description: "Play a classic Asteroids clone in the browser, built with Python and Pygame and deployed with pygbag on GitHub Pages."
 categories:
   - pygame

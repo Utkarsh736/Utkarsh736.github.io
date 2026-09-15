@@ -1,0 +1,32 @@
+---
+title: "Static Site Generator"
+subtitle: "Markdown → static HTML, built from scratch in pure Python."
+author: "Utkarsh736"
+date: 2026-01-26
+image: ../../assets/StaticSiteGenerator/thumbnail.png
+description: "A from-scratch Python static site generator that turns Markdown into a themed site — live demo of the Tolkien Fan Club sample."
+categories:
+  - python
+  - static-site
+  - markdown
+format:
+  html:
+    other-links:
+      - text: Source on GitHub
+        href: https://github.com/Utkarsh736/static-site-generator
+    toc: false
+---
+
+A static site generator written in pure Python (no external dependencies). It parses Markdown into a custom node tree, injects content into an HTML template, and copies static assets — then deploys to GitHub Pages. The live demo is a small Tolkien-themed sample site produced by the generator.
+
+::: {.app-frame}
+<iframe
+  src="https://utkarsh736.github.io/static-site-generator/"
+  height="640"
+  loading="lazy"
+  title="Static Site Generator — live demo"
+  style="width: 100%; border: none; border-radius: 8px;">
+</iframe>
+:::
+
+Built for the Boot.dev course. Supports headings, lists, blockquotes, code blocks, links, images, recursive nested content, and configurable base paths for GitHub Pages subdirectory hosting. Source: [Utkarsh736/static-site-generator](https://github.com/Utkarsh736/static-site-generator).

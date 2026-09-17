@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-09-17">
+<meta name="description" content="Hybrid search + RAG + CLIP image search over 5 000 movies">
 
-<title>Utkarsh736 — Machine Learning Engineer &amp; Sports Analyst – Utkarsh736</title>
+<title>RAG Search Engine – Utkarsh736</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,30 +31,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3b2e33f50bba15e4d7a9a077a40d0d20.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-ee90b860b5052d30e58a1a4cfc2b2fde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-3b2e33f50bba15e4d7a9a077a40d0d20.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-3b2e33f50bba15e4d7a9a077a40d0d20.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-ee90b860b5052d30e58a1a4cfc2b2fde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-3b2e33f50bba15e4d7a9a077a40d0d20.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,97 +80,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-landing-apps .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-landing-apps'] = new List('listing-landing-apps', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-landing-blogs .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-landing-blogs'] = new List('listing-landing-blogs', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Utkarsh736 — Machine Learning Engineer &amp; Sports Analyst – Utkarsh736">
-<meta property="og:image" content="https://utkarsh736.github.io/assets/display.jpg">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="RAG Search Engine – Utkarsh736">
+<meta property="og:description" content="Hybrid search + RAG + CLIP image search over 5 000 movies">
+<meta property="og:image" content="https://utkarsh736.github.io//assets/rag-search-engine/rag-demo_thumbnail.jpg">
 <meta property="og:site_name" content="Utkarsh736">
 </head>
 
@@ -343,7 +258,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Utkarsh736</span>
     </a>
   </div>
@@ -353,19 +268,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blogs/blogs.html"> 
+    <a class="nav-link" href="../../blogs/blogs.html"> 
 <span class="menu-text">Blogs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./apps/apps.html"> 
+    <a class="nav-link" href="../../apps/apps.html"> 
 <span class="menu-text">Apps</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -404,14 +319,31 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Utkarsh736 — Machine Learning Engineer &amp; Sports Analyst</h1>
-</div>
+<h1 class="title">RAG Search Engine</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">RAG</div>
+    <div class="quarto-category">search</div>
+    <div class="quarto-category">Gradio</div>
+    <div class="quarto-category">multimodal</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Hybrid search + RAG + CLIP image search over 5 000 movies
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 17, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -421,188 +353,14 @@ window.Quarto = {
 </header>
 
 
-<div class="hero">
-<div class="hero-copy">
-<p><span class="kicker">Hi, I’m Utkarsh</span></p>
-<section id="building-useful-ml-and-writing-about-it." class="level1">
-<h1>Building useful ML — and writing about it.</h1>
-<p>I’m a machine learning engineer at Omdena and a sports analyst focused on cricket. By day I turn messy data into models that actually work — the rest of the time I’m following cricket, hockey, MMA, and the NFL.</p>
-<div class="hero-actions">
-<p><a href="./about.html" class="btn btn-primary">About me</a> <a href="./apps/apps.html" class="btn btn-outline-secondary">Explore apps</a></p>
-</div>
-<div class="social-chips">
-<p><a class="chip-link" href="https://github.com/Utkarsh736"><i class="bi bi-github"></i>GitHub</a> <a class="chip-link" href="https://www.linkedin.com/in/utkarsh736/"><i class="bi bi-linkedin"></i>LinkedIn</a> <a class="chip-link" href="https://twitter.com/Utkarsh736"><i class="bi bi-twitter-x"></i>Twitter</a> <a class="chip-link" href="https://huggingface.co/Utkarsh736"><i class="bi bi-emoji-smile"></i>HuggingFace</a> <a class="chip-link" href="https://www.kaggle.com/utkarshtomar736"><i class="bi bi-bar-chart-line"></i>Kaggle</a> <a class="chip-link" href="https://bsky.app/profile/utkarsh736.bsky.social"><i class="bi bi-bluesky"></i>Bluesky</a> <a class="chip-link" href="https://dagshub.com/Utkarsh736"><i class="bi bi-diagram-3"></i>DagsHub</a></p>
-</div>
-</section>
-</div>
-<div class="hero-side">
-<div class="hero-photo">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="assets/display.jpg" class="img-fluid figure-img"></p>
-<figcaption>ML Engineer · Cricket Analyst</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="section-head">
-<section id="featured-apps" class="level2">
-<h2 class="anchored" data-anchor-id="featured-apps">Featured Apps</h2>
-<p>Small, useful tools — mostly Gradio apps deployed on Hugging Face Spaces.</p>
-</section>
-<p><a href="./apps/apps.html" class="section-more">All apps <i class="bi bi-arrow-right"></i></a></p>
-</div>
-<div id="listing-landing-apps" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-categories="UkFHJTJDc2VhcmNoJTJDR3JhZGlvJTJDbXVsdGltb2RhbA==" data-listing-date-sort="1789603200000" data-listing-file-modified-sort="1789634630021" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
-<a href="./apps/posts/rag-search-engine.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./assets/rag-search-engine/rag-demo_thumbnail.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-RAG Search Engine
-</h5>
-<div class="card-text listing-description delink">
-<p>Hybrid search + RAG + CLIP image search over 5 000 movies</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-September 17, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="cHlnYW1lJTJDZ2FtZSUyQ3dlYmFzc2VtYmx5" data-listing-date-sort="1789430400000" data-listing-file-modified-sort="1789634630021" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
-<a href="./apps/posts/Asteroids.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./assets/asteroids_display.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Asteroids
-</h5>
-<div class="card-text listing-description delink">
-<p>Play a classic Asteroids clone in the browser, built with Python and Pygame and deployed with pygbag on GitHub Pages.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Utkarsh736
-</div>
-<div class="listing-date">
-September 15, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<div class="section-head">
-<section id="latest-writing" class="level2">
-<h2 class="anchored" data-anchor-id="latest-writing">Latest Writing</h2>
-<p>Notes on machine learning, experiments, and sports analytics.</p>
-</section>
-<p><a href="./blogs/blogs.html" class="section-more">All posts <i class="bi bi-arrow-right"></i></a></p>
-</div>
-<div id="listing-landing-blogs" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDY29tcHV0ZXIlMjB2aXNpb24lMkN0cmFuc2Zvcm1lcnM=" data-listing-date-sort="1789430400000" data-listing-file-modified-sort="1789634630040" data-listing-date-modified-sort="1789634630000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1216">
-<div class="thumbnail"><a href="./blogs/posts/ViT_From_Scratch.html" class="no-external">
-
-<img loading="lazy" src="./assets/vit_display.jpeg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blogs/posts/ViT_From_Scratch.html" class="no-external">Vision Transformer from Scratch</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blogs/posts/ViT_From_Scratch.html" class="no-external">Implementing ViT end-to-end and walking through the pieces that matter.</a>
-</div>
-<div class="delink listing-description"><a href="./blogs/posts/ViT_From_Scratch.html" class="no-external">
-<p>A from-scratch walkthrough of the Vision Transformer architecture in a notebook.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blogs/posts/ViT_From_Scratch.html" class="no-external">
-<div class="listing-date">
-September 15, 2026
-</div>
-<div class="listing-author">
-Utkarsh736
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDdHJhbnNmb3JtZXJzJTJDcHl0b3JjaA==" data-listing-date-sort="1788912000000" data-listing-file-modified-sort="1789634630040" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1856">
-<div class="thumbnail"><a href="./blogs/posts/Transformer_From_Scratch.html" class="no-external">
-
-<img loading="lazy" src="./assets/transformer_from_scratch/transformer.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blogs/posts/Transformer_From_Scratch.html" class="no-external">Building a Transformer From Scratch</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blogs/posts/Transformer_From_Scratch.html" class="no-external"></a>
-</div>
-<div class="delink listing-description"><a href="./blogs/posts/Transformer_From_Scratch.html" class="no-external">
-<p>A readable, from-scratch GPT-style Transformer in PyTorch — embeddings, causal attention, multi-head, MLP, residual blocks, training and generation.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blogs/posts/Transformer_From_Scratch.html" class="no-external">
-<div class="listing-date">
-September 9, 2026
-</div>
-<div class="listing-author">
-Utkarsh736
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1719014400000" data-listing-file-modified-sort="1789634630039" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
-<div class="thumbnail"><a href="./blogs/posts/Bear_Classifier.html" class="no-external">
-
-<img loading="lazy" src="./assets/Bear_Classifier/thumbnail.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blogs/posts/Bear_Classifier.html" class="no-external">Bear Classifier</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blogs/posts/Bear_Classifier.html" class="no-external"></a>
-</div>
-<div class="delink listing-description"><a href="./blogs/posts/Bear_Classifier.html" class="no-external">
-<p>Using a pre-trained classifier to classify bears into ‘Teddy’, ‘Black’, and ‘Grizzly’ bears.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blogs/posts/Bear_Classifier.html" class="no-external">
-<div class="listing-date">
-June 22, 2024
-</div>
-<div class="listing-author">
-Utkarsh736
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-
+<p>Interactive demo of the <a href="https://github.com/Utkarsh736/rag-search-engine">rag-search-engine</a> project.</p>
+<ul>
+<li><strong>Hybrid Search</strong> (BM25 + semantic embeddings with Reciprocal Rank Fusion)</li>
+<li><strong>RAG + Citations</strong> powered by Gemini</li>
+<li><strong>Image Search</strong> with CLIP</li>
+</ul>
+<iframe src="https://utkarsh736-rag-search-engine.hf.space" width="100%" height="720" frameborder="0" style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
 
 
 

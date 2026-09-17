@@ -1,213 +1,59 @@
 [
   {
-    "objectID": "apps/posts/StaticSiteGenerator.html",
-    "href": "apps/posts/StaticSiteGenerator.html",
-    "title": "Static Site Generator",
+    "objectID": "apps/posts/rag-search-engine.html",
+    "href": "apps/posts/rag-search-engine.html",
+    "title": "RAG Search Engine",
     "section": "",
-    "text": "A static site generator written in pure Python (no external dependencies). It parses Markdown into a custom node tree, injects content into an HTML template, and copies static assets — then deploys to GitHub Pages. The live demo is a small Tolkien-themed sample site produced by the generator.\n\n\n\n\nBuilt for the Boot.dev course. Supports headings, lists, blockquotes, code blocks, links, images, recursive nested content, and configurable base paths for GitHub Pages subdirectory hosting. Source: Utkarsh736/static-site-generator.\n\n\n\n Back to top"
+    "text": "Interactive demo of the rag-search-engine project.\n\nHybrid Search (BM25 + semantic embeddings with Reciprocal Rank Fusion)\nRAG + Citations powered by Gemini\nImage Search with CLIP\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "apps/posts/Asteroids.html",
-    "href": "apps/posts/Asteroids.html",
-    "title": "Asteroids",
-    "section": "",
-    "text": "A classic Asteroids arcade game written in Python and Pygame, packaged for the web with pygbag so it runs entirely in the browser via WebAssembly. Use W/A/S/D to move and Space to shoot.\n\n\n\n\nBuilt as part of learning game loops, sprite groups, and collision handling in Pygame. Source: Utkarsh736/asteroids.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "apps/apps.html",
-    "href": "apps/apps.html",
-    "title": "Apps",
-    "section": "",
-    "text": "Asteroids\n\n\n\npygame\n\ngame\n\nwebassembly\n\n\n\nPlay a classic Asteroids clone in the browser, built with Python and Pygame and deployed with pygbag on GitHub Pages.\n\n\n\nUtkarsh736\n\n\nSeptember 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatic Site Generator\n\n\n\npython\n\nstatic-site\n\nmarkdown\n\n\n\nA from-scratch Python static site generator that turns Markdown into a themed site — live demo of the Tolkien Fan Club sample.\n\n\n\nUtkarsh736\n\n\nJanuary 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGradio Docker Demo\n\n\n\ndocker\n\ngradio\n\n\n\nA minimal Gradio app packed in Docker and served on Hugging Face Spaces — a sandbox for deployment experiments.\n\n\n\nUtkarsh736\n\n\nJune 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nBear Classifier\n\n\n\ncomputer vision\n\ngradio\n\n\n\nA Gradio app to classify bears into ‘Teddy’, ‘Grizzly’, or ‘Black’ — served live from Hugging Face Spaces.\n\n\n\nUtkarsh736\n\n\nJune 22, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "blogs/posts/Bear_Classifier.html",
-    "href": "blogs/posts/Bear_Classifier.html",
+    "objectID": "apps/posts/Bearify.html",
+    "href": "apps/posts/Bearify.html",
     "title": "Bear Classifier",
     "section": "",
-    "text": "In this notebook, we will use a vision classifer to classfiy bear(teddy, black & grizzly) and deploy the model as web app using huggiface gradio space.\nfrom fastai.vision.all import *"
+    "text": "Bearify is a lightweight image classifier built with fastai and deployed as a Gradio web app on Hugging Face Spaces. Pick or drop a photo of a bear and the model will call it a teddy, grizzly, or black bear — try it live below, then read the blog post for the full build.\n\n\n\n\nThe model behind the app is trained on the Bears FastAI dataset.\n\n\n\n Back to top"
   },
   {
-    "objectID": "blogs/posts/Bear_Classifier.html#data",
-    "href": "blogs/posts/Bear_Classifier.html#data",
-    "title": "Bear Classifier",
-    "section": "Data",
-    "text": "Data\nThe data is being imported from Kaggle\nDataset - anirudhg15/bears-fastai-2021\n\nfrom google.colab import userdata\nimport os\n\nos.environ[\"KAGGLE_KEY\"] = userdata.get('KAGGLE_KEY')\nos.environ[\"KAGGLE_USERNAME\"] = userdata.get('KAGGLE_USERNAME')\n\n\n!kaggle datasets download -d anirudhg15/bears-fastai-2021\n! unzip \"bears-fastai-2021\"\n\n\nfrom pathlib import Path\n\n\npath = Path('bears')\n\n\nbl_bear = (path/'black').ls().sorted()\nbl_bear[1]\n\nPath('bears/black/00000001.jpg')\n\n\n\nImage.open(bl_bear[1])"
-  },
-  {
-    "objectID": "blogs/posts/Bear_Classifier.html#dls-function-fastai-explaination",
-    "href": "blogs/posts/Bear_Classifier.html#dls-function-fastai-explaination",
-    "title": "Bear Classifier",
-    "section": "DLS function fastai explaination",
-    "text": "DLS function fastai explaination\n\ndef get_dls(bs, size):\n  dblock = DataBlock(blocks=(ImageBlock, CategoryBlock),\n                     get_items=get_image_files,\n                     splitter=RandomSplitter(),\n                     get_y=parent_label,\n                     item_tfms=Resize(size))\n\n  return dblock.dataloaders(path, bs=bs)\n\n\ndls = get_dls(64, 224)\n\n\ndls.show_batch(nrows=1, ncols=3)\n\n\n\n\n\n\n\n\n\nlearn = cnn_learner(dls, resnet18, metrics=error_rate)\nlearn.fine_tune(4)\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n1.629151\n0.250812\n0.122807\n00:21\n\n\n\n\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n0.429806\n0.061032\n0.017544\n00:22\n\n\n1\n0.268742\n0.013778\n0.000000\n00:21\n\n\n2\n0.186102\n0.013141\n0.000000\n00:21\n\n\n3\n0.139788\n0.016549\n0.017544\n00:20"
-  },
-  {
-    "objectID": "blogs/posts/Bear_Classifier.html#interpretting-the-model",
-    "href": "blogs/posts/Bear_Classifier.html#interpretting-the-model",
-    "title": "Bear Classifier",
-    "section": "Interpretting the model",
-    "text": "Interpretting the model\n\ninterp = ClassificationInterpretation.from_learner(learn)\ninterp.plot_confusion_matrix()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ninterp.plot_top_losses(5, nrows=1, figsize=(17,4))"
-  },
-  {
-    "objectID": "blogs/posts/Bear_Classifier.html#prediction",
-    "href": "blogs/posts/Bear_Classifier.html#prediction",
-    "title": "Bear Classifier",
-    "section": "Prediction",
-    "text": "Prediction\n\nlearn.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
-  },
-  {
-    "objectID": "blogs/posts/Bear_Classifier.html#saving-the-model",
-    "href": "blogs/posts/Bear_Classifier.html#saving-the-model",
-    "title": "Bear Classifier",
-    "section": "Saving the Model",
-    "text": "Saving the Model\n\nlearn.export(fname='bear_model.pkl', pickle_module=pickle, pickle_protocol=2)"
-  },
-  {
-    "objectID": "blogs/posts/Bear_Classifier.html#reload-model",
-    "href": "blogs/posts/Bear_Classifier.html#reload-model",
-    "title": "Bear Classifier",
-    "section": "Reload Model",
-    "text": "Reload Model\n\nreload_model=load_learner('bear_model.pkl', cpu=True, pickle_module=pickle)\nreload_model\n\n&lt;fastai.learner.Learner at 0x7bd9edf06890&gt;\n\n\n\nreload_model.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
-  },
-  {
-    "objectID": "blogs/posts/ViT_From_Scratch.html",
-    "href": "blogs/posts/ViT_From_Scratch.html",
-    "title": "Vision Transformer from Scratch",
+    "objectID": "apps/posts/Testing.html",
+    "href": "apps/posts/Testing.html",
+    "title": "Gradio Docker Demo",
     "section": "",
-    "text": "After implementing a small GPT-style Transformer from scratch, I wanted to understand how the same architecture could be applied to images.\nVision Transformers, or ViTs, approach image understanding by treating an image as a sequence of patches. Instead of processing the entire image through a convolutional network, the model divides it into smaller regions, converts those regions into vectors, and processes them using Transformer blocks.\nIn this notebook, I build a small Vision Transformer from scratch using PyTorch.\nThe goal is to understand how an image becomes a sequence of tokens, how positional information is added, and how the Transformer architecture can be adapted for image classification.\nThis is a deliberately small first implementation. It prioritizes understanding the architecture and its tensor shapes over achieving state-of-the-art accuracy.\n\n\nA Vision Transformer consists of two major parts:\n\nConverting an image into a sequence of patch embeddings.\nProcessing that sequence using a Transformer encoder.\n\nThe implementation follows this structure:\nImage\n  ↓\nPatch Embedding\n  ↓\nClass Token + Positional Embeddings\n  ↓\nTransformer Blocks × N\n  ├── LayerNorm\n  ├── Multi-Head Self-Attention\n  └── MLP\n  ↓\nClass Token Representation\n  ↓\nClassification Head\n  ↓\nClass Logits\nWe will implement the components in the following order:\n\nConfiguration\nPatch Embedding\nClass Token and Positional Embeddings\nLayerNorm\nSingle-Head Attention\nMulti-Head Attention\nMLP\nTransformer Block\nFull Vision Transformer\nDataset and Training\nEvaluation\n\n\n\n\n\n\nCode\nimport math\nimport random\nimport torch\nimport torch.nn as nn\nimport torch.nn.functional as F\nfrom dataclasses import dataclass\n\n\n\n\nCode\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nprint(\"Device:\", device)\n\nSEED = 42\nrandom.seed(SEED)\ntorch.manual_seed(SEED)\nif torch.cuda.is_available():\n    torch.cuda.manual_seed(SEED)\n\n\nDevice: cpu\n\n\n\n\n\nBefore implementing the model, we define the architectural hyperparameters in one place.\nThe important image-related parameters are:\n\nimg_size: height and width of the input image\npatch_size: height and width of each image patch\nin_channels: number of image channels\nd_model: size of each patch representation\nn_heads: number of attention heads\nd_head: dimension of each attention head\nd_mlp: hidden dimension of the MLP\nn_layers: number of Transformer blocks\nn_classes: number of output classes\n\nFor this first implementation, we use small images and a small model so that the complete architecture can be trained and inspected without requiring a large computational budget.\n\n\nCode\n@dataclass\nclass Config:\n    # Image / patch related (NEW)\n    img_size: int = 32          # e.g. 32 or 64 for toy experiments\n    patch_size: int = 4         # must divide img_size evenly\n    in_channels: int = 3        # 3 for RGB, 1 for grayscale\n    num_classes: int = 10\n\n    # Model dimensions (SAME as language Transformer)\n    d_model: int = 128\n    n_heads: int = 4\n    d_head: int = 32\n    d_mlp: int = 512\n    n_layers: int = 4\n    dropout: float = 0.0\n\n    # Derived\n    @property\n    def num_patches(self):\n        return (self.img_size // self.patch_size) ** 2\n\n    # Sanity-Check\n    def __post_init__(self):\n      assert self.d_model == self.n_heads*self.d_head\n      assert self.img_size % self.patch_size == 0\n\n\n\n\n\nA Transformer expects a sequence of vectors as input.\nAn image, however, is represented as a grid of pixels:\n(B, C, H, W)\nwhere:\n\nB is the batch size\nC is the number of channels\nH is the image height\nW is the image width\n\nTo apply a Transformer to images, we divide each image into smaller patches.\nFor example, a 32 × 32 image with a patch size of 4 × 4 produces:\n\\[\n\\frac{32}{4} \\times \\frac{32}{4} = 64\n\\]\npatches.\nEach patch is then projected into a vector of size d_model.\nThe result is a sequence of patch embeddings:\n(B, num_patches, d_model)\nThis is the bridge between image processing and the Transformer architecture.\n\n\nCode\nclass PatchEmbedding(nn.Module):\n  def __init__(self, cfg: Config):\n    super().__init__()\n    self.cfg = cfg\n\n    self.proj = nn.Conv2d(\n        cfg.in_channels,\n        cfg.d_model,\n        kernel_size=cfg.patch_size,\n        stride=cfg.patch_size,\n    )\n\n  def forward(self, x):\n    x = self.proj(x)\n    x = x.flatten(2)\n    x = x.transpose(1,2)\n\n    return x\n\n\n\n\n\npatch.png\n\n\nImage Credit\n\n\n\nAfter patch embedding, an image is represented as a sequence of patch vectors.\nHowever, we still need two things:\n\nA way to preserve spatial information.\nA representation that can be used for image classification.\n\n\n\nSelf-attention does not inherently know the spatial arrangement of the patches.\nThe patch at the top-left and the patch at the bottom-right are both just vectors. Without positional information, the model would not know where they came from.\nWe therefore add a learned positional embedding to each patch representation.\n\n\n\nWe also prepend a learned class token to the sequence.\nThis token is not associated with a particular image patch. Instead, it acts as a location where information from the entire image can be aggregated through the Transformer blocks.\nAfter processing the image, we use the final representation of this class token for classification.\n\n\nCode\nclass ViTEmbedding(nn.Module):\n  def __init__(self, cfg: Config):\n    super().__init__()\n    self.cfg = cfg\n    self.patch_embed = PatchEmbedding(cfg)\n\n    self.cls_token = nn.Parameter(torch.zeros(1,1,cfg.d_model))\n    self.pos_embed = nn.Parameter(torch.zeros(1,1+cfg.num_patches,cfg.d_model))\n\n    self.dropout = nn.Dropout(cfg.dropout)\n    self._init_weights()\n\n  def _init_weights(self):\n    nn.init.trunc_normal_(self.cls_token, std=0.02)\n    nn.init.trunc_normal_(self.pos_embed, std=0.02)\n\n  def forward(self, x):\n    x = self.patch_embed(x)\n    B = x.shape[0]\n    cls_token = self.cls_token.expand(x.shape[0], -1, -1)\n    x = torch.cat((cls_token, x), dim=1)\n    x = x + self.pos_embed\n\n    return self.dropout(x)\n\n\n\n\n\n\nThe Vision Transformer uses the same LayerNorm mechanism as the language Transformer.\nFor each token representation, we normalize across the feature dimension:\n\\[\n\\hat{x} = \\frac{x-\\mu}{\\sqrt{\\sigma^2+\\epsilon}}\n\\]\nThe normalized representation is then scaled and shifted using learned parameters.\nIn this implementation, normalization is applied independently to each patch token and to the class token.\n\n\nCode\nclass LayerNorm(nn.Module):\n  def __init__(self, d_model, eps=1e-5):\n    super().__init__()\n    self.gamma = nn.Parameter(torch.ones(d_model))\n    self.beta = nn.Parameter(torch.zeros(d_model))\n    self.eps = eps\n\n  def forward(self, x):\n    mean = torch.mean(x, dim=-1, keepdim=True)\n    var = ((x-mean)**2).mean(dim=-1, keepdim=True)\n\n    x_norm = (x - mean) / torch.sqrt(var + self.eps)\n\n    op = self.gamma * x_norm + self.beta\n\n    return op\n\n\n\n\n\nOnce the image has been converted into a sequence of patch embeddings, the attention mechanism is almost identical to the one used in the language Transformer.\nEach patch representation is projected into:\n\nQuery\nKey\nValue\n\nThe attention scores are calculated using:\n\\[\nQK^T\n\\]\nand scaled by:\n\\[\n\\frac{1}{\\sqrt{d_{head}}}\n\\]\nThe key difference is that Vision Transformers do not need causal masking for ordinary image classification.\nEach patch should be able to attend to every other patch, because the model is not predicting future tokens. It is processing the image as a whole.\nTherefore, the attention matrix is fully visible rather than lower-triangular.\n\n\nCode\nclass AttentionHead(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n    self.key = nn.Linear(cfg.d_model, cfg.d_head, bias=False)\n    self.query = nn.Linear(cfg.d_model, cfg.d_head, bias=False)\n    self.value = nn.Linear(cfg.d_model, cfg.d_head, bias=False)\n\n    self.dropout = nn.Dropout(cfg.dropout)\n\n  def forward(self, x):\n    B, T, C = x.shape\n\n    k = self.key(x)\n    q = self.query(x)\n    v = self.value(x)\n\n    attn_scores = q @ k.transpose(-2, -1) / math.sqrt(cfg.d_head)\n    attn_probs = F.softmax(attn_scores, dim=-1)\n\n    attn_probs = self.dropout(attn_probs)\n\n    return attn_probs @ v\n\n\n\n\n\nMulti-head attention allows the model to learn several relationships between image patches simultaneously.\nIn this implementation, each head independently processes the patch sequence, and the resulting representations are concatenated and projected back to d_model.\nThe implementation is intentionally similar to the one used in the language Transformer notebook.\nThe main architectural difference is that the input sequence now represents image patches rather than text tokens.\n\n\nCode\nclass MultiHeadAttention(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n\n    self.heads = nn.ModuleList(\n        [AttentionHead(cfg) for _ in range(cfg.n_heads)]\n    )\n\n    self.proj = nn.Linear(cfg.n_heads * cfg.d_head, cfg.d_model)\n\n    self.dropout = nn.Dropout(cfg.dropout)\n\n  def forward(self, x):\n    out = torch.cat([h(x) for h in self.heads], dim=-1)\n    out = self.dropout(self.proj(out))\n\n    return out\n\n\n\n\n\nThe MLP is the same general component used in the language Transformer.\nIt expands each patch representation to a larger hidden dimension, applies a nonlinear activation, and projects it back to d_model.\nThe important distinction is that the MLP operates independently on each token.\nIn the Vision Transformer, this means each patch representation is transformed independently after attention has allowed information to be exchanged between patches.\n\n\nCode\nclass MLP(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n\n    self.linear1 = nn.Linear(\n        cfg.d_model,\n        cfg.d_mlp\n    )\n\n    self.linear2 = nn.Linear(\n        cfg.d_mlp,\n        cfg.d_model,\n    )\n\n  def forward(self, x):\n\n    x = self.linear1(x)\n\n    # Apply activation\n\n    x = F.gelu(x)\n\n    x = self.linear2(x)\n\n    return x\n\n\n\n\n\nThe Transformer block combines LayerNorm, self-attention, the MLP, and residual connections.\nThe structure is the same Pre-LayerNorm design used in the previous Transformer implementation:\nx\n│\n├── LayerNorm\n│       ↓\n│   Self-Attention\n│       ↓\n└───── (+)\n        │\n        ↓\n    LayerNorm\n        │\n       MLP\n        │\n      (+)\n        │\n      Output\nThe block processes the entire patch sequence while preserving its shape:\n(B, num_patches + 1, d_model)\n\n\nCode\nclass TransformerBlock(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n\n    self.ln1 = LayerNorm(cfg.d_model)\n    self.attn = MultiHeadAttention(cfg)\n\n    self.ln2 = LayerNorm(cfg.d_model)\n    self.mlp = MLP(cfg)\n\n  def forward(self, x):\n\n    # Attention + residual\n    x = x + self.attn(self.ln1(x))\n\n    # MLP + residual\n    x = x + self.mlp(self.ln2(x))\n\n    return x\n\n\n\n\n\nWe can now assemble the complete model.\nThe input image is converted into patch embeddings, a class token is added, and the resulting sequence is processed through several Transformer blocks.\nThe final class token representation is passed through a classification head to produce logits for each class.\nImage\n  ↓\nPatch Embedding\n  ↓\nClass Token + Positional Embeddings\n  ↓\nTransformer Blocks\n  ↓\nFinal LayerNorm\n  ↓\nClass Token\n  ↓\nLinear Classification Head\n  ↓\nClass Logits\nThe model output is:\n(B, n_classes)\nwhere each row contains the classification logits for one image.\n\n\nCode\nclass ViT(nn.Module):\n  def __init__(self, cfg: Config):\n    super().__init__()\n    self.cfg = cfg\n    self.embed = ViTEmbedding(cfg)\n    self.blocks = nn.ModuleList([TransformerBlock(cfg) for _ in range(cfg.n_layers)])\n    self.norm = LayerNorm(cfg.d_model)\n    self.head = nn.Linear(cfg.d_model, cfg.num_classes)\n    self.apply(self._init_weights)\n\n  def _init_weights(self, m):\n    if isinstance(m, nn.Linear):\n      nn.init.trunc_normal_(m.weight, std=0.02)\n      if m.bias is not None:\n        nn.init.zeros_(m.bias)\n    elif isinstance(m, nn.LayerNorm):\n      nn.init.zeros_(m.bias)\n      nn.init.ones_(m.weight)\n\n  def forward(self, x):\n    x = self.embed(x)\n    for block in self.blocks:\n      x = block(x)\n    x = self.norm(x)\n    cls_out = x[:, 0]\n    return self.head(cls_out)\n\n\n\n\n\nTo keep the experiment simple, we use a small dataset for image classification.\nThe purpose of this dataset is not to evaluate the full capabilities of Vision Transformers. Instead, it provides a manageable environment for checking whether the model can learn useful visual representations.\nA small dataset also makes it easier to inspect training behavior and experiment with the architecture.\n\n\nCode\n# Sanity Check\n\ncfg = Config()\nmodel = ViT(cfg).to(device)\n\n# Fake images\nx = torch.randn(4, cfg.in_channels, cfg.img_size, cfg.img_size).to(device)\nlogits = model(x)\n\nprint(\"Logits shape:\", logits.shape)          # expected: (4, 10)\nprint(\"Number of parameters:\", sum(p.numel() for p in model.parameters()))\n\n\nLogits shape: torch.Size([4, 10])\nNumber of parameters: 807818\n\n\n\n\n\n\nCode\ndef get_batch(batch_size, cfg, device):\n    x = torch.randn(batch_size, cfg.in_channels, cfg.img_size, cfg.img_size, device=device)\n    y = torch.randint(0, cfg.num_classes, (batch_size,), device=device)\n    return x, y\n\n\n\n\n\n\n\n\nCode\ndef compute_loss(logits, targets):\n    return F.cross_entropy(logits, targets)\n\n\n\n\n\nThe training loop follows the same general workflow as the language Transformer.\nFor each batch:\n\nPass the images through the model.\nCalculate the classification loss.\nBackpropagate through the model.\nUpdate the parameters using the optimizer.\n\nThe main difference is the training objective.\nInstead of predicting the next token, the Vision Transformer predicts a class label for each image.\nThe model is trained using cross-entropy loss over the classification logits.\n\n\nCode\noptimizer = torch.optim.AdamW(model.parameters(), lr=1e-3)\n\nnum_steps = 200\nfor step in range(num_steps):\n    model.train()\n    x, y = get_batch(batch_size=16, cfg=cfg, device=device)\n\n    logits = model(x)\n    loss = compute_loss(logits, y)\n\n    optimizer.zero_grad(set_to_none=True)\n    loss.backward()\n    optimizer.step()\n\n    if step % 50 == 0:\n        print(f\"Step {step:3d} | Loss: {loss.item():.4f}\")\n\n\nStep   0 | Loss: 2.2782\nStep  50 | Loss: 2.2705\nStep 100 | Loss: 2.2685\nStep 150 | Loss: 2.3349\n\n\n\n\n\nTraining loss alone does not tell us whether the model generalizes to unseen images.\nWe therefore evaluate the model on a separate validation or test set.\nThe main metric for this classification task is accuracy:\n\\[\n\\text{Accuracy}\n=\n\\frac{\\text{Correct Predictions}}\n{\\text{Total Predictions}}\n\\]\nFor a small learning experiment, accuracy and loss provide a useful first indication of whether the model is learning the intended visual patterns.\n\n\nCode\nmodel.eval()\nwith torch.no_grad():\n    x, y = get_batch(4, cfg, device)\n    logits = model(x)\n    preds = logits.argmax(dim=-1)\n    print(\"Predictions:\", preds.tolist())\n    print(\"Targets:    \", y.tolist())\n\n\nPredictions: [3, 3, 3, 3]\nTargets:     [2, 9, 0, 3]"
+    "text": "This app is the same Gradio experience, but packaged with Docker instead of the standard Space setup — a clean sandbox for testing how containerized ML apps behave on Hugging Face infrastructure. Give it a spin below.\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#what-were-building",
-    "href": "blogs/posts/ViT_From_Scratch.html#what-were-building",
-    "title": "Vision Transformer from Scratch",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Utkarsh — About",
     "section": "",
-    "text": "A Vision Transformer consists of two major parts:\n\nConverting an image into a sequence of patch embeddings.\nProcessing that sequence using a Transformer encoder.\n\nThe implementation follows this structure:\nImage\n  ↓\nPatch Embedding\n  ↓\nClass Token + Positional Embeddings\n  ↓\nTransformer Blocks × N\n  ├── LayerNorm\n  ├── Multi-Head Self-Attention\n  └── MLP\n  ↓\nClass Token Representation\n  ↓\nClassification Head\n  ↓\nClass Logits\nWe will implement the components in the following order:\n\nConfiguration\nPatch Embedding\nClass Token and Positional Embeddings\nLayerNorm\nSingle-Head Attention\nMulti-Head Attention\nMLP\nTransformer Block\nFull Vision Transformer\nDataset and Training\nEvaluation"
+    "text": "Machine Learning Engineer @ Omdena · Cricket Analyst\n\nGitHub LinkedIn Twitter HuggingFace Kaggle Bluesky DagsHub"
   },
   {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#setup",
-    "href": "blogs/posts/ViT_From_Scratch.html#setup",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "Code\nimport math\nimport random\nimport torch\nimport torch.nn as nn\nimport torch.nn.functional as F\nfrom dataclasses import dataclass\n\n\n\n\nCode\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nprint(\"Device:\", device)\n\nSEED = 42\nrandom.seed(SEED)\ntorch.manual_seed(SEED)\nif torch.cuda.is_available():\n    torch.cuda.manual_seed(SEED)\n\n\nDevice: cpu"
+    "objectID": "about.html#bio",
+    "href": "about.html#bio",
+    "title": "Utkarsh — About",
+    "section": "Bio",
+    "text": "Bio\nHello! I’m a machine learning engineer and sports analyst with a focus on cricket. At Omdena I build and ship models for real business problems — from computer vision and object detection to tabular learning and ensemble methods. I care about the whole lifecycle: clean data pipelines, honest experiments, and models that survive contact with production.\nI’m a polyglot programmer at heart. Python is home, with C, Golang, and Rust next on the bench — I enjoy learning how different languages think about the same problem. Away from the keyboard you’ll find me following cricket, hockey, MMA, and the NFL, or exploring the world of movies. Sports are where my two worlds meet: data that moves, and stories that numbers can tell."
   },
   {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#configuration",
-    "href": "blogs/posts/ViT_From_Scratch.html#configuration",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "Before implementing the model, we define the architectural hyperparameters in one place.\nThe important image-related parameters are:\n\nimg_size: height and width of the input image\npatch_size: height and width of each image patch\nin_channels: number of image channels\nd_model: size of each patch representation\nn_heads: number of attention heads\nd_head: dimension of each attention head\nd_mlp: hidden dimension of the MLP\nn_layers: number of Transformer blocks\nn_classes: number of output classes\n\nFor this first implementation, we use small images and a small model so that the complete architecture can be trained and inspected without requiring a large computational budget.\n\n\nCode\n@dataclass\nclass Config:\n    # Image / patch related (NEW)\n    img_size: int = 32          # e.g. 32 or 64 for toy experiments\n    patch_size: int = 4         # must divide img_size evenly\n    in_channels: int = 3        # 3 for RGB, 1 for grayscale\n    num_classes: int = 10\n\n    # Model dimensions (SAME as language Transformer)\n    d_model: int = 128\n    n_heads: int = 4\n    d_head: int = 32\n    d_mlp: int = 512\n    n_layers: int = 4\n    dropout: float = 0.0\n\n    # Derived\n    @property\n    def num_patches(self):\n        return (self.img_size // self.patch_size) ** 2\n\n    # Sanity-Check\n    def __post_init__(self):\n      assert self.d_model == self.n_heads*self.d_head\n      assert self.img_size % self.patch_size == 0"
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "Utkarsh — About",
+    "section": "Skills",
+    "text": "Skills\n\n\nLanguages\n\n\nPython C Golang Rust\n\n\n\n\nMachine Learning & Data\n\n\nPyTorch TensorFlow Keras scikit-learn XGBoost YOLOv5 Pandas NumPy Matplotlib Seaborn\n\n\n\n\nMLOps & Tooling\n\n\nGit DVC MLflow Tableau Gradio\n\n\n\n\nDomains\n\n\nComputer Vision Object Detection Cricket Analytics Video Analytics Ensemble Modeling"
   },
   {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#patch-embedding",
-    "href": "blogs/posts/ViT_From_Scratch.html#patch-embedding",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "A Transformer expects a sequence of vectors as input.\nAn image, however, is represented as a grid of pixels:\n(B, C, H, W)\nwhere:\n\nB is the batch size\nC is the number of channels\nH is the image height\nW is the image width\n\nTo apply a Transformer to images, we divide each image into smaller patches.\nFor example, a 32 × 32 image with a patch size of 4 × 4 produces:\n\\[\n\\frac{32}{4} \\times \\frac{32}{4} = 64\n\\]\npatches.\nEach patch is then projected into a vector of size d_model.\nThe result is a sequence of patch embeddings:\n(B, num_patches, d_model)\nThis is the bridge between image processing and the Transformer architecture.\n\n\nCode\nclass PatchEmbedding(nn.Module):\n  def __init__(self, cfg: Config):\n    super().__init__()\n    self.cfg = cfg\n\n    self.proj = nn.Conv2d(\n        cfg.in_channels,\n        cfg.d_model,\n        kernel_size=cfg.patch_size,\n        stride=cfg.patch_size,\n    )\n\n  def forward(self, x):\n    x = self.proj(x)\n    x = x.flatten(2)\n    x = x.transpose(1,2)\n\n    return x\n\n\n\n\n\npatch.png\n\n\nImage Credit"
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Utkarsh — About",
+    "section": "Experience",
+    "text": "Experience\n\n\nMachine Learning Engineer — Omdena\nOmdena May 2022 — Present\n\nDeveloped and deployed machine learning models — Random Forest, XGBoost, and deep learning architectures like YOLOv5 and YOLT — across diverse business applications.\nImplemented computer vision neural networks for object detection, strengthening image-processing pipelines end to end.\nEngineered data pipelines with Python, Pandas, and NumPy to process large datasets and surface actionable insights.\nBuilt and optimized neural architectures with PyTorch, TensorFlow, and Keras; applied ensemble techniques to push model performance further.\nEstablished model versioning and experiment tracking with Git, DVC, and MLflow, and visualized results with Matplotlib and Seaborn for stakeholders.\nPartnered with cross-functional teams to propose and implement AI-driven solutions to business challenges.\n\n\n\nCricket Video Analyst — Mad About Sports\nMad About Sports · Intern Video & Performance Analytics\n\nConducted in-depth analysis of batsmen and bowlers using video analytics and data visualization, identifying strengths, weaknesses, and strategic matchups.\nProcessed and visualized complex cricket performance data with the Python ecosystem and Tableau.\nDeveloped and presented data-driven recommendations that contributed to improved player performance and team strategy.\nApplied machine learning to predict player performance trends and inform training regimens.\nCollaborated with analysts and coaches to produce high-quality analytical reports and presentations."
   },
   {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#class-token-and-positional-embeddings",
-    "href": "blogs/posts/ViT_From_Scratch.html#class-token-and-positional-embeddings",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "After patch embedding, an image is represented as a sequence of patch vectors.\nHowever, we still need two things:\n\nA way to preserve spatial information.\nA representation that can be used for image classification.\n\n\n\nSelf-attention does not inherently know the spatial arrangement of the patches.\nThe patch at the top-left and the patch at the bottom-right are both just vectors. Without positional information, the model would not know where they came from.\nWe therefore add a learned positional embedding to each patch representation.\n\n\n\nWe also prepend a learned class token to the sequence.\nThis token is not associated with a particular image patch. Instead, it acts as a location where information from the entire image can be aggregated through the Transformer blocks.\nAfter processing the image, we use the final representation of this class token for classification.\n\n\nCode\nclass ViTEmbedding(nn.Module):\n  def __init__(self, cfg: Config):\n    super().__init__()\n    self.cfg = cfg\n    self.patch_embed = PatchEmbedding(cfg)\n\n    self.cls_token = nn.Parameter(torch.zeros(1,1,cfg.d_model))\n    self.pos_embed = nn.Parameter(torch.zeros(1,1+cfg.num_patches,cfg.d_model))\n\n    self.dropout = nn.Dropout(cfg.dropout)\n    self._init_weights()\n\n  def _init_weights(self):\n    nn.init.trunc_normal_(self.cls_token, std=0.02)\n    nn.init.trunc_normal_(self.pos_embed, std=0.02)\n\n  def forward(self, x):\n    x = self.patch_embed(x)\n    B = x.shape[0]\n    cls_token = self.cls_token.expand(x.shape[0], -1, -1)\n    x = torch.cat((cls_token, x), dim=1)\n    x = x + self.pos_embed\n\n    return self.dropout(x)"
-  },
-  {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#layer-normalization",
-    "href": "blogs/posts/ViT_From_Scratch.html#layer-normalization",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "The Vision Transformer uses the same LayerNorm mechanism as the language Transformer.\nFor each token representation, we normalize across the feature dimension:\n\\[\n\\hat{x} = \\frac{x-\\mu}{\\sqrt{\\sigma^2+\\epsilon}}\n\\]\nThe normalized representation is then scaled and shifted using learned parameters.\nIn this implementation, normalization is applied independently to each patch token and to the class token.\n\n\nCode\nclass LayerNorm(nn.Module):\n  def __init__(self, d_model, eps=1e-5):\n    super().__init__()\n    self.gamma = nn.Parameter(torch.ones(d_model))\n    self.beta = nn.Parameter(torch.zeros(d_model))\n    self.eps = eps\n\n  def forward(self, x):\n    mean = torch.mean(x, dim=-1, keepdim=True)\n    var = ((x-mean)**2).mean(dim=-1, keepdim=True)\n\n    x_norm = (x - mean) / torch.sqrt(var + self.eps)\n\n    op = self.gamma * x_norm + self.beta\n\n    return op"
-  },
-  {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#self-attention",
-    "href": "blogs/posts/ViT_From_Scratch.html#self-attention",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "Once the image has been converted into a sequence of patch embeddings, the attention mechanism is almost identical to the one used in the language Transformer.\nEach patch representation is projected into:\n\nQuery\nKey\nValue\n\nThe attention scores are calculated using:\n\\[\nQK^T\n\\]\nand scaled by:\n\\[\n\\frac{1}{\\sqrt{d_{head}}}\n\\]\nThe key difference is that Vision Transformers do not need causal masking for ordinary image classification.\nEach patch should be able to attend to every other patch, because the model is not predicting future tokens. It is processing the image as a whole.\nTherefore, the attention matrix is fully visible rather than lower-triangular.\n\n\nCode\nclass AttentionHead(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n    self.key = nn.Linear(cfg.d_model, cfg.d_head, bias=False)\n    self.query = nn.Linear(cfg.d_model, cfg.d_head, bias=False)\n    self.value = nn.Linear(cfg.d_model, cfg.d_head, bias=False)\n\n    self.dropout = nn.Dropout(cfg.dropout)\n\n  def forward(self, x):\n    B, T, C = x.shape\n\n    k = self.key(x)\n    q = self.query(x)\n    v = self.value(x)\n\n    attn_scores = q @ k.transpose(-2, -1) / math.sqrt(cfg.d_head)\n    attn_probs = F.softmax(attn_scores, dim=-1)\n\n    attn_probs = self.dropout(attn_probs)\n\n    return attn_probs @ v"
-  },
-  {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#multi-head-attention",
-    "href": "blogs/posts/ViT_From_Scratch.html#multi-head-attention",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "Multi-head attention allows the model to learn several relationships between image patches simultaneously.\nIn this implementation, each head independently processes the patch sequence, and the resulting representations are concatenated and projected back to d_model.\nThe implementation is intentionally similar to the one used in the language Transformer notebook.\nThe main architectural difference is that the input sequence now represents image patches rather than text tokens.\n\n\nCode\nclass MultiHeadAttention(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n\n    self.heads = nn.ModuleList(\n        [AttentionHead(cfg) for _ in range(cfg.n_heads)]\n    )\n\n    self.proj = nn.Linear(cfg.n_heads * cfg.d_head, cfg.d_model)\n\n    self.dropout = nn.Dropout(cfg.dropout)\n\n  def forward(self, x):\n    out = torch.cat([h(x) for h in self.heads], dim=-1)\n    out = self.dropout(self.proj(out))\n\n    return out"
-  },
-  {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#the-feed-forward-network",
-    "href": "blogs/posts/ViT_From_Scratch.html#the-feed-forward-network",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "The MLP is the same general component used in the language Transformer.\nIt expands each patch representation to a larger hidden dimension, applies a nonlinear activation, and projects it back to d_model.\nThe important distinction is that the MLP operates independently on each token.\nIn the Vision Transformer, this means each patch representation is transformed independently after attention has allowed information to be exchanged between patches.\n\n\nCode\nclass MLP(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n\n    self.linear1 = nn.Linear(\n        cfg.d_model,\n        cfg.d_mlp\n    )\n\n    self.linear2 = nn.Linear(\n        cfg.d_mlp,\n        cfg.d_model,\n    )\n\n  def forward(self, x):\n\n    x = self.linear1(x)\n\n    # Apply activation\n\n    x = F.gelu(x)\n\n    x = self.linear2(x)\n\n    return x"
-  },
-  {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#transformer-block",
-    "href": "blogs/posts/ViT_From_Scratch.html#transformer-block",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "The Transformer block combines LayerNorm, self-attention, the MLP, and residual connections.\nThe structure is the same Pre-LayerNorm design used in the previous Transformer implementation:\nx\n│\n├── LayerNorm\n│       ↓\n│   Self-Attention\n│       ↓\n└───── (+)\n        │\n        ↓\n    LayerNorm\n        │\n       MLP\n        │\n      (+)\n        │\n      Output\nThe block processes the entire patch sequence while preserving its shape:\n(B, num_patches + 1, d_model)\n\n\nCode\nclass TransformerBlock(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n\n    self.ln1 = LayerNorm(cfg.d_model)\n    self.attn = MultiHeadAttention(cfg)\n\n    self.ln2 = LayerNorm(cfg.d_model)\n    self.mlp = MLP(cfg)\n\n  def forward(self, x):\n\n    # Attention + residual\n    x = x + self.attn(self.ln1(x))\n\n    # MLP + residual\n    x = x + self.mlp(self.ln2(x))\n\n    return x"
-  },
-  {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#the-complete-vision-transformer",
-    "href": "blogs/posts/ViT_From_Scratch.html#the-complete-vision-transformer",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "We can now assemble the complete model.\nThe input image is converted into patch embeddings, a class token is added, and the resulting sequence is processed through several Transformer blocks.\nThe final class token representation is passed through a classification head to produce logits for each class.\nImage\n  ↓\nPatch Embedding\n  ↓\nClass Token + Positional Embeddings\n  ↓\nTransformer Blocks\n  ↓\nFinal LayerNorm\n  ↓\nClass Token\n  ↓\nLinear Classification Head\n  ↓\nClass Logits\nThe model output is:\n(B, n_classes)\nwhere each row contains the classification logits for one image.\n\n\nCode\nclass ViT(nn.Module):\n  def __init__(self, cfg: Config):\n    super().__init__()\n    self.cfg = cfg\n    self.embed = ViTEmbedding(cfg)\n    self.blocks = nn.ModuleList([TransformerBlock(cfg) for _ in range(cfg.n_layers)])\n    self.norm = LayerNorm(cfg.d_model)\n    self.head = nn.Linear(cfg.d_model, cfg.num_classes)\n    self.apply(self._init_weights)\n\n  def _init_weights(self, m):\n    if isinstance(m, nn.Linear):\n      nn.init.trunc_normal_(m.weight, std=0.02)\n      if m.bias is not None:\n        nn.init.zeros_(m.bias)\n    elif isinstance(m, nn.LayerNorm):\n      nn.init.zeros_(m.bias)\n      nn.init.ones_(m.weight)\n\n  def forward(self, x):\n    x = self.embed(x)\n    for block in self.blocks:\n      x = block(x)\n    x = self.norm(x)\n    cls_out = x[:, 0]\n    return self.head(cls_out)"
-  },
-  {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#dataset",
-    "href": "blogs/posts/ViT_From_Scratch.html#dataset",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "To keep the experiment simple, we use a small dataset for image classification.\nThe purpose of this dataset is not to evaluate the full capabilities of Vision Transformers. Instead, it provides a manageable environment for checking whether the model can learn useful visual representations.\nA small dataset also makes it easier to inspect training behavior and experiment with the architecture.\n\n\nCode\n# Sanity Check\n\ncfg = Config()\nmodel = ViT(cfg).to(device)\n\n# Fake images\nx = torch.randn(4, cfg.in_channels, cfg.img_size, cfg.img_size).to(device)\nlogits = model(x)\n\nprint(\"Logits shape:\", logits.shape)          # expected: (4, 10)\nprint(\"Number of parameters:\", sum(p.numel() for p in model.parameters()))\n\n\nLogits shape: torch.Size([4, 10])\nNumber of parameters: 807818\n\n\n\n\n\n\nCode\ndef get_batch(batch_size, cfg, device):\n    x = torch.randn(batch_size, cfg.in_channels, cfg.img_size, cfg.img_size, device=device)\n    y = torch.randint(0, cfg.num_classes, (batch_size,), device=device)\n    return x, y"
-  },
-  {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#loss-function",
-    "href": "blogs/posts/ViT_From_Scratch.html#loss-function",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "Code\ndef compute_loss(logits, targets):\n    return F.cross_entropy(logits, targets)"
-  },
-  {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#training",
-    "href": "blogs/posts/ViT_From_Scratch.html#training",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "The training loop follows the same general workflow as the language Transformer.\nFor each batch:\n\nPass the images through the model.\nCalculate the classification loss.\nBackpropagate through the model.\nUpdate the parameters using the optimizer.\n\nThe main difference is the training objective.\nInstead of predicting the next token, the Vision Transformer predicts a class label for each image.\nThe model is trained using cross-entropy loss over the classification logits.\n\n\nCode\noptimizer = torch.optim.AdamW(model.parameters(), lr=1e-3)\n\nnum_steps = 200\nfor step in range(num_steps):\n    model.train()\n    x, y = get_batch(batch_size=16, cfg=cfg, device=device)\n\n    logits = model(x)\n    loss = compute_loss(logits, y)\n\n    optimizer.zero_grad(set_to_none=True)\n    loss.backward()\n    optimizer.step()\n\n    if step % 50 == 0:\n        print(f\"Step {step:3d} | Loss: {loss.item():.4f}\")\n\n\nStep   0 | Loss: 2.2782\nStep  50 | Loss: 2.2705\nStep 100 | Loss: 2.2685\nStep 150 | Loss: 2.3349"
-  },
-  {
-    "objectID": "blogs/posts/ViT_From_Scratch.html#evaluation",
-    "href": "blogs/posts/ViT_From_Scratch.html#evaluation",
-    "title": "Vision Transformer from Scratch",
-    "section": "",
-    "text": "Training loss alone does not tell us whether the model generalizes to unseen images.\nWe therefore evaluate the model on a separate validation or test set.\nThe main metric for this classification task is accuracy:\n\\[\n\\text{Accuracy}\n=\n\\frac{\\text{Correct Predictions}}\n{\\text{Total Predictions}}\n\\]\nFor a small learning experiment, accuracy and loss provide a useful first indication of whether the model is learning the intended visual patterns.\n\n\nCode\nmodel.eval()\nwith torch.no_grad():\n    x, y = get_batch(4, cfg, device)\n    logits = model(x)\n    preds = logits.argmax(dim=-1)\n    print(\"Predictions:\", preds.tolist())\n    print(\"Targets:    \", y.tolist())\n\n\nPredictions: [3, 3, 3, 3]\nTargets:     [2, 9, 0, 3]"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Utkarsh736 — Machine Learning Engineer & Sports Analyst",
-    "section": "",
-    "text": "Hi, I’m Utkarsh\n\n\nI’m a machine learning engineer at Omdena and a sports analyst focused on cricket. By day I turn messy data into models that actually work — the rest of the time I’m following cricket, hockey, MMA, and the NFL.\n\nAbout me Explore apps\n\n\nGitHub LinkedIn Twitter HuggingFace Kaggle Bluesky DagsHub\n\n\n\n\n\n\n\n\nML Engineer · Cricket Analyst"
-  },
-  {
-    "objectID": "index.html#featured-apps",
-    "href": "index.html#featured-apps",
-    "title": "Utkarsh736 — Machine Learning Engineer & Sports Analyst",
-    "section": "Featured Apps",
-    "text": "Featured Apps\nSmall, useful tools — mostly Gradio apps deployed on Hugging Face Spaces."
-  },
-  {
-    "objectID": "index.html#latest-writing",
-    "href": "index.html#latest-writing",
-    "title": "Utkarsh736 — Machine Learning Engineer & Sports Analyst",
-    "section": "Latest Writing",
-    "text": "Latest Writing\nNotes on machine learning, experiments, and sports analytics."
-  },
-  {
-    "objectID": "blogs/blogs.html",
-    "href": "blogs/blogs.html",
-    "title": "Blogs",
-    "section": "",
-    "text": "Vision Transformer from Scratch\n\n\nImplementing ViT end-to-end and walking through the pieces that matter.\n\n\n\nmachine learning\n\ncomputer vision\n\ntransformers\n\n\n\nA from-scratch walkthrough of the Vision Transformer architecture in a notebook.\n\n\n\n\n\nSeptember 15, 2026\n\n\nUtkarsh736\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Transformer From Scratch\n\n\n\n\n\n\nmachine learning\n\ntransformers\n\npytorch\n\n\n\nA readable, from-scratch GPT-style Transformer in PyTorch — embeddings, causal attention, multi-head, MLP, residual blocks, training and generation.\n\n\n\n\n\nSeptember 9, 2026\n\n\nUtkarsh736\n\n\n\n\n\n\n\n\n\n\n\n\nBear Classifier\n\n\n\n\n\nUsing a pre-trained classifier to classify bears into ‘Teddy’, ‘Black’, and ‘Grizzly’ bears.\n\n\n\n\n\nJune 22, 2024\n\n\nUtkarsh736\n\n\n\n\n\nNo matching items\n Back to top"
+    "objectID": "about.html#off-the-clock",
+    "href": "about.html#off-the-clock",
+    "title": "Utkarsh — About",
+    "section": "Off the clock",
+    "text": "Off the clock\n\nCricket Hockey MMA NFL Movies\n\n\nGet in touch\nThe fastest way to reach me is LinkedIn — or say hi on any platform below. Always happy to talk machine learning, cricket analytics, or trade movie recommendations.\n\nGitHub LinkedIn Twitter HuggingFace Bluesky\n\n Download resume"
   },
   {
     "objectID": "blogs/posts/Transformer_From_Scratch.html",
@@ -364,52 +210,213 @@
     "text": "Possible improvements include:\n\nBetter tokenization\nA larger and more meaningful dataset\nTrain/validation splits\nImproved sampling strategies\nDropout and regularization\nLearning-rate scheduling\nVectorized multi-head attention\nEfficient attention implementations\nKV caching during generation\nComparing the implementation against a real GPT architecture"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Utkarsh — About",
+    "objectID": "blogs/blogs.html",
+    "href": "blogs/blogs.html",
+    "title": "Blogs",
     "section": "",
-    "text": "Machine Learning Engineer @ Omdena · Cricket Analyst\n\nGitHub LinkedIn Twitter HuggingFace Kaggle Bluesky DagsHub"
+    "text": "Vision Transformer from Scratch\n\n\nImplementing ViT end-to-end and walking through the pieces that matter.\n\n\n\nmachine learning\n\ncomputer vision\n\ntransformers\n\n\n\nA from-scratch walkthrough of the Vision Transformer architecture in a notebook.\n\n\n\n\n\nSeptember 15, 2026\n\n\nUtkarsh736\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Transformer From Scratch\n\n\n\n\n\n\nmachine learning\n\ntransformers\n\npytorch\n\n\n\nA readable, from-scratch GPT-style Transformer in PyTorch — embeddings, causal attention, multi-head, MLP, residual blocks, training and generation.\n\n\n\n\n\nSeptember 9, 2026\n\n\nUtkarsh736\n\n\n\n\n\n\n\n\n\n\n\n\nBear Classifier\n\n\n\n\n\nUsing a pre-trained classifier to classify bears into ‘Teddy’, ‘Black’, and ‘Grizzly’ bears.\n\n\n\n\n\nJune 22, 2024\n\n\nUtkarsh736\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
-    "objectID": "about.html#bio",
-    "href": "about.html#bio",
-    "title": "Utkarsh — About",
-    "section": "Bio",
-    "text": "Bio\nHello! I’m a machine learning engineer and sports analyst with a focus on cricket. At Omdena I build and ship models for real business problems — from computer vision and object detection to tabular learning and ensemble methods. I care about the whole lifecycle: clean data pipelines, honest experiments, and models that survive contact with production.\nI’m a polyglot programmer at heart. Python is home, with C, Golang, and Rust next on the bench — I enjoy learning how different languages think about the same problem. Away from the keyboard you’ll find me following cricket, hockey, MMA, and the NFL, or exploring the world of movies. Sports are where my two worlds meet: data that moves, and stories that numbers can tell."
-  },
-  {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "Utkarsh — About",
-    "section": "Skills",
-    "text": "Skills\n\n\nLanguages\n\n\nPython C Golang Rust\n\n\n\n\nMachine Learning & Data\n\n\nPyTorch TensorFlow Keras scikit-learn XGBoost YOLOv5 Pandas NumPy Matplotlib Seaborn\n\n\n\n\nMLOps & Tooling\n\n\nGit DVC MLflow Tableau Gradio\n\n\n\n\nDomains\n\n\nComputer Vision Object Detection Cricket Analytics Video Analytics Ensemble Modeling"
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "Utkarsh — About",
-    "section": "Experience",
-    "text": "Experience\n\n\nMachine Learning Engineer — Omdena\nOmdena May 2022 — Present\n\nDeveloped and deployed machine learning models — Random Forest, XGBoost, and deep learning architectures like YOLOv5 and YOLT — across diverse business applications.\nImplemented computer vision neural networks for object detection, strengthening image-processing pipelines end to end.\nEngineered data pipelines with Python, Pandas, and NumPy to process large datasets and surface actionable insights.\nBuilt and optimized neural architectures with PyTorch, TensorFlow, and Keras; applied ensemble techniques to push model performance further.\nEstablished model versioning and experiment tracking with Git, DVC, and MLflow, and visualized results with Matplotlib and Seaborn for stakeholders.\nPartnered with cross-functional teams to propose and implement AI-driven solutions to business challenges.\n\n\n\nCricket Video Analyst — Mad About Sports\nMad About Sports · Intern Video & Performance Analytics\n\nConducted in-depth analysis of batsmen and bowlers using video analytics and data visualization, identifying strengths, weaknesses, and strategic matchups.\nProcessed and visualized complex cricket performance data with the Python ecosystem and Tableau.\nDeveloped and presented data-driven recommendations that contributed to improved player performance and team strategy.\nApplied machine learning to predict player performance trends and inform training regimens.\nCollaborated with analysts and coaches to produce high-quality analytical reports and presentations."
-  },
-  {
-    "objectID": "about.html#off-the-clock",
-    "href": "about.html#off-the-clock",
-    "title": "Utkarsh — About",
-    "section": "Off the clock",
-    "text": "Off the clock\n\nCricket Hockey MMA NFL Movies\n\n\nGet in touch\nThe fastest way to reach me is LinkedIn — or say hi on any platform below. Always happy to talk machine learning, cricket analytics, or trade movie recommendations.\n\nGitHub LinkedIn Twitter HuggingFace Bluesky\n\n Download resume"
-  },
-  {
-    "objectID": "apps/posts/Testing.html",
-    "href": "apps/posts/Testing.html",
-    "title": "Gradio Docker Demo",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Utkarsh736 — Machine Learning Engineer & Sports Analyst",
     "section": "",
-    "text": "This app is the same Gradio experience, but packaged with Docker instead of the standard Space setup — a clean sandbox for testing how containerized ML apps behave on Hugging Face infrastructure. Give it a spin below.\n\n\n\n\n\n\n\n Back to top"
+    "text": "Hi, I’m Utkarsh\n\n\nI’m a machine learning engineer at Omdena and a sports analyst focused on cricket. By day I turn messy data into models that actually work — the rest of the time I’m following cricket, hockey, MMA, and the NFL.\n\nAbout me Explore apps\n\n\nGitHub LinkedIn Twitter HuggingFace Kaggle Bluesky DagsHub\n\n\n\n\n\n\n\n\nML Engineer · Cricket Analyst"
   },
   {
-    "objectID": "apps/posts/Bearify.html",
-    "href": "apps/posts/Bearify.html",
+    "objectID": "index.html#featured-apps",
+    "href": "index.html#featured-apps",
+    "title": "Utkarsh736 — Machine Learning Engineer & Sports Analyst",
+    "section": "Featured Apps",
+    "text": "Featured Apps\nSmall, useful tools — mostly Gradio apps deployed on Hugging Face Spaces."
+  },
+  {
+    "objectID": "index.html#latest-writing",
+    "href": "index.html#latest-writing",
+    "title": "Utkarsh736 — Machine Learning Engineer & Sports Analyst",
+    "section": "Latest Writing",
+    "text": "Latest Writing\nNotes on machine learning, experiments, and sports analytics."
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html",
+    "href": "blogs/posts/ViT_From_Scratch.html",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "After implementing a small GPT-style Transformer from scratch, I wanted to understand how the same architecture could be applied to images.\nVision Transformers, or ViTs, approach image understanding by treating an image as a sequence of patches. Instead of processing the entire image through a convolutional network, the model divides it into smaller regions, converts those regions into vectors, and processes them using Transformer blocks.\nIn this notebook, I build a small Vision Transformer from scratch using PyTorch.\nThe goal is to understand how an image becomes a sequence of tokens, how positional information is added, and how the Transformer architecture can be adapted for image classification.\nThis is a deliberately small first implementation. It prioritizes understanding the architecture and its tensor shapes over achieving state-of-the-art accuracy.\n\n\nA Vision Transformer consists of two major parts:\n\nConverting an image into a sequence of patch embeddings.\nProcessing that sequence using a Transformer encoder.\n\nThe implementation follows this structure:\nImage\n  ↓\nPatch Embedding\n  ↓\nClass Token + Positional Embeddings\n  ↓\nTransformer Blocks × N\n  ├── LayerNorm\n  ├── Multi-Head Self-Attention\n  └── MLP\n  ↓\nClass Token Representation\n  ↓\nClassification Head\n  ↓\nClass Logits\nWe will implement the components in the following order:\n\nConfiguration\nPatch Embedding\nClass Token and Positional Embeddings\nLayerNorm\nSingle-Head Attention\nMulti-Head Attention\nMLP\nTransformer Block\nFull Vision Transformer\nDataset and Training\nEvaluation\n\n\n\n\n\n\nCode\nimport math\nimport random\nimport torch\nimport torch.nn as nn\nimport torch.nn.functional as F\nfrom dataclasses import dataclass\n\n\n\n\nCode\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nprint(\"Device:\", device)\n\nSEED = 42\nrandom.seed(SEED)\ntorch.manual_seed(SEED)\nif torch.cuda.is_available():\n    torch.cuda.manual_seed(SEED)\n\n\nDevice: cpu\n\n\n\n\n\nBefore implementing the model, we define the architectural hyperparameters in one place.\nThe important image-related parameters are:\n\nimg_size: height and width of the input image\npatch_size: height and width of each image patch\nin_channels: number of image channels\nd_model: size of each patch representation\nn_heads: number of attention heads\nd_head: dimension of each attention head\nd_mlp: hidden dimension of the MLP\nn_layers: number of Transformer blocks\nn_classes: number of output classes\n\nFor this first implementation, we use small images and a small model so that the complete architecture can be trained and inspected without requiring a large computational budget.\n\n\nCode\n@dataclass\nclass Config:\n    # Image / patch related (NEW)\n    img_size: int = 32          # e.g. 32 or 64 for toy experiments\n    patch_size: int = 4         # must divide img_size evenly\n    in_channels: int = 3        # 3 for RGB, 1 for grayscale\n    num_classes: int = 10\n\n    # Model dimensions (SAME as language Transformer)\n    d_model: int = 128\n    n_heads: int = 4\n    d_head: int = 32\n    d_mlp: int = 512\n    n_layers: int = 4\n    dropout: float = 0.0\n\n    # Derived\n    @property\n    def num_patches(self):\n        return (self.img_size // self.patch_size) ** 2\n\n    # Sanity-Check\n    def __post_init__(self):\n      assert self.d_model == self.n_heads*self.d_head\n      assert self.img_size % self.patch_size == 0\n\n\n\n\n\nA Transformer expects a sequence of vectors as input.\nAn image, however, is represented as a grid of pixels:\n(B, C, H, W)\nwhere:\n\nB is the batch size\nC is the number of channels\nH is the image height\nW is the image width\n\nTo apply a Transformer to images, we divide each image into smaller patches.\nFor example, a 32 × 32 image with a patch size of 4 × 4 produces:\n\\[\n\\frac{32}{4} \\times \\frac{32}{4} = 64\n\\]\npatches.\nEach patch is then projected into a vector of size d_model.\nThe result is a sequence of patch embeddings:\n(B, num_patches, d_model)\nThis is the bridge between image processing and the Transformer architecture.\n\n\nCode\nclass PatchEmbedding(nn.Module):\n  def __init__(self, cfg: Config):\n    super().__init__()\n    self.cfg = cfg\n\n    self.proj = nn.Conv2d(\n        cfg.in_channels,\n        cfg.d_model,\n        kernel_size=cfg.patch_size,\n        stride=cfg.patch_size,\n    )\n\n  def forward(self, x):\n    x = self.proj(x)\n    x = x.flatten(2)\n    x = x.transpose(1,2)\n\n    return x\n\n\n\n\n\npatch.png\n\n\nImage Credit\n\n\n\nAfter patch embedding, an image is represented as a sequence of patch vectors.\nHowever, we still need two things:\n\nA way to preserve spatial information.\nA representation that can be used for image classification.\n\n\n\nSelf-attention does not inherently know the spatial arrangement of the patches.\nThe patch at the top-left and the patch at the bottom-right are both just vectors. Without positional information, the model would not know where they came from.\nWe therefore add a learned positional embedding to each patch representation.\n\n\n\nWe also prepend a learned class token to the sequence.\nThis token is not associated with a particular image patch. Instead, it acts as a location where information from the entire image can be aggregated through the Transformer blocks.\nAfter processing the image, we use the final representation of this class token for classification.\n\n\nCode\nclass ViTEmbedding(nn.Module):\n  def __init__(self, cfg: Config):\n    super().__init__()\n    self.cfg = cfg\n    self.patch_embed = PatchEmbedding(cfg)\n\n    self.cls_token = nn.Parameter(torch.zeros(1,1,cfg.d_model))\n    self.pos_embed = nn.Parameter(torch.zeros(1,1+cfg.num_patches,cfg.d_model))\n\n    self.dropout = nn.Dropout(cfg.dropout)\n    self._init_weights()\n\n  def _init_weights(self):\n    nn.init.trunc_normal_(self.cls_token, std=0.02)\n    nn.init.trunc_normal_(self.pos_embed, std=0.02)\n\n  def forward(self, x):\n    x = self.patch_embed(x)\n    B = x.shape[0]\n    cls_token = self.cls_token.expand(x.shape[0], -1, -1)\n    x = torch.cat((cls_token, x), dim=1)\n    x = x + self.pos_embed\n\n    return self.dropout(x)\n\n\n\n\n\n\nThe Vision Transformer uses the same LayerNorm mechanism as the language Transformer.\nFor each token representation, we normalize across the feature dimension:\n\\[\n\\hat{x} = \\frac{x-\\mu}{\\sqrt{\\sigma^2+\\epsilon}}\n\\]\nThe normalized representation is then scaled and shifted using learned parameters.\nIn this implementation, normalization is applied independently to each patch token and to the class token.\n\n\nCode\nclass LayerNorm(nn.Module):\n  def __init__(self, d_model, eps=1e-5):\n    super().__init__()\n    self.gamma = nn.Parameter(torch.ones(d_model))\n    self.beta = nn.Parameter(torch.zeros(d_model))\n    self.eps = eps\n\n  def forward(self, x):\n    mean = torch.mean(x, dim=-1, keepdim=True)\n    var = ((x-mean)**2).mean(dim=-1, keepdim=True)\n\n    x_norm = (x - mean) / torch.sqrt(var + self.eps)\n\n    op = self.gamma * x_norm + self.beta\n\n    return op\n\n\n\n\n\nOnce the image has been converted into a sequence of patch embeddings, the attention mechanism is almost identical to the one used in the language Transformer.\nEach patch representation is projected into:\n\nQuery\nKey\nValue\n\nThe attention scores are calculated using:\n\\[\nQK^T\n\\]\nand scaled by:\n\\[\n\\frac{1}{\\sqrt{d_{head}}}\n\\]\nThe key difference is that Vision Transformers do not need causal masking for ordinary image classification.\nEach patch should be able to attend to every other patch, because the model is not predicting future tokens. It is processing the image as a whole.\nTherefore, the attention matrix is fully visible rather than lower-triangular.\n\n\nCode\nclass AttentionHead(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n    self.key = nn.Linear(cfg.d_model, cfg.d_head, bias=False)\n    self.query = nn.Linear(cfg.d_model, cfg.d_head, bias=False)\n    self.value = nn.Linear(cfg.d_model, cfg.d_head, bias=False)\n\n    self.dropout = nn.Dropout(cfg.dropout)\n\n  def forward(self, x):\n    B, T, C = x.shape\n\n    k = self.key(x)\n    q = self.query(x)\n    v = self.value(x)\n\n    attn_scores = q @ k.transpose(-2, -1) / math.sqrt(cfg.d_head)\n    attn_probs = F.softmax(attn_scores, dim=-1)\n\n    attn_probs = self.dropout(attn_probs)\n\n    return attn_probs @ v\n\n\n\n\n\nMulti-head attention allows the model to learn several relationships between image patches simultaneously.\nIn this implementation, each head independently processes the patch sequence, and the resulting representations are concatenated and projected back to d_model.\nThe implementation is intentionally similar to the one used in the language Transformer notebook.\nThe main architectural difference is that the input sequence now represents image patches rather than text tokens.\n\n\nCode\nclass MultiHeadAttention(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n\n    self.heads = nn.ModuleList(\n        [AttentionHead(cfg) for _ in range(cfg.n_heads)]\n    )\n\n    self.proj = nn.Linear(cfg.n_heads * cfg.d_head, cfg.d_model)\n\n    self.dropout = nn.Dropout(cfg.dropout)\n\n  def forward(self, x):\n    out = torch.cat([h(x) for h in self.heads], dim=-1)\n    out = self.dropout(self.proj(out))\n\n    return out\n\n\n\n\n\nThe MLP is the same general component used in the language Transformer.\nIt expands each patch representation to a larger hidden dimension, applies a nonlinear activation, and projects it back to d_model.\nThe important distinction is that the MLP operates independently on each token.\nIn the Vision Transformer, this means each patch representation is transformed independently after attention has allowed information to be exchanged between patches.\n\n\nCode\nclass MLP(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n\n    self.linear1 = nn.Linear(\n        cfg.d_model,\n        cfg.d_mlp\n    )\n\n    self.linear2 = nn.Linear(\n        cfg.d_mlp,\n        cfg.d_model,\n    )\n\n  def forward(self, x):\n\n    x = self.linear1(x)\n\n    # Apply activation\n\n    x = F.gelu(x)\n\n    x = self.linear2(x)\n\n    return x\n\n\n\n\n\nThe Transformer block combines LayerNorm, self-attention, the MLP, and residual connections.\nThe structure is the same Pre-LayerNorm design used in the previous Transformer implementation:\nx\n│\n├── LayerNorm\n│       ↓\n│   Self-Attention\n│       ↓\n└───── (+)\n        │\n        ↓\n    LayerNorm\n        │\n       MLP\n        │\n      (+)\n        │\n      Output\nThe block processes the entire patch sequence while preserving its shape:\n(B, num_patches + 1, d_model)\n\n\nCode\nclass TransformerBlock(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n\n    self.ln1 = LayerNorm(cfg.d_model)\n    self.attn = MultiHeadAttention(cfg)\n\n    self.ln2 = LayerNorm(cfg.d_model)\n    self.mlp = MLP(cfg)\n\n  def forward(self, x):\n\n    # Attention + residual\n    x = x + self.attn(self.ln1(x))\n\n    # MLP + residual\n    x = x + self.mlp(self.ln2(x))\n\n    return x\n\n\n\n\n\nWe can now assemble the complete model.\nThe input image is converted into patch embeddings, a class token is added, and the resulting sequence is processed through several Transformer blocks.\nThe final class token representation is passed through a classification head to produce logits for each class.\nImage\n  ↓\nPatch Embedding\n  ↓\nClass Token + Positional Embeddings\n  ↓\nTransformer Blocks\n  ↓\nFinal LayerNorm\n  ↓\nClass Token\n  ↓\nLinear Classification Head\n  ↓\nClass Logits\nThe model output is:\n(B, n_classes)\nwhere each row contains the classification logits for one image.\n\n\nCode\nclass ViT(nn.Module):\n  def __init__(self, cfg: Config):\n    super().__init__()\n    self.cfg = cfg\n    self.embed = ViTEmbedding(cfg)\n    self.blocks = nn.ModuleList([TransformerBlock(cfg) for _ in range(cfg.n_layers)])\n    self.norm = LayerNorm(cfg.d_model)\n    self.head = nn.Linear(cfg.d_model, cfg.num_classes)\n    self.apply(self._init_weights)\n\n  def _init_weights(self, m):\n    if isinstance(m, nn.Linear):\n      nn.init.trunc_normal_(m.weight, std=0.02)\n      if m.bias is not None:\n        nn.init.zeros_(m.bias)\n    elif isinstance(m, nn.LayerNorm):\n      nn.init.zeros_(m.bias)\n      nn.init.ones_(m.weight)\n\n  def forward(self, x):\n    x = self.embed(x)\n    for block in self.blocks:\n      x = block(x)\n    x = self.norm(x)\n    cls_out = x[:, 0]\n    return self.head(cls_out)\n\n\n\n\n\nTo keep the experiment simple, we use a small dataset for image classification.\nThe purpose of this dataset is not to evaluate the full capabilities of Vision Transformers. Instead, it provides a manageable environment for checking whether the model can learn useful visual representations.\nA small dataset also makes it easier to inspect training behavior and experiment with the architecture.\n\n\nCode\n# Sanity Check\n\ncfg = Config()\nmodel = ViT(cfg).to(device)\n\n# Fake images\nx = torch.randn(4, cfg.in_channels, cfg.img_size, cfg.img_size).to(device)\nlogits = model(x)\n\nprint(\"Logits shape:\", logits.shape)          # expected: (4, 10)\nprint(\"Number of parameters:\", sum(p.numel() for p in model.parameters()))\n\n\nLogits shape: torch.Size([4, 10])\nNumber of parameters: 807818\n\n\n\n\n\n\nCode\ndef get_batch(batch_size, cfg, device):\n    x = torch.randn(batch_size, cfg.in_channels, cfg.img_size, cfg.img_size, device=device)\n    y = torch.randint(0, cfg.num_classes, (batch_size,), device=device)\n    return x, y\n\n\n\n\n\n\n\n\nCode\ndef compute_loss(logits, targets):\n    return F.cross_entropy(logits, targets)\n\n\n\n\n\nThe training loop follows the same general workflow as the language Transformer.\nFor each batch:\n\nPass the images through the model.\nCalculate the classification loss.\nBackpropagate through the model.\nUpdate the parameters using the optimizer.\n\nThe main difference is the training objective.\nInstead of predicting the next token, the Vision Transformer predicts a class label for each image.\nThe model is trained using cross-entropy loss over the classification logits.\n\n\nCode\noptimizer = torch.optim.AdamW(model.parameters(), lr=1e-3)\n\nnum_steps = 200\nfor step in range(num_steps):\n    model.train()\n    x, y = get_batch(batch_size=16, cfg=cfg, device=device)\n\n    logits = model(x)\n    loss = compute_loss(logits, y)\n\n    optimizer.zero_grad(set_to_none=True)\n    loss.backward()\n    optimizer.step()\n\n    if step % 50 == 0:\n        print(f\"Step {step:3d} | Loss: {loss.item():.4f}\")\n\n\nStep   0 | Loss: 2.2782\nStep  50 | Loss: 2.2705\nStep 100 | Loss: 2.2685\nStep 150 | Loss: 2.3349\n\n\n\n\n\nTraining loss alone does not tell us whether the model generalizes to unseen images.\nWe therefore evaluate the model on a separate validation or test set.\nThe main metric for this classification task is accuracy:\n\\[\n\\text{Accuracy}\n=\n\\frac{\\text{Correct Predictions}}\n{\\text{Total Predictions}}\n\\]\nFor a small learning experiment, accuracy and loss provide a useful first indication of whether the model is learning the intended visual patterns.\n\n\nCode\nmodel.eval()\nwith torch.no_grad():\n    x, y = get_batch(4, cfg, device)\n    logits = model(x)\n    preds = logits.argmax(dim=-1)\n    print(\"Predictions:\", preds.tolist())\n    print(\"Targets:    \", y.tolist())\n\n\nPredictions: [3, 3, 3, 3]\nTargets:     [2, 9, 0, 3]"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#what-were-building",
+    "href": "blogs/posts/ViT_From_Scratch.html#what-were-building",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "A Vision Transformer consists of two major parts:\n\nConverting an image into a sequence of patch embeddings.\nProcessing that sequence using a Transformer encoder.\n\nThe implementation follows this structure:\nImage\n  ↓\nPatch Embedding\n  ↓\nClass Token + Positional Embeddings\n  ↓\nTransformer Blocks × N\n  ├── LayerNorm\n  ├── Multi-Head Self-Attention\n  └── MLP\n  ↓\nClass Token Representation\n  ↓\nClassification Head\n  ↓\nClass Logits\nWe will implement the components in the following order:\n\nConfiguration\nPatch Embedding\nClass Token and Positional Embeddings\nLayerNorm\nSingle-Head Attention\nMulti-Head Attention\nMLP\nTransformer Block\nFull Vision Transformer\nDataset and Training\nEvaluation"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#setup",
+    "href": "blogs/posts/ViT_From_Scratch.html#setup",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "Code\nimport math\nimport random\nimport torch\nimport torch.nn as nn\nimport torch.nn.functional as F\nfrom dataclasses import dataclass\n\n\n\n\nCode\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nprint(\"Device:\", device)\n\nSEED = 42\nrandom.seed(SEED)\ntorch.manual_seed(SEED)\nif torch.cuda.is_available():\n    torch.cuda.manual_seed(SEED)\n\n\nDevice: cpu"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#configuration",
+    "href": "blogs/posts/ViT_From_Scratch.html#configuration",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "Before implementing the model, we define the architectural hyperparameters in one place.\nThe important image-related parameters are:\n\nimg_size: height and width of the input image\npatch_size: height and width of each image patch\nin_channels: number of image channels\nd_model: size of each patch representation\nn_heads: number of attention heads\nd_head: dimension of each attention head\nd_mlp: hidden dimension of the MLP\nn_layers: number of Transformer blocks\nn_classes: number of output classes\n\nFor this first implementation, we use small images and a small model so that the complete architecture can be trained and inspected without requiring a large computational budget.\n\n\nCode\n@dataclass\nclass Config:\n    # Image / patch related (NEW)\n    img_size: int = 32          # e.g. 32 or 64 for toy experiments\n    patch_size: int = 4         # must divide img_size evenly\n    in_channels: int = 3        # 3 for RGB, 1 for grayscale\n    num_classes: int = 10\n\n    # Model dimensions (SAME as language Transformer)\n    d_model: int = 128\n    n_heads: int = 4\n    d_head: int = 32\n    d_mlp: int = 512\n    n_layers: int = 4\n    dropout: float = 0.0\n\n    # Derived\n    @property\n    def num_patches(self):\n        return (self.img_size // self.patch_size) ** 2\n\n    # Sanity-Check\n    def __post_init__(self):\n      assert self.d_model == self.n_heads*self.d_head\n      assert self.img_size % self.patch_size == 0"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#patch-embedding",
+    "href": "blogs/posts/ViT_From_Scratch.html#patch-embedding",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "A Transformer expects a sequence of vectors as input.\nAn image, however, is represented as a grid of pixels:\n(B, C, H, W)\nwhere:\n\nB is the batch size\nC is the number of channels\nH is the image height\nW is the image width\n\nTo apply a Transformer to images, we divide each image into smaller patches.\nFor example, a 32 × 32 image with a patch size of 4 × 4 produces:\n\\[\n\\frac{32}{4} \\times \\frac{32}{4} = 64\n\\]\npatches.\nEach patch is then projected into a vector of size d_model.\nThe result is a sequence of patch embeddings:\n(B, num_patches, d_model)\nThis is the bridge between image processing and the Transformer architecture.\n\n\nCode\nclass PatchEmbedding(nn.Module):\n  def __init__(self, cfg: Config):\n    super().__init__()\n    self.cfg = cfg\n\n    self.proj = nn.Conv2d(\n        cfg.in_channels,\n        cfg.d_model,\n        kernel_size=cfg.patch_size,\n        stride=cfg.patch_size,\n    )\n\n  def forward(self, x):\n    x = self.proj(x)\n    x = x.flatten(2)\n    x = x.transpose(1,2)\n\n    return x\n\n\n\n\n\npatch.png\n\n\nImage Credit"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#class-token-and-positional-embeddings",
+    "href": "blogs/posts/ViT_From_Scratch.html#class-token-and-positional-embeddings",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "After patch embedding, an image is represented as a sequence of patch vectors.\nHowever, we still need two things:\n\nA way to preserve spatial information.\nA representation that can be used for image classification.\n\n\n\nSelf-attention does not inherently know the spatial arrangement of the patches.\nThe patch at the top-left and the patch at the bottom-right are both just vectors. Without positional information, the model would not know where they came from.\nWe therefore add a learned positional embedding to each patch representation.\n\n\n\nWe also prepend a learned class token to the sequence.\nThis token is not associated with a particular image patch. Instead, it acts as a location where information from the entire image can be aggregated through the Transformer blocks.\nAfter processing the image, we use the final representation of this class token for classification.\n\n\nCode\nclass ViTEmbedding(nn.Module):\n  def __init__(self, cfg: Config):\n    super().__init__()\n    self.cfg = cfg\n    self.patch_embed = PatchEmbedding(cfg)\n\n    self.cls_token = nn.Parameter(torch.zeros(1,1,cfg.d_model))\n    self.pos_embed = nn.Parameter(torch.zeros(1,1+cfg.num_patches,cfg.d_model))\n\n    self.dropout = nn.Dropout(cfg.dropout)\n    self._init_weights()\n\n  def _init_weights(self):\n    nn.init.trunc_normal_(self.cls_token, std=0.02)\n    nn.init.trunc_normal_(self.pos_embed, std=0.02)\n\n  def forward(self, x):\n    x = self.patch_embed(x)\n    B = x.shape[0]\n    cls_token = self.cls_token.expand(x.shape[0], -1, -1)\n    x = torch.cat((cls_token, x), dim=1)\n    x = x + self.pos_embed\n\n    return self.dropout(x)"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#layer-normalization",
+    "href": "blogs/posts/ViT_From_Scratch.html#layer-normalization",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "The Vision Transformer uses the same LayerNorm mechanism as the language Transformer.\nFor each token representation, we normalize across the feature dimension:\n\\[\n\\hat{x} = \\frac{x-\\mu}{\\sqrt{\\sigma^2+\\epsilon}}\n\\]\nThe normalized representation is then scaled and shifted using learned parameters.\nIn this implementation, normalization is applied independently to each patch token and to the class token.\n\n\nCode\nclass LayerNorm(nn.Module):\n  def __init__(self, d_model, eps=1e-5):\n    super().__init__()\n    self.gamma = nn.Parameter(torch.ones(d_model))\n    self.beta = nn.Parameter(torch.zeros(d_model))\n    self.eps = eps\n\n  def forward(self, x):\n    mean = torch.mean(x, dim=-1, keepdim=True)\n    var = ((x-mean)**2).mean(dim=-1, keepdim=True)\n\n    x_norm = (x - mean) / torch.sqrt(var + self.eps)\n\n    op = self.gamma * x_norm + self.beta\n\n    return op"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#self-attention",
+    "href": "blogs/posts/ViT_From_Scratch.html#self-attention",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "Once the image has been converted into a sequence of patch embeddings, the attention mechanism is almost identical to the one used in the language Transformer.\nEach patch representation is projected into:\n\nQuery\nKey\nValue\n\nThe attention scores are calculated using:\n\\[\nQK^T\n\\]\nand scaled by:\n\\[\n\\frac{1}{\\sqrt{d_{head}}}\n\\]\nThe key difference is that Vision Transformers do not need causal masking for ordinary image classification.\nEach patch should be able to attend to every other patch, because the model is not predicting future tokens. It is processing the image as a whole.\nTherefore, the attention matrix is fully visible rather than lower-triangular.\n\n\nCode\nclass AttentionHead(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n    self.key = nn.Linear(cfg.d_model, cfg.d_head, bias=False)\n    self.query = nn.Linear(cfg.d_model, cfg.d_head, bias=False)\n    self.value = nn.Linear(cfg.d_model, cfg.d_head, bias=False)\n\n    self.dropout = nn.Dropout(cfg.dropout)\n\n  def forward(self, x):\n    B, T, C = x.shape\n\n    k = self.key(x)\n    q = self.query(x)\n    v = self.value(x)\n\n    attn_scores = q @ k.transpose(-2, -1) / math.sqrt(cfg.d_head)\n    attn_probs = F.softmax(attn_scores, dim=-1)\n\n    attn_probs = self.dropout(attn_probs)\n\n    return attn_probs @ v"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#multi-head-attention",
+    "href": "blogs/posts/ViT_From_Scratch.html#multi-head-attention",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "Multi-head attention allows the model to learn several relationships between image patches simultaneously.\nIn this implementation, each head independently processes the patch sequence, and the resulting representations are concatenated and projected back to d_model.\nThe implementation is intentionally similar to the one used in the language Transformer notebook.\nThe main architectural difference is that the input sequence now represents image patches rather than text tokens.\n\n\nCode\nclass MultiHeadAttention(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n\n    self.heads = nn.ModuleList(\n        [AttentionHead(cfg) for _ in range(cfg.n_heads)]\n    )\n\n    self.proj = nn.Linear(cfg.n_heads * cfg.d_head, cfg.d_model)\n\n    self.dropout = nn.Dropout(cfg.dropout)\n\n  def forward(self, x):\n    out = torch.cat([h(x) for h in self.heads], dim=-1)\n    out = self.dropout(self.proj(out))\n\n    return out"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#the-feed-forward-network",
+    "href": "blogs/posts/ViT_From_Scratch.html#the-feed-forward-network",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "The MLP is the same general component used in the language Transformer.\nIt expands each patch representation to a larger hidden dimension, applies a nonlinear activation, and projects it back to d_model.\nThe important distinction is that the MLP operates independently on each token.\nIn the Vision Transformer, this means each patch representation is transformed independently after attention has allowed information to be exchanged between patches.\n\n\nCode\nclass MLP(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n\n    self.linear1 = nn.Linear(\n        cfg.d_model,\n        cfg.d_mlp\n    )\n\n    self.linear2 = nn.Linear(\n        cfg.d_mlp,\n        cfg.d_model,\n    )\n\n  def forward(self, x):\n\n    x = self.linear1(x)\n\n    # Apply activation\n\n    x = F.gelu(x)\n\n    x = self.linear2(x)\n\n    return x"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#transformer-block",
+    "href": "blogs/posts/ViT_From_Scratch.html#transformer-block",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "The Transformer block combines LayerNorm, self-attention, the MLP, and residual connections.\nThe structure is the same Pre-LayerNorm design used in the previous Transformer implementation:\nx\n│\n├── LayerNorm\n│       ↓\n│   Self-Attention\n│       ↓\n└───── (+)\n        │\n        ↓\n    LayerNorm\n        │\n       MLP\n        │\n      (+)\n        │\n      Output\nThe block processes the entire patch sequence while preserving its shape:\n(B, num_patches + 1, d_model)\n\n\nCode\nclass TransformerBlock(nn.Module):\n  def __init__(self, cfg):\n    super().__init__()\n\n    self.ln1 = LayerNorm(cfg.d_model)\n    self.attn = MultiHeadAttention(cfg)\n\n    self.ln2 = LayerNorm(cfg.d_model)\n    self.mlp = MLP(cfg)\n\n  def forward(self, x):\n\n    # Attention + residual\n    x = x + self.attn(self.ln1(x))\n\n    # MLP + residual\n    x = x + self.mlp(self.ln2(x))\n\n    return x"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#the-complete-vision-transformer",
+    "href": "blogs/posts/ViT_From_Scratch.html#the-complete-vision-transformer",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "We can now assemble the complete model.\nThe input image is converted into patch embeddings, a class token is added, and the resulting sequence is processed through several Transformer blocks.\nThe final class token representation is passed through a classification head to produce logits for each class.\nImage\n  ↓\nPatch Embedding\n  ↓\nClass Token + Positional Embeddings\n  ↓\nTransformer Blocks\n  ↓\nFinal LayerNorm\n  ↓\nClass Token\n  ↓\nLinear Classification Head\n  ↓\nClass Logits\nThe model output is:\n(B, n_classes)\nwhere each row contains the classification logits for one image.\n\n\nCode\nclass ViT(nn.Module):\n  def __init__(self, cfg: Config):\n    super().__init__()\n    self.cfg = cfg\n    self.embed = ViTEmbedding(cfg)\n    self.blocks = nn.ModuleList([TransformerBlock(cfg) for _ in range(cfg.n_layers)])\n    self.norm = LayerNorm(cfg.d_model)\n    self.head = nn.Linear(cfg.d_model, cfg.num_classes)\n    self.apply(self._init_weights)\n\n  def _init_weights(self, m):\n    if isinstance(m, nn.Linear):\n      nn.init.trunc_normal_(m.weight, std=0.02)\n      if m.bias is not None:\n        nn.init.zeros_(m.bias)\n    elif isinstance(m, nn.LayerNorm):\n      nn.init.zeros_(m.bias)\n      nn.init.ones_(m.weight)\n\n  def forward(self, x):\n    x = self.embed(x)\n    for block in self.blocks:\n      x = block(x)\n    x = self.norm(x)\n    cls_out = x[:, 0]\n    return self.head(cls_out)"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#dataset",
+    "href": "blogs/posts/ViT_From_Scratch.html#dataset",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "To keep the experiment simple, we use a small dataset for image classification.\nThe purpose of this dataset is not to evaluate the full capabilities of Vision Transformers. Instead, it provides a manageable environment for checking whether the model can learn useful visual representations.\nA small dataset also makes it easier to inspect training behavior and experiment with the architecture.\n\n\nCode\n# Sanity Check\n\ncfg = Config()\nmodel = ViT(cfg).to(device)\n\n# Fake images\nx = torch.randn(4, cfg.in_channels, cfg.img_size, cfg.img_size).to(device)\nlogits = model(x)\n\nprint(\"Logits shape:\", logits.shape)          # expected: (4, 10)\nprint(\"Number of parameters:\", sum(p.numel() for p in model.parameters()))\n\n\nLogits shape: torch.Size([4, 10])\nNumber of parameters: 807818\n\n\n\n\n\n\nCode\ndef get_batch(batch_size, cfg, device):\n    x = torch.randn(batch_size, cfg.in_channels, cfg.img_size, cfg.img_size, device=device)\n    y = torch.randint(0, cfg.num_classes, (batch_size,), device=device)\n    return x, y"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#loss-function",
+    "href": "blogs/posts/ViT_From_Scratch.html#loss-function",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "Code\ndef compute_loss(logits, targets):\n    return F.cross_entropy(logits, targets)"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#training",
+    "href": "blogs/posts/ViT_From_Scratch.html#training",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "The training loop follows the same general workflow as the language Transformer.\nFor each batch:\n\nPass the images through the model.\nCalculate the classification loss.\nBackpropagate through the model.\nUpdate the parameters using the optimizer.\n\nThe main difference is the training objective.\nInstead of predicting the next token, the Vision Transformer predicts a class label for each image.\nThe model is trained using cross-entropy loss over the classification logits.\n\n\nCode\noptimizer = torch.optim.AdamW(model.parameters(), lr=1e-3)\n\nnum_steps = 200\nfor step in range(num_steps):\n    model.train()\n    x, y = get_batch(batch_size=16, cfg=cfg, device=device)\n\n    logits = model(x)\n    loss = compute_loss(logits, y)\n\n    optimizer.zero_grad(set_to_none=True)\n    loss.backward()\n    optimizer.step()\n\n    if step % 50 == 0:\n        print(f\"Step {step:3d} | Loss: {loss.item():.4f}\")\n\n\nStep   0 | Loss: 2.2782\nStep  50 | Loss: 2.2705\nStep 100 | Loss: 2.2685\nStep 150 | Loss: 2.3349"
+  },
+  {
+    "objectID": "blogs/posts/ViT_From_Scratch.html#evaluation",
+    "href": "blogs/posts/ViT_From_Scratch.html#evaluation",
+    "title": "Vision Transformer from Scratch",
+    "section": "",
+    "text": "Training loss alone does not tell us whether the model generalizes to unseen images.\nWe therefore evaluate the model on a separate validation or test set.\nThe main metric for this classification task is accuracy:\n\\[\n\\text{Accuracy}\n=\n\\frac{\\text{Correct Predictions}}\n{\\text{Total Predictions}}\n\\]\nFor a small learning experiment, accuracy and loss provide a useful first indication of whether the model is learning the intended visual patterns.\n\n\nCode\nmodel.eval()\nwith torch.no_grad():\n    x, y = get_batch(4, cfg, device)\n    logits = model(x)\n    preds = logits.argmax(dim=-1)\n    print(\"Predictions:\", preds.tolist())\n    print(\"Targets:    \", y.tolist())\n\n\nPredictions: [3, 3, 3, 3]\nTargets:     [2, 9, 0, 3]"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html",
+    "href": "blogs/posts/Bear_Classifier.html",
     "title": "Bear Classifier",
     "section": "",
-    "text": "Bearify is a lightweight image classifier built with fastai and deployed as a Gradio web app on Hugging Face Spaces. Pick or drop a photo of a bear and the model will call it a teddy, grizzly, or black bear — try it live below, then read the blog post for the full build.\n\n\n\n\nThe model behind the app is trained on the Bears FastAI dataset.\n\n\n\n Back to top"
+    "text": "In this notebook, we will use a vision classifer to classfiy bear(teddy, black & grizzly) and deploy the model as web app using huggiface gradio space.\nfrom fastai.vision.all import *"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html#data",
+    "href": "blogs/posts/Bear_Classifier.html#data",
+    "title": "Bear Classifier",
+    "section": "Data",
+    "text": "Data\nThe data is being imported from Kaggle\nDataset - anirudhg15/bears-fastai-2021\n\nfrom google.colab import userdata\nimport os\n\nos.environ[\"KAGGLE_KEY\"] = userdata.get('KAGGLE_KEY')\nos.environ[\"KAGGLE_USERNAME\"] = userdata.get('KAGGLE_USERNAME')\n\n\n!kaggle datasets download -d anirudhg15/bears-fastai-2021\n! unzip \"bears-fastai-2021\"\n\n\nfrom pathlib import Path\n\n\npath = Path('bears')\n\n\nbl_bear = (path/'black').ls().sorted()\nbl_bear[1]\n\nPath('bears/black/00000001.jpg')\n\n\n\nImage.open(bl_bear[1])"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html#dls-function-fastai-explaination",
+    "href": "blogs/posts/Bear_Classifier.html#dls-function-fastai-explaination",
+    "title": "Bear Classifier",
+    "section": "DLS function fastai explaination",
+    "text": "DLS function fastai explaination\n\ndef get_dls(bs, size):\n  dblock = DataBlock(blocks=(ImageBlock, CategoryBlock),\n                     get_items=get_image_files,\n                     splitter=RandomSplitter(),\n                     get_y=parent_label,\n                     item_tfms=Resize(size))\n\n  return dblock.dataloaders(path, bs=bs)\n\n\ndls = get_dls(64, 224)\n\n\ndls.show_batch(nrows=1, ncols=3)\n\n\n\n\n\n\n\n\n\nlearn = cnn_learner(dls, resnet18, metrics=error_rate)\nlearn.fine_tune(4)\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n1.629151\n0.250812\n0.122807\n00:21\n\n\n\n\n\n\n\n\n\n\n\n\nepoch\ntrain_loss\nvalid_loss\nerror_rate\ntime\n\n\n\n\n0\n0.429806\n0.061032\n0.017544\n00:22\n\n\n1\n0.268742\n0.013778\n0.000000\n00:21\n\n\n2\n0.186102\n0.013141\n0.000000\n00:21\n\n\n3\n0.139788\n0.016549\n0.017544\n00:20"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html#interpretting-the-model",
+    "href": "blogs/posts/Bear_Classifier.html#interpretting-the-model",
+    "title": "Bear Classifier",
+    "section": "Interpretting the model",
+    "text": "Interpretting the model\n\ninterp = ClassificationInterpretation.from_learner(learn)\ninterp.plot_confusion_matrix()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ninterp.plot_top_losses(5, nrows=1, figsize=(17,4))"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html#prediction",
+    "href": "blogs/posts/Bear_Classifier.html#prediction",
+    "title": "Bear Classifier",
+    "section": "Prediction",
+    "text": "Prediction\n\nlearn.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html#saving-the-model",
+    "href": "blogs/posts/Bear_Classifier.html#saving-the-model",
+    "title": "Bear Classifier",
+    "section": "Saving the Model",
+    "text": "Saving the Model\n\nlearn.export(fname='bear_model.pkl', pickle_module=pickle, pickle_protocol=2)"
+  },
+  {
+    "objectID": "blogs/posts/Bear_Classifier.html#reload-model",
+    "href": "blogs/posts/Bear_Classifier.html#reload-model",
+    "title": "Bear Classifier",
+    "section": "Reload Model",
+    "text": "Reload Model\n\nreload_model=load_learner('bear_model.pkl', cpu=True, pickle_module=pickle)\nreload_model\n\n&lt;fastai.learner.Learner at 0x7bd9edf06890&gt;\n\n\n\nreload_model.predict('/content/bears/black/00000017.jpg')\n\n\n\n\n\n\n\n\n('black', tensor(0), tensor([9.9993e-01, 1.4458e-06, 7.3126e-05]))"
+  },
+  {
+    "objectID": "apps/apps.html",
+    "href": "apps/apps.html",
+    "title": "Apps",
+    "section": "",
+    "text": "RAG Search Engine\n\n\n\nRAG\n\nsearch\n\nGradio\n\nmultimodal\n\n\n\nHybrid search + RAG + CLIP image search over 5 000 movies\n\n\n\n\n\n\nSeptember 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nAsteroids\n\n\n\npygame\n\ngame\n\nwebassembly\n\n\n\nPlay a classic Asteroids clone in the browser, built with Python and Pygame and deployed with pygbag on GitHub Pages.\n\n\n\nUtkarsh736\n\n\nSeptember 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatic Site Generator\n\n\n\npython\n\nstatic-site\n\nmarkdown\n\n\n\nA from-scratch Python static site generator that turns Markdown into a themed site — live demo of the Tolkien Fan Club sample.\n\n\n\nUtkarsh736\n\n\nJanuary 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGradio Docker Demo\n\n\n\ndocker\n\ngradio\n\n\n\nA minimal Gradio app packed in Docker and served on Hugging Face Spaces — a sandbox for deployment experiments.\n\n\n\nUtkarsh736\n\n\nJune 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nBear Classifier\n\n\n\ncomputer vision\n\ngradio\n\n\n\nA Gradio app to classify bears into ‘Teddy’, ‘Grizzly’, or ‘Black’ — served live from Hugging Face Spaces.\n\n\n\nUtkarsh736\n\n\nJune 22, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "apps/posts/Asteroids.html",
+    "href": "apps/posts/Asteroids.html",
+    "title": "Asteroids",
+    "section": "",
+    "text": "A classic Asteroids arcade game written in Python and Pygame, packaged for the web with pygbag so it runs entirely in the browser via WebAssembly. Use W/A/S/D to move and Space to shoot.\n\n\n\n\nBuilt as part of learning game loops, sprite groups, and collision handling in Pygame. Source: Utkarsh736/asteroids.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "apps/posts/StaticSiteGenerator.html",
+    "href": "apps/posts/StaticSiteGenerator.html",
+    "title": "Static Site Generator",
+    "section": "",
+    "text": "A static site generator written in pure Python (no external dependencies). It parses Markdown into a custom node tree, injects content into an HTML template, and copies static assets — then deploys to GitHub Pages. The live demo is a small Tolkien-themed sample site produced by the generator.\n\n\n\n\nBuilt for the Boot.dev course. Supports headings, lists, blockquotes, code blocks, links, images, recursive nested content, and configurable base paths for GitHub Pages subdirectory hosting. Source: Utkarsh736/static-site-generator.\n\n\n\n Back to top"
   }
 ]

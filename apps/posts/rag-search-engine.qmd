@@ -1,0 +1,24 @@
+---
+title: "RAG Search Engine"
+description: "Hybrid search + RAG + CLIP image search over 5 000 movies"
+date: 2026-09-17
+categories: [RAG, search, Gradio, multimodal]
+image: /assets/rag-search-engine/rag-demo_thumbnail.jpg   
+---
+
+Interactive demo of the [rag-search-engine](https://github.com/Utkarsh736/rag-search-engine) project.
+
+- **Hybrid Search** (BM25 + semantic embeddings with Reciprocal Rank Fusion)
+- **RAG + Citations** powered by Gemini
+- **Image Search** with CLIP
+
+```{=html}
+<iframe
+  src="https://utkarsh736-rag-search-engine.hf.space"
+  width="100%"
+  height="720"
+  frameborder="0"
+  style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>

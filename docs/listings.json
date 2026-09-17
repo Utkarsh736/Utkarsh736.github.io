@@ -2,6 +2,7 @@
   {
     "listing": "/apps/apps.html",
     "items": [
+      "/apps/posts/rag-search-engine.html",
       "/apps/posts/Asteroids.html",
       "/apps/posts/StaticSiteGenerator.html",
       "/apps/posts/Testing.html",
@@ -19,6 +20,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/apps/posts/rag-search-engine.html",
       "/apps/posts/Asteroids.html",
       "/apps/posts/StaticSiteGenerator.html",
       "/apps/posts/Testing.html",

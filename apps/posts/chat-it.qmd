@@ -1,0 +1,31 @@
+---
+title: "Chat It"
+description: "A clean, streaming AI chatbot built with Next.js and the Vercel AI SDK"
+date: 2026-09-20
+categories: [AI, chatbot, Next.js, Vercel]
+image: /assets/chat-it-thumb.png   # optional – add a screenshot later
+---
+
+A lightweight conversational AI interface powered by the Vercel AI SDK.
+
+Ask questions, generate code, draft writing, or explore ideas — with fast streaming responses and a minimal UI.
+
+**Stack**
+- Next.js App Router
+- Vercel AI SDK
+- Streaming chat UI
+- Deployed on Vercel
+
+```{=html}
+<iframe
+  src="https://chat-it-rose.vercel.app"
+  width="100%"
+  height="700"
+  style="border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);"
+  frameborder="0"
+  allow="clipboard-write"
+  data-external="1"
+></iframe>
+```
+[Open live app ↗](https://chat-it-rose.vercel.app)
+

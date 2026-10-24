@@ -1,0 +1,51 @@
+---
+title: "Meaify"
+subtitle: "AI-assisted handwritten exam evaluator — OCR, rubric scoring, and LLM feedback."
+author: "Utkarsh736"
+date: 2026-10-20
+description: "Upload a handwritten answer sheet → vision OCR → hybrid rubric scoring → AI feedback → voice-enabled chatbot. Teacher-in-the-loop review and grading history."
+categories:
+  - OCR
+  - education
+  - Next.js
+  - LLM
+image: # add a thumbnail later
+format:
+  html:
+    other-links:
+      - text: Source on GitHub
+        href: https://github.com/Utkarsh736/meaify
+      - text: Live demo
+        href: https://meaify.vercel.app
+    toc: false
+---
+
+Upload a handwritten answer sheet → AI-assisted OCR → rubric grading → AI feedback → voice-enabled chatbot.
+
+Built with **Next.js · TypeScript · Tailwind · Prisma + SQLite**. Powered by **Groq** (free tier) with **Gemini** as failsafe and **Hugging Face** embeddings.
+
+**Features**
+
+- **Vision OCR** (Groq → Gemini fallback) on handwritten sheets
+- **Hybrid rubric scoring** — 0.6 × semantic similarity + 0.4 × keyword match (Porter-stemmer tolerant)
+- **AI feedback** per question, regeneratable with one click
+- **Voice chatbot** — Web Speech API with Groq Whisper fallback
+- **Rubric manager** — JSON rubrics under `/rubrics/`, easy to git-track
+- **Grading history** — every submission persists via Prisma
+
+```{=html}
+<iframe
+  src="https://meaify.vercel.app"
+  width="100%"
+  height="720"
+  style="border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);"
+  frameborder="0"
+  allow="clipboard-write; microphone"
+  loading="lazy"
+  title="Meaify — live demo"
+></iframe>
+```
+
+[Open live app ↗](https://meaify.vercel.app)
+
+Source: [Utkarsh736/meaify](https://github.com/Utkarsh736/meaify).

@@ -1,0 +1,33 @@
+---
+title: "VLM Lab"
+subtitle: "Hands-on Vision Language Model pretraining, fine-tuning, and evaluation."
+author: "Utkarsh736"
+date: 2026-09-28
+description: "Structured workspace for building small VLMs from scratch, fine-tuning open weights (SmolVLM, Qwen2-VL, SigLIP), and multimodal applications — aimed at free-tier compute."
+categories:
+  - VLM
+  - multimodal
+  - fine-tuning
+  - research
+format:
+  html:
+    other-links:
+      - text: Source on GitHub
+        href: https://github.com/Utkarsh736/vlm-lab
+    toc: false
+---
+
+A hands-on repository for Vision Language Model (VLM) pretraining, fine-tuning, evaluation, and multimodal application experiments.
+
+**Structure**
+
+- **01_pretraining** — small VLM training from scratch (NanoVLM / SmolVLM) & loss tracking
+- **02_finetuning** — SFT, PEFT/QLoRA, and preference alignment (DPO/MPO)
+- **03_benchmarking** — latency, TTFT, and throughput metrics
+- **04_applications** — document AI, Video-RAG pipelines, and agentic workflows
+
+Built to work on free-tier environments like Google Colab and Kaggle, covering both custom small models and modern open weights (SmolVLM, Qwen2-VL, SigLIP).
+
+**Stack:** Python, PyTorch, Transformers, Accelerate, bitsandbytes.
+
+Source: [Utkarsh736/vlm-lab](https://github.com/Utkarsh736/vlm-lab).

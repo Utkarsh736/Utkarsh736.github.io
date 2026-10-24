@@ -1,0 +1,35 @@
+---
+title: "Open Cricket Analytics"
+subtitle: "End-to-end open-data pipeline for Cricsheet — clean tables, descriptive metrics, Streamlit explorer."
+author: "Utkarsh736"
+date: 2026-09-22
+description: "Ingest Cricsheet match JSON, build clean CSV tables, and explore descriptive cricket metrics. WPL is the starter dataset; the same parser supports any conforming Cricsheet archive."
+categories:
+  - cricket
+  - data
+  - Streamlit
+  - analytics
+format:
+  html:
+    other-links:
+      - text: Source on GitHub
+        href: https://github.com/Utkarsh736/open-cricket-analytics
+    toc: false
+---
+
+A small, end-to-end open-data project for ingesting Cricsheet match data, building clean CSV tables, and exploring descriptive cricket metrics.
+
+WPL is the initial dataset, not a hard-coded limit: the same parser and analytics functions support any Cricsheet JSON archive whose records conform to the published schema.
+
+**What you get**
+
+- Reusable Python package + scripts for download, parse, and stage-1/stage-2 tables
+- Matches, deliveries, batting/bowling summaries, phase summaries, quality report
+- Streamlit explorer for matches, scorecards, players, phase scoring, and tables
+- Jupyter notebook for deeper exploratory analysis
+
+No ML model is trained yet — the focus is solid ingestion, honest metric definitions, and reproducible tables.
+
+**Stack:** Python, uv, Pandas, Streamlit, Cricsheet data.
+
+Source: [Utkarsh736/open-cricket-analytics](https://github.com/Utkarsh736/open-cricket-analytics).

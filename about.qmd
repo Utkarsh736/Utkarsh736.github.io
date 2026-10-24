@@ -12,7 +12,7 @@ image: assets/display.jpg
 
 # Hi, I'm Utkarsh. {.about-name}
 
-[Machine Learning Engineer @ Omdena · Cricket Analyst]{.about-role}
+[Data Scientist & AI/ML Engineer · Computer Vision · NLP · Generative AI · MLOps]{.about-role}
 
 ::: {.social-chips}
 
@@ -32,11 +32,59 @@ image: assets/display.jpg
 
 ## Bio
 
-Hello! I'm a machine learning engineer and sports analyst with a focus on cricket. At [Omdena](https://omdena.com) I build and ship models for real business problems — from computer vision and object detection to tabular learning and ensemble methods. I care about the whole lifecycle: clean data pipelines, honest experiments, and models that survive contact with production.
+Data Scientist and AI/ML Engineer with 3+ years building end-to-end ML systems across computer vision, NLP, generative AI, and big data — from social-impact and geospatial domains to multimodal search and LLM applications. Grounded in the full data engineering stack: Hadoop, Spark, Hive, cloud pipelines, and ETL at scale. Currently deepening work in transformer architectures, RAG systems, embedding fine-tuning, and LLM fine-tuning.
 
-I'm a polyglot programmer at heart. Python is home, with C, Golang, and Rust next on the bench — I enjoy learning how different languages think about the same problem. Away from the keyboard you'll find me following cricket, hockey, MMA, and the NFL, or exploring the world of movies. Sports are where my two worlds meet: data that moves, and stories that numbers can tell.
+Comfortable moving between IC model work and leading cross-functional teams (up to 65 contributors). Treats MLOps, reproducibility, versioning, and pipeline hygiene as core engineering, not an afterthought. Away from the keyboard: cricket, hockey, MMA, the NFL, and movies.
 
 ## Skills
+
+::: {.chip-group}
+
+::: {.chip-group-label}
+ML / AI
+:::
+
+::: {.chips}
+[Computer Vision]{.chip} [YOLO]{.chip} [SAM]{.chip} [NLP]{.chip} [Generative AI]{.chip} [RAG]{.chip} [Embedding Fine-tuning]{.chip} [LoRA]{.chip} [Matryoshka/MRL]{.chip} [Transformers]{.chip} [LLM Fine-tuning]{.chip} [PyTorch]{.chip} [TensorFlow]{.chip}
+:::
+
+:::
+
+::: {.chip-group}
+
+::: {.chip-group-label}
+Big Data & Pipelines
+:::
+
+::: {.chips}
+[Hadoop]{.chip} [Spark]{.chip} [Hive]{.chip} [Airflow]{.chip} [ETL/ELT]{.chip} [Delta Lake]{.chip}
+:::
+
+:::
+
+::: {.chip-group}
+
+::: {.chip-group-label}
+MLOps
+:::
+
+::: {.chips}
+[DVC]{.chip} [MLflow]{.chip} [Git]{.chip} [Docker]{.chip} [experiment tracking]{.chip}
+:::
+
+:::
+
+::: {.chip-group}
+
+::: {.chip-group-label}
+Data & Cloud
+:::
+
+::: {.chips}
+[Python]{.chip} [SQL]{.chip} [Pandas]{.chip} [Tableau]{.chip} [AWS]{.chip} [Azure]{.chip} [Streamlit]{.chip} [Gradio]{.chip} [Hugging Face]{.chip}
+:::
+
+:::
 
 ::: {.chip-group}
 
@@ -45,43 +93,7 @@ Languages
 :::
 
 ::: {.chips}
-[Python]{.chip} [C]{.chip} [Golang]{.chip} [Rust]{.chip}
-:::
-
-:::
-
-::: {.chip-group}
-
-::: {.chip-group-label}
-Machine Learning & Data
-:::
-
-::: {.chips}
-[PyTorch]{.chip} [TensorFlow]{.chip} [Keras]{.chip} [scikit-learn]{.chip} [XGBoost]{.chip} [YOLOv5]{.chip} [Pandas]{.chip} [NumPy]{.chip} [Matplotlib]{.chip} [Seaborn]{.chip}
-:::
-
-:::
-
-::: {.chip-group}
-
-::: {.chip-group-label}
-MLOps & Tooling
-:::
-
-::: {.chips}
-[Git]{.chip} [DVC]{.chip} [MLflow]{.chip} [Tableau]{.chip} [Gradio]{.chip}
-:::
-
-:::
-
-::: {.chip-group}
-
-::: {.chip-group-label}
-Domains
-:::
-
-::: {.chips}
-[Computer Vision]{.chip} [Object Detection]{.chip} [Cricket Analytics]{.chip} [Video Analytics]{.chip} [Ensemble Modeling]{.chip}
+[Python]{.chip} [SQL]{.chip} [R]{.chip} [Go]{.chip}
 :::
 
 :::
@@ -92,17 +104,15 @@ Domains
 
 ::: {.timeline-item}
 
-[Machine Learning Engineer — Omdena]{.timeline-role}
+[Data Scientist / Product Manager — Omdena]{.timeline-role}
 
-[Omdena]{.timeline-org}
+[Omdena · Project-based]{.timeline-org}
 [May 2022 — Present]{.timeline-dates}
 
-- Developed and deployed machine learning models — Random Forest, XGBoost, and deep learning architectures like YOLOv5 and YOLT — across diverse business applications.
-- Implemented computer vision neural networks for object detection, strengthening image-processing pipelines end to end.
-- Engineered data pipelines with Python, Pandas, and NumPy to process large datasets and surface actionable insights.
-- Built and optimized neural architectures with PyTorch, TensorFlow, and Keras; applied ensemble techniques to push model performance further.
-- Established model versioning and experiment tracking with Git, DVC, and MLflow, and visualized results with Matplotlib and Seaborn for stakeholders.
-- Partnered with cross-functional teams to propose and implement AI-driven solutions to business challenges.
+- Architected and deployed end-to-end ML solutions across CV, NLP, and generative AI, handling data pipeline design through model deployment for multiple production use cases.
+- Led project delivery for multi-disciplinary teams (up to 65 contributors), coordinating engineers, domain experts, and business stakeholders to ship on time.
+- Established team-wide MLOps standards using Git, DVC, and MLflow, reducing experiment chaos and making model reproduction a non-issue.
+- Translated model performance into business-facing insights; owned stakeholder communication from progress updates to final deliverables.
 
 :::
 
@@ -111,13 +121,39 @@ Domains
 [Cricket Video Analyst — Mad About Sports]{.timeline-role}
 
 [Mad About Sports · Intern]{.timeline-org}
-[Video & Performance Analytics]{.timeline-dates}
+[2022]{.timeline-dates}
 
-- Conducted in-depth analysis of batsmen and bowlers using video analytics and data visualization, identifying strengths, weaknesses, and strategic matchups.
-- Processed and visualized complex cricket performance data with the Python ecosystem and Tableau.
-- Developed and presented data-driven recommendations that contributed to improved player performance and team strategy.
-- Applied machine learning to predict player performance trends and inform training regimens.
-- Collaborated with analysts and coaches to produce high-quality analytical reports and presentations.
+- Built player performance analytics in Python (Pandas, NumPy, Matplotlib, Seaborn) and Tableau from raw video and match data.
+- Developed predictive models for batting/bowling performance trends; findings fed directly into coaching and selection strategy.
+
+:::
+
+:::
+
+## Education
+
+::: {.timeline}
+
+::: {.timeline-item}
+
+[PG Certificate Programme in Big Data Analytics (PGCP-BDA)]{.timeline-role}
+
+[C-DAC]{.timeline-org}
+[2026]{.timeline-dates}
+
+- Big Data Engineering: Hadoop ecosystem (HDFS, MapReduce, YARN), Hive, HBase, Spark, Airflow-based ETL, Data Lakes & Lakehouses (Delta Lake).
+- Deep Learning & Generative AI: CNNs, RNNs, transfer learning, object detection/segmentation; Transformers, BERT, LLMs, fine-tuning & alignment (RLHF), SLM/LLM deployment.
+
+:::
+
+::: {.timeline-item}
+
+[B.Tech — Information Technology]{.timeline-role}
+
+[GGSIPU, Delhi]{.timeline-org}
+[2017 — 2021]{.timeline-dates}
+
+GPA 7.7 · Relevant coursework: Data Structures, Algorithms, Database Systems, Statistics.
 
 :::
 
@@ -133,7 +169,7 @@ Domains
 
 [Get in touch]{.cta-title}
 
-The fastest way to reach me is [LinkedIn](https://www.linkedin.com/in/utkarsh736/) — or say hi on any platform below. Always happy to talk machine learning, cricket analytics, or trade movie recommendations.
+The fastest way to reach me is [LinkedIn](https://www.linkedin.com/in/utkarsh736/) — or say hi on any platform below. Always happy to talk machine learning, RAG, embeddings, cricket analytics, or trade movie recommendations.
 
 ::: {.social-chips}
 
@@ -145,5 +181,4 @@ The fastest way to reach me is [LinkedIn](https://www.linkedin.com/in/utkarsh736
 
 :::
 
-[<i class="bi bi-file-earmark-person"></i> Download resume](assets/Resources/resume.pdf){.btn .btn-outline-secondary}
 :::

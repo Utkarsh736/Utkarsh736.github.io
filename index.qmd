@@ -1,9 +1,9 @@
 ---
-title: "Utkarsh736 — Machine Learning Engineer & Sports Analyst"
+title: "Utkarsh736 — Data Scientist & AI/ML Engineer"
 image: assets/display.jpg
 listing:
-  - id: landing-apps
-    contents: apps/posts
+  - id: landing-projects
+    contents: projects/posts
     type: grid
     max-items: 2
     grid-columns: 2
@@ -24,13 +24,13 @@ listing:
 
 [Hi, I'm Utkarsh]{.kicker}
 
-# Building useful ML — and writing about it.
+# Building end-to-end ML systems — and writing about them.
 
-I'm a machine learning engineer at Omdena and a sports analyst focused on cricket. By day I turn messy data into models that actually work — the rest of the time I'm following cricket, hockey, MMA, and the NFL.
+Data Scientist and AI/ML Engineer with 3+ years shipping computer vision, NLP, generative AI, and big-data systems. Currently focused on transformers, RAG, embedding fine-tuning, and LLM applications.
 
 ::: {.hero-actions}
 
-[About me](about.qmd){.btn .btn-primary} [Explore apps](apps/apps.qmd){.btn .btn-outline-secondary}
+[About me](about.qmd){.btn .btn-primary} [Explore projects](projects/projects.qmd){.btn .btn-outline-secondary}
 
 :::
 
@@ -51,7 +51,7 @@ I'm a machine learning engineer at Omdena and a sports analyst focused on cricke
 ::: {.hero-side}
 
 ::: {.hero-photo}
-![ML Engineer · Cricket Analyst](assets/display.jpg)
+![Data Scientist · AI/ML Engineer](assets/display.jpg)
 :::
 
 :::
@@ -61,16 +61,16 @@ I'm a machine learning engineer at Omdena and a sports analyst focused on cricke
 ::: {.section-head}
 ::: {}
 
-## Featured Apps
+## Featured Projects
 
-Small, useful tools — mostly Gradio apps deployed on Hugging Face Spaces.
+Tools, labs, and production-minded experiments across CV, NLP, agents, and retrieval.
 
 :::
 
-[All apps <i class="bi bi-arrow-right"></i>](apps/apps.qmd){.section-more}
+[All projects <i class="bi bi-arrow-right"></i>](projects/projects.qmd){.section-more}
 :::
 
-::: {#landing-apps}
+::: {#landing-projects}
 :::
 
 ::: {.section-head}
@@ -78,7 +78,7 @@ Small, useful tools — mostly Gradio apps deployed on Hugging Face Spaces.
 
 ## Latest Writing
 
-Notes on machine learning, experiments, and sports analytics.
+Notes on machine learning, transformers, and experiments.
 
 :::
 

@@ -1,0 +1,33 @@
+---
+title: "Auditor"
+subtitle: "Agentic security auditor — CLI + dashboard for code and LLM apps."
+author: "Utkarsh736"
+date: 2026-10-18
+description: "Deterministic security scanners (~40 rules across 7 categories) with optional LLM-enriched remediation, a CLI, and a Next.js dashboard."
+categories:
+  - security
+  - agentic
+  - CLI
+  - LLM
+format:
+  html:
+    other-links:
+      - text: Source on GitHub
+        href: https://github.com/Utkarsh736/audit
+    toc: false
+---
+
+Security auditing for code projects and LLM applications.
+
+| Component | What it does |
+| --- | --- |
+| **Engine** | Python package with 7 deterministic scanner categories (~40 rules): secrets, prompt injection, PII, authentication, insecure output handling, dangerous code, and configuration. OWASP/CWE knowledge base, optional LLM enrichment, and safe auto-fixes. |
+| **CLI** | `audit scan`, `audit explain`, `audit fix`, `audit info` — CI-friendly exit codes and JSON output. |
+| **Dashboard** | Next.js web UI over the same CLI — scan local projects, browse findings with remediation detail, shared history. |
+| **Demo** | Intentionally vulnerable LLM chatbot with planted findings for end-to-end testing. |
+
+Fully functional offline; the LLM layer only adds deeper, code-specific remediation on top of the built-in knowledge base.
+
+**Stack:** Python, Next.js, TypeScript, OWASP/CWE knowledge base.
+
+Source: [Utkarsh736/audit](https://github.com/Utkarsh736/audit).

@@ -1,8 +1,8 @@
 ---
-title: "Apps"
-subtitle: "Small tools I've built — mostly Gradio apps deployed on Hugging Face Spaces."
+title: "Projects"
+subtitle: "Tools, labs, and experiments — Gradio apps, CLI tools, agent systems, and research code."
 listing:
-  - id: apps
+  - id: projects
     contents: posts
     type: grid
     grid-columns: 3
@@ -13,5 +13,5 @@ listing:
 title-block-banner: body
 ---
 
-::: {#apps}
+::: {#projects}
 :::

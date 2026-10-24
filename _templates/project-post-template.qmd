@@ -1,0 +1,26 @@
+---
+title: "Project Name"
+subtitle: "One line describing what the project does."
+author: "Utkarsh736"
+date: 2026-01-01
+date-modified: last-modified
+image: /assets/your-thumbnail.png
+description: "One-sentence summary used on the Projects grid card."
+categories:
+  - category
+format:
+  html:
+    other-links:
+      - text: Source on GitHub
+        href: https://github.com/Utkarsh736/your-repo
+    toc: false
+---
+
+One or two sentences introducing the project: what it does, what powers it, and
+where it runs (if anywhere).
+
+::: {.app-frame}
+<iframe src="https://YOUR_DEMO_URL" height="520" loading="lazy" title="Live demo"></iframe>
+:::
+
+Optional closing notes — stack, limitations, links. Leave the iframe out if there is no live demo yet.

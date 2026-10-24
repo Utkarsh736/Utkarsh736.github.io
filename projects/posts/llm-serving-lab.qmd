@@ -1,0 +1,34 @@
+---
+title: "LLM Serving Lab"
+subtitle: "Pedagogical reimplementation of the LLM serving stack — KV cache, batching, paged memory, gateway."
+author: "Utkarsh736"
+date: 2026-10-08
+description: "Five layers built in order: KV cache, continuous batching, paged memory, vLLM config sweeps, and a FastAPI gateway — written to understand how vLLM, TGI, and TensorRT-LLM actually work."
+categories:
+  - LLM
+  - systems
+  - PyTorch
+  - serving
+format:
+  html:
+    other-links:
+      - text: Source on GitHub
+        href: https://github.com/Utkarsh736/llm-serving-lab
+    toc: false
+---
+
+A pedagogical reimplementation of the LLM serving stack — KV cache, continuous batching, paged memory, and a gateway — written to understand how vLLM, TGI, and TensorRT-LLM actually work.
+
+| Layer | Status |
+| --- | --- |
+| KV cache | Done — naive vs cached decode, equivalence tests, benchmarks |
+| Continuous batching | Done — token-level scheduler simulator, naive vs continuous policies |
+| Paged memory | Done — block allocator + page tables (PagedAttention-style) |
+| vLLM config sweep | Done — real hardware (T4) throughput and latency measurements |
+| FastAPI gateway | Done |
+
+Highlights include measured decode speedups (up to ~64× at long sequences), continuous-batching throughput and tail-latency wins, and paged admission of ~9× more concurrent sequences than naive pre-allocation at bounded waste.
+
+**Stack:** Python, PyTorch, uv, FastAPI, vLLM benchmarks.
+
+Source: [Utkarsh736/llm-serving-lab](https://github.com/Utkarsh736/llm-serving-lab).

@@ -3,7 +3,13 @@ title: "RAG Search Engine"
 description: "Hybrid search + RAG + CLIP image search over 5 000 movies"
 date: 2026-09-17
 categories: [RAG, search, Gradio, multimodal]
-image: /assets/rag-search-engine/rag-demo_thumbnail.jpg   
+image: /assets/rag-search-engine/rag-demo_thumbnail.jpg
+format:
+  html:
+    other-links:
+      - text: Source on GitHub
+        href: https://github.com/Utkarsh736/rag-search-engine
+    toc: false
 ---
 
 Interactive demo of the [rag-search-engine](https://github.com/Utkarsh736/rag-search-engine) project.
@@ -22,3 +28,6 @@ Interactive demo of the [rag-search-engine](https://github.com/Utkarsh736/rag-se
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen
 ></iframe>
+```
+
+**Stack:** Python, BM25, Sentence Transformers, CLIP, Gemini API, Gradio, Hugging Face Spaces.

@@ -1,0 +1,42 @@
+---
+title: "Workflow Agent"
+subtitle: "An AI agent that turns arXiv into a personal daily digest."
+author: "Utkarsh736"
+date: 2026-10-05
+description: "Agentic pipeline: search arXiv, filter seen papers, summarize, write a Markdown digest. Tool-calling loop with Groq, SQLite memory, and rate limiting from day one."
+categories:
+  - agentic
+  - LLM
+  - arXiv
+  - tools
+format:
+  html:
+    other-links:
+      - text: Source on GitHub
+        href: https://github.com/Utkarsh736/workflow-agent
+    toc: false
+---
+
+An AI agent that automates a daily research workflow.
+
+Every day the agent:
+
+1. Searches arXiv for topics you care about.
+2. Filters out papers it has shown you before.
+3. Summarizes each new paper in 2–3 bullets.
+4. Writes a Markdown digest file.
+
+You talk to the agent in plain English; it decides which tools to call.
+
+**Design choices**
+
+- arXiv API over scraping
+- SQLite for seen-paper memory (lookup, not vectors)
+- Groq with tool calling (`qwen/qwen3-8b`-class models)
+- Run-scoped store, streaming summarizer, rate limiting from day one
+
+Phase 1 (agent core) is complete. Later phases: evals, cost tracking, reliability, and deploy.
+
+**Stack:** Python, Groq, SQLite, uv.
+
+Source: [Utkarsh736/workflow-agent](https://github.com/Utkarsh736/workflow-agent).

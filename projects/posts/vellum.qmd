@@ -1,0 +1,36 @@
+---
+title: "Vellum"
+subtitle: "Offline-first PDF & EPUB reader — desktop and Android, one Rust core."
+author: "Utkarsh736"
+date: 2026-10-12
+description: "Lightweight, private PDF and EPUB reader. Desktop (Tauri + React) and Android (Kotlin + Compose) share a Rust core. Zero telemetry, no network permission, no account."
+categories:
+  - Rust
+  - Tauri
+  - Android
+  - privacy
+format:
+  html:
+    other-links:
+      - text: Source on GitHub
+        href: https://github.com/Utkarsh736/vellum
+    toc: false
+---
+
+A lightweight, private, **offline-first** PDF & EPUB reader.
+
+Desktop (Tauri v2 · React · TypeScript · Tailwind) and Android (Kotlin · Jetpack Compose) share one Rust core. Book files stay on disk; the app never uploads, indexes, or copies their contents.
+
+**Zero telemetry. No network permission. No account.**
+
+**Features**
+
+- **Library** — import PDFs and EPUBs; covers, titles, and authors from file metadata
+- **Reading progress** — resume where you left off (PDF page or EPUB CFI)
+- **Desktop** — sidebar layout, virtualized cover grid, keyboard shortcuts, drag-and-drop
+- **Android** — Storage Access Framework, Material 3, TalkBack-friendly
+- **Privacy by design** — SQLite holds only library fields; covers in OS cache; no INTERNET on Android
+
+**Stack:** Rust (core), Tauri v2, React, TypeScript, Kotlin, Jetpack Compose, UniFFI.
+
+Source: [Utkarsh736/vellum](https://github.com/Utkarsh736/vellum).

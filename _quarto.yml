@@ -6,7 +6,7 @@ website:
   title: "Utkarsh736"
   favicon: assets/favicon.svg
   site-url: https://utkarsh736.github.io/
-  description: "Utkarsh — Machine Learning Engineer & cricket analytics enthusiast. I build useful models and write about what I learn."
+  description: "Utkarsh Tomar — Data Scientist & AI/ML Engineer. Computer vision, NLP, generative AI, RAG, embeddings, and MLOps."
   image: assets/display.jpg
   open-graph: true
   back-to-top-navigation: true
@@ -18,8 +18,8 @@ website:
         href: index.qmd
       - text: "Blogs"
         href: blogs/blogs.qmd
-      - text: "Apps"
-        href: apps/apps.qmd
+      - text: "Projects"
+        href: projects/projects.qmd
       - text: "About"
         href: about.qmd
     right:

@@ -11,16 +11,16 @@ _quarto.yml            Site config: pages, navbar, footer, theme, colors
 theme-light.scss       Light theme design tokens (colors, fonts, radii)
 theme-dark.scss        Dark theme design tokens (auto-paired toggle)
 styles.css             All component styling (hero, cards, chips, timeline...)
-index.qmd              Homepage: hero + featured apps + latest writing
-about.qmd              Bio, skills, experience timeline, contact block
+index.qmd              Homepage: hero + featured projects + latest writing
+about.qmd              Bio, skills, experience timeline, education, contact
 blogs/
   blogs.qmd            Blog listing page (renders automatically)
   posts/               Drop .qmd or .ipynb files here — done, they're live
-apps/
-  apps.qmd             Apps grid page (renders automatically)
-  posts/               One .qmd per app (Bearify, Docker demo)
+projects/
+  projects.qmd         Projects grid page (renders automatically)
+  posts/               One .qmd per project
 _templates/            Copy-paste starting points (ignored by Quarto)
-assets/                Images, resume, thumbnails (kept out of git — see below)
+assets/                Images, thumbnails (see note below)
 docs/                  Rendered site (this is what GitHub Pages serves)
 .github/workflows/     Optional CI publish workflow
 ```
@@ -36,10 +36,11 @@ single words in `[brackets]{.chip}`. Text only, no HTML needed.
 run `quarto render`, commit. New posts appear on the Blogs page and in the
 homepage "Latest Writing" list automatically.
 
-**Publish an app** — copy `_templates/app-post-template.qmd` into
-`apps/posts/`, swap in your Hugging Face Space URL in the iframe, add a
-thumbnail under `assets/`. It joins the Apps grid and the homepage "Featured
-Apps" section on its own.
+**Publish a project** — copy `_templates/project-post-template.qmd` into
+`projects/posts/`, fill in title/date/description/categories, link the GitHub
+repo, and optionally embed a demo iframe. It joins the Projects grid and the
+homepage "Featured Projects" section on its own. Skip the iframe if there is
+no live demo yet.
 
 **Change the accent color / fonts** — open `theme-light.scss` and
 `theme-dark.scss`. Every color is a small set of variables at the top plus the
@@ -64,7 +65,7 @@ branch. After making changes:
 ```bash
 quarto render
 git add .
-git commit -m "update site"
+git commit -m "[Update] site content"
 git push
 ```
 
@@ -76,9 +77,4 @@ CI-based publishing, switch the repo's Pages source to the `gh-pages` branch
 > thumbnails, and resume are NOT pushed to the public repo. The committed
 > `docs/` folder is what visitors see. If you ever switch to CI-only
 > publishing, remove `/assets/` from `.gitignore` so the render can find your
-> images — and keep `assets/Resources/resume.pdf` in mind when linking your CV
-> from the About page.
-
-## License
-
-[MIT](LICENSE)
+> images.

@@ -9,7 +9,6 @@ categories:
   - education
   - Next.js
   - LLM
-image: # add a thumbnail later
 format:
   html:
     other-links:

@@ -2,54 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://utkarsh736.github.io/about.html</loc>
-    <lastmod>2026-09-06T07:07:54.000Z</lastmod>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/apps.html</loc>
-    <lastmod>2026-09-06T07:08:23.000Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/projects.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/posts/Bearify.html</loc>
-    <lastmod>2026-09-06T07:21:13.000Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/Bearify.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/posts/StaticSiteGenerator.html</loc>
-    <lastmod>2026-09-15T14:11:55.934Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/StaticSiteGenerator.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/posts/Asteroids.html</loc>
-    <lastmod>2026-09-15T17:16:53.873Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/vlm-lab.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/projects/posts/vellum.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/projects/posts/Asteroids.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/projects/posts/llm-serving-lab.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/blogs/posts/ViT_From_Scratch.html</loc>
-    <lastmod>2026-09-15T17:18:07.991Z</lastmod>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/blogs/posts/Bear_Classifier.html</loc>
-    <lastmod>2026-09-06T07:22:45.000Z</lastmod>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/blogs/posts/Transformer_From_Scratch.html</loc>
-    <lastmod>2026-09-17T08:40:06.711Z</lastmod>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/blogs/blogs.html</loc>
-    <lastmod>2026-09-06T07:08:22.000Z</lastmod>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/posts/Testing.html</loc>
-    <lastmod>2026-09-06T07:21:13.000Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/audit.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/posts/rag-search-engine.html</loc>
-    <lastmod>2026-09-17T08:34:00.427Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/workflow-agent.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/posts/chat-it.html</loc>
-    <lastmod>2026-09-20T14:42:24.393Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/meaify.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/projects/posts/open-cricket-analytics.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/projects/posts/rag-search-engine.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/projects/posts/chat-it.html</loc>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/index.html</loc>
-    <lastmod>2026-09-06T07:06:59.000Z</lastmod>
+    <lastmod>2026-10-24T02:28:32.000Z</lastmod>
   </url>
 </urlset>

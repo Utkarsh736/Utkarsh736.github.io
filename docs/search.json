@@ -4,63 +4,91 @@
     "href": "about.html",
     "title": "Utkarsh — About",
     "section": "",
-    "text": "Machine Learning Engineer @ Omdena · Cricket Analyst\n\nGitHub LinkedIn Twitter HuggingFace Kaggle Bluesky DagsHub"
+    "text": "Data Scientist & AI/ML Engineer · Computer Vision · NLP · Generative AI · MLOps\n\nGitHub LinkedIn Twitter HuggingFace Kaggle Bluesky DagsHub"
   },
   {
     "objectID": "about.html#bio",
     "href": "about.html#bio",
     "title": "Utkarsh — About",
     "section": "Bio",
-    "text": "Bio\nHello! I’m a machine learning engineer and sports analyst with a focus on cricket. At Omdena I build and ship models for real business problems — from computer vision and object detection to tabular learning and ensemble methods. I care about the whole lifecycle: clean data pipelines, honest experiments, and models that survive contact with production.\nI’m a polyglot programmer at heart. Python is home, with C, Golang, and Rust next on the bench — I enjoy learning how different languages think about the same problem. Away from the keyboard you’ll find me following cricket, hockey, MMA, and the NFL, or exploring the world of movies. Sports are where my two worlds meet: data that moves, and stories that numbers can tell."
+    "text": "Bio\nData Scientist and AI/ML Engineer with 3+ years building end-to-end ML systems across computer vision, NLP, generative AI, and big data — from social-impact and geospatial domains to multimodal search and LLM applications. Grounded in the full data engineering stack: Hadoop, Spark, Hive, cloud pipelines, and ETL at scale. Currently deepening work in transformer architectures, RAG systems, embedding fine-tuning, and LLM fine-tuning.\nComfortable moving between IC model work and leading cross-functional teams (up to 65 contributors). Treats MLOps, reproducibility, versioning, and pipeline hygiene as core engineering, not an afterthought. Away from the keyboard: cricket, hockey, MMA, the NFL, and movies."
   },
   {
     "objectID": "about.html#skills",
     "href": "about.html#skills",
     "title": "Utkarsh — About",
     "section": "Skills",
-    "text": "Skills\n\n\nLanguages\n\n\nPython C Golang Rust\n\n\n\n\nMachine Learning & Data\n\n\nPyTorch TensorFlow Keras scikit-learn XGBoost YOLOv5 Pandas NumPy Matplotlib Seaborn\n\n\n\n\nMLOps & Tooling\n\n\nGit DVC MLflow Tableau Gradio\n\n\n\n\nDomains\n\n\nComputer Vision Object Detection Cricket Analytics Video Analytics Ensemble Modeling"
+    "text": "Skills\n\n\nML / AI\n\n\nComputer Vision YOLO SAM NLP Generative AI RAG Embedding Fine-tuning LoRA Matryoshka/MRL Transformers LLM Fine-tuning PyTorch TensorFlow\n\n\n\n\nBig Data & Pipelines\n\n\nHadoop Spark Hive Airflow ETL/ELT Delta Lake\n\n\n\n\nMLOps\n\n\nDVC MLflow Git Docker experiment tracking\n\n\n\n\nData & Cloud\n\n\nPython SQL Pandas Tableau AWS Azure Streamlit Gradio Hugging Face\n\n\n\n\nLanguages\n\n\nPython SQL R Go"
   },
   {
     "objectID": "about.html#experience",
     "href": "about.html#experience",
     "title": "Utkarsh — About",
     "section": "Experience",
-    "text": "Experience\n\n\nMachine Learning Engineer — Omdena\nOmdena May 2022 — Present\n\nDeveloped and deployed machine learning models — Random Forest, XGBoost, and deep learning architectures like YOLOv5 and YOLT — across diverse business applications.\nImplemented computer vision neural networks for object detection, strengthening image-processing pipelines end to end.\nEngineered data pipelines with Python, Pandas, and NumPy to process large datasets and surface actionable insights.\nBuilt and optimized neural architectures with PyTorch, TensorFlow, and Keras; applied ensemble techniques to push model performance further.\nEstablished model versioning and experiment tracking with Git, DVC, and MLflow, and visualized results with Matplotlib and Seaborn for stakeholders.\nPartnered with cross-functional teams to propose and implement AI-driven solutions to business challenges.\n\n\n\nCricket Video Analyst — Mad About Sports\nMad About Sports · Intern Video & Performance Analytics\n\nConducted in-depth analysis of batsmen and bowlers using video analytics and data visualization, identifying strengths, weaknesses, and strategic matchups.\nProcessed and visualized complex cricket performance data with the Python ecosystem and Tableau.\nDeveloped and presented data-driven recommendations that contributed to improved player performance and team strategy.\nApplied machine learning to predict player performance trends and inform training regimens.\nCollaborated with analysts and coaches to produce high-quality analytical reports and presentations."
+    "text": "Experience\n\n\nData Scientist / Product Manager — Omdena\nOmdena · Project-based May 2022 — Present\n\nArchitected and deployed end-to-end ML solutions across CV, NLP, and generative AI, handling data pipeline design through model deployment for multiple production use cases.\nLed project delivery for multi-disciplinary teams (up to 65 contributors), coordinating engineers, domain experts, and business stakeholders to ship on time.\nEstablished team-wide MLOps standards using Git, DVC, and MLflow, reducing experiment chaos and making model reproduction a non-issue.\nTranslated model performance into business-facing insights; owned stakeholder communication from progress updates to final deliverables.\n\n\n\nCricket Video Analyst — Mad About Sports\nMad About Sports · Intern 2022\n\nBuilt player performance analytics in Python (Pandas, NumPy, Matplotlib, Seaborn) and Tableau from raw video and match data.\nDeveloped predictive models for batting/bowling performance trends; findings fed directly into coaching and selection strategy."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Utkarsh — About",
+    "section": "Education",
+    "text": "Education\n\n\nPG Certificate Programme in Big Data Analytics (PGCP-BDA)\nC-DAC 2026\n\nBig Data Engineering: Hadoop ecosystem (HDFS, MapReduce, YARN), Hive, HBase, Spark, Airflow-based ETL, Data Lakes & Lakehouses (Delta Lake).\nDeep Learning & Generative AI: CNNs, RNNs, transfer learning, object detection/segmentation; Transformers, BERT, LLMs, fine-tuning & alignment (RLHF), SLM/LLM deployment.\n\n\n\nB.Tech — Information Technology\nGGSIPU, Delhi 2017 — 2021\nGPA 7.7 · Relevant coursework: Data Structures, Algorithms, Database Systems, Statistics."
   },
   {
     "objectID": "about.html#off-the-clock",
     "href": "about.html#off-the-clock",
     "title": "Utkarsh — About",
     "section": "Off the clock",
-    "text": "Off the clock\n\nCricket Hockey MMA NFL Movies\n\n\nGet in touch\nThe fastest way to reach me is LinkedIn — or say hi on any platform below. Always happy to talk machine learning, cricket analytics, or trade movie recommendations.\n\nGitHub LinkedIn Twitter HuggingFace Bluesky\n\n Download resume"
+    "text": "Off the clock\n\nCricket Hockey MMA NFL Movies\n\n\nGet in touch\nThe fastest way to reach me is LinkedIn — or say hi on any platform below. Always happy to talk machine learning, RAG, embeddings, cricket analytics, or trade movie recommendations.\n\nGitHub LinkedIn Twitter HuggingFace Bluesky"
   },
   {
-    "objectID": "apps/apps.html",
-    "href": "apps/apps.html",
-    "title": "Apps",
+    "objectID": "projects/projects.html",
+    "href": "projects/projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "Chat It\n\n\n\nAI\n\nchatbot\n\nNext.js\n\nVercel\n\n\n\nA clean, streaming AI chatbot built with Next.js and the Vercel AI SDK\n\n\n\n\n\n\nSeptember 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nRAG Search Engine\n\n\n\nRAG\n\nsearch\n\nGradio\n\nmultimodal\n\n\n\nHybrid search + RAG + CLIP image search over 5 000 movies\n\n\n\n\n\n\nSeptember 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nAsteroids\n\n\n\npygame\n\ngame\n\nwebassembly\n\n\n\nPlay a classic Asteroids clone in the browser, built with Python and Pygame and deployed with pygbag on GitHub Pages.\n\n\n\nUtkarsh736\n\n\nSeptember 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatic Site Generator\n\n\n\npython\n\nstatic-site\n\nmarkdown\n\n\n\nA from-scratch Python static site generator that turns Markdown into a themed site — live demo of the Tolkien Fan Club sample.\n\n\n\nUtkarsh736\n\n\nJanuary 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGradio Docker Demo\n\n\n\ndocker\n\ngradio\n\n\n\nA minimal Gradio app packed in Docker and served on Hugging Face Spaces — a sandbox for deployment experiments.\n\n\n\nUtkarsh736\n\n\nJune 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nBear Classifier\n\n\n\ncomputer vision\n\ngradio\n\n\n\nA Gradio app to classify bears into ‘Teddy’, ‘Grizzly’, or ‘Black’ — served live from Hugging Face Spaces.\n\n\n\nUtkarsh736\n\n\nJune 22, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n Back to top"
+    "text": "Meaify\n\n\n\nOCR\n\neducation\n\nNext.js\n\nLLM\n\n\n\nUpload a handwritten answer sheet → vision OCR → hybrid rubric scoring → AI feedback → voice-enabled chatbot. Teacher-in-the-loop review and grading history.\n\n\n\nUtkarsh736\n\n\nOctober 20, 2026\n\n\n\n\n\n\n\n\n\n\n\nAuditor\n\n\n\nsecurity\n\nagentic\n\nCLI\n\nLLM\n\n\n\nDeterministic security scanners (~40 rules across 7 categories) with optional LLM-enriched remediation, a CLI, and a Next.js dashboard.\n\n\n\nUtkarsh736\n\n\nOctober 18, 2026\n\n\n\n\n\n\n\n\n\n\n\nVellum\n\n\n\nRust\n\nTauri\n\nAndroid\n\nprivacy\n\n\n\nLightweight, private PDF and EPUB reader. Desktop (Tauri + React) and Android (Kotlin + Compose) share a Rust core. Zero telemetry, no network permission, no account.\n\n\n\nUtkarsh736\n\n\nOctober 12, 2026\n\n\n\n\n\n\n\n\n\n\n\nLLM Serving Lab\n\n\n\nLLM\n\nsystems\n\nPyTorch\n\nserving\n\n\n\nFive layers built in order: KV cache, continuous batching, paged memory, vLLM config sweeps, and a FastAPI gateway — written to understand how vLLM, TGI, and TensorRT-LLM…\n\n\n\nUtkarsh736\n\n\nOctober 8, 2026\n\n\n\n\n\n\n\n\n\n\n\nWorkflow Agent\n\n\n\nagentic\n\nLLM\n\narXiv\n\ntools\n\n\n\nAgentic pipeline: search arXiv, filter seen papers, summarize, write a Markdown digest. Tool-calling loop with Groq, SQLite memory, and rate limiting from day one.\n\n\n\nUtkarsh736\n\n\nOctober 5, 2026\n\n\n\n\n\n\n\n\n\n\n\nVLM Lab\n\n\n\nVLM\n\nmultimodal\n\nfine-tuning\n\nresearch\n\n\n\nStructured workspace for building small VLMs from scratch, fine-tuning open weights (SmolVLM, Qwen2-VL, SigLIP), and multimodal applications — aimed at free-tier compute.\n\n\n\nUtkarsh736\n\n\nSeptember 28, 2026\n\n\n\n\n\n\n\n\n\n\n\nOpen Cricket Analytics\n\n\n\ncricket\n\ndata\n\nStreamlit\n\nanalytics\n\n\n\nIngest Cricsheet match JSON, build clean CSV tables, and explore descriptive cricket metrics. WPL is the starter dataset; the same parser supports any conforming Cricsheet…\n\n\n\nUtkarsh736\n\n\nSeptember 22, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nChat It\n\n\n\nAI\n\nchatbot\n\nNext.js\n\nVercel\n\n\n\nA clean, streaming AI chatbot built with Next.js and the Vercel AI SDK\n\n\n\n\n\n\nSeptember 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nRAG Search Engine\n\n\n\nRAG\n\nsearch\n\nGradio\n\nmultimodal\n\n\n\nHybrid search + RAG + CLIP image search over 5 000 movies\n\n\n\n\n\n\nSeptember 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nAsteroids\n\n\n\npygame\n\ngame\n\nwebassembly\n\n\n\nPlay a classic Asteroids clone in the browser, built with Python and Pygame and deployed with pygbag on GitHub Pages.\n\n\n\nUtkarsh736\n\n\nSeptember 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatic Site Generator\n\n\n\npython\n\nstatic-site\n\nmarkdown\n\n\n\nA from-scratch Python static site generator that turns Markdown into a themed site — live demo of the Tolkien Fan Club sample.\n\n\n\nUtkarsh736\n\n\nJanuary 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nBear Classifier\n\n\n\ncomputer vision\n\ngradio\n\n\n\nA Gradio app to classify bears into ‘Teddy’, ‘Grizzly’, or ‘Black’ — served live from Hugging Face Spaces.\n\n\n\nUtkarsh736\n\n\nJune 22, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "apps/posts/Bearify.html",
-    "href": "apps/posts/Bearify.html",
+    "objectID": "projects/posts/Bearify.html",
+    "href": "projects/posts/Bearify.html",
     "title": "Bear Classifier",
     "section": "",
     "text": "Bearify is a lightweight image classifier built with fastai and deployed as a Gradio web app on Hugging Face Spaces. Pick or drop a photo of a bear and the model will call it a teddy, grizzly, or black bear — try it live below, then read the blog post for the full build.\n\n\n\n\nThe model behind the app is trained on the Bears FastAI dataset.\n\n\n\n Back to top"
   },
   {
-    "objectID": "apps/posts/StaticSiteGenerator.html",
-    "href": "apps/posts/StaticSiteGenerator.html",
+    "objectID": "projects/posts/StaticSiteGenerator.html",
+    "href": "projects/posts/StaticSiteGenerator.html",
     "title": "Static Site Generator",
     "section": "",
     "text": "A static site generator written in pure Python (no external dependencies). It parses Markdown into a custom node tree, injects content into an HTML template, and copies static assets — then deploys to GitHub Pages. The live demo is a small Tolkien-themed sample site produced by the generator.\n\n\n\n\nBuilt for the Boot.dev course. Supports headings, lists, blockquotes, code blocks, links, images, recursive nested content, and configurable base paths for GitHub Pages subdirectory hosting. Source: Utkarsh736/static-site-generator.\n\n\n\n Back to top"
   },
   {
-    "objectID": "apps/posts/Asteroids.html",
-    "href": "apps/posts/Asteroids.html",
+    "objectID": "projects/posts/vlm-lab.html",
+    "href": "projects/posts/vlm-lab.html",
+    "title": "VLM Lab",
+    "section": "",
+    "text": "A hands-on repository for Vision Language Model (VLM) pretraining, fine-tuning, evaluation, and multimodal application experiments.\nStructure\n\n01_pretraining — small VLM training from scratch (NanoVLM / SmolVLM) & loss tracking\n02_finetuning — SFT, PEFT/QLoRA, and preference alignment (DPO/MPO)\n03_benchmarking — latency, TTFT, and throughput metrics\n04_applications — document AI, Video-RAG pipelines, and agentic workflows\n\nBuilt to work on free-tier environments like Google Colab and Kaggle, covering both custom small models and modern open weights (SmolVLM, Qwen2-VL, SigLIP).\nStack: Python, PyTorch, Transformers, Accelerate, bitsandbytes.\nSource: Utkarsh736/vlm-lab.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/posts/vellum.html",
+    "href": "projects/posts/vellum.html",
+    "title": "Vellum",
+    "section": "",
+    "text": "A lightweight, private, offline-first PDF & EPUB reader.\nDesktop (Tauri v2 · React · TypeScript · Tailwind) and Android (Kotlin · Jetpack Compose) share one Rust core. Book files stay on disk; the app never uploads, indexes, or copies their contents.\nZero telemetry. No network permission. No account.\nFeatures\n\nLibrary — import PDFs and EPUBs; covers, titles, and authors from file metadata\nReading progress — resume where you left off (PDF page or EPUB CFI)\nDesktop — sidebar layout, virtualized cover grid, keyboard shortcuts, drag-and-drop\nAndroid — Storage Access Framework, Material 3, TalkBack-friendly\nPrivacy by design — SQLite holds only library fields; covers in OS cache; no INTERNET on Android\n\nStack: Rust (core), Tauri v2, React, TypeScript, Kotlin, Jetpack Compose, UniFFI.\nSource: Utkarsh736/vellum.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/posts/Asteroids.html",
+    "href": "projects/posts/Asteroids.html",
     "title": "Asteroids",
     "section": "",
     "text": "A classic Asteroids arcade game written in Python and Pygame, packaged for the web with pygbag so it runs entirely in the browser via WebAssembly. Use W/A/S/D to move and Space to shoot.\n\n\n\n\nBuilt as part of learning game loops, sprite groups, and collision handling in Pygame. Source: Utkarsh736/asteroids.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/posts/llm-serving-lab.html",
+    "href": "projects/posts/llm-serving-lab.html",
+    "title": "LLM Serving Lab",
+    "section": "",
+    "text": "A pedagogical reimplementation of the LLM serving stack — KV cache, continuous batching, paged memory, and a gateway — written to understand how vLLM, TGI, and TensorRT-LLM actually work.\n\n\n\n\n\n\n\nLayer\nStatus\n\n\n\n\nKV cache\nDone — naive vs cached decode, equivalence tests, benchmarks\n\n\nContinuous batching\nDone — token-level scheduler simulator, naive vs continuous policies\n\n\nPaged memory\nDone — block allocator + page tables (PagedAttention-style)\n\n\nvLLM config sweep\nDone — real hardware (T4) throughput and latency measurements\n\n\nFastAPI gateway\nDone\n\n\n\nHighlights include measured decode speedups (up to ~64× at long sequences), continuous-batching throughput and tail-latency wins, and paged admission of ~9× more concurrent sequences than naive pre-allocation at bounded waste.\nStack: Python, PyTorch, uv, FastAPI, vLLM benchmarks.\nSource: Utkarsh736/llm-serving-lab.\n\n\n\n Back to top"
   },
   {
     "objectID": "blogs/posts/ViT_From_Scratch.html",
@@ -385,22 +413,43 @@
     "text": "Vision Transformer from Scratch\n\n\nImplementing ViT end-to-end and walking through the pieces that matter.\n\n\n\nmachine learning\n\ncomputer vision\n\ntransformers\n\n\n\nA from-scratch walkthrough of the Vision Transformer architecture in a notebook.\n\n\n\n\n\nSeptember 15, 2026\n\n\nUtkarsh736\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Transformer From Scratch\n\n\n\n\n\n\nmachine learning\n\ntransformers\n\npytorch\n\n\n\nA readable, from-scratch GPT-style Transformer in PyTorch — embeddings, causal attention, multi-head, MLP, residual blocks, training and generation.\n\n\n\n\n\nSeptember 9, 2026\n\n\nUtkarsh736\n\n\n\n\n\n\n\n\n\n\n\n\nBear Classifier\n\n\n\n\n\nUsing a pre-trained classifier to classify bears into ‘Teddy’, ‘Black’, and ‘Grizzly’ bears.\n\n\n\n\n\nJune 22, 2024\n\n\nUtkarsh736\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
-    "objectID": "apps/posts/Testing.html",
-    "href": "apps/posts/Testing.html",
-    "title": "Gradio Docker Demo",
+    "objectID": "projects/posts/audit.html",
+    "href": "projects/posts/audit.html",
+    "title": "Auditor",
     "section": "",
-    "text": "This app is the same Gradio experience, but packaged with Docker instead of the standard Space setup — a clean sandbox for testing how containerized ML apps behave on Hugging Face infrastructure. Give it a spin below.\n\n\n\n\n\n\n\n Back to top"
+    "text": "Security auditing for code projects and LLM applications.\n\n\n\n\n\n\n\nComponent\nWhat it does\n\n\n\n\nEngine\nPython package with 7 deterministic scanner categories (~40 rules): secrets, prompt injection, PII, authentication, insecure output handling, dangerous code, and configuration. OWASP/CWE knowledge base, optional LLM enrichment, and safe auto-fixes.\n\n\nCLI\naudit scan, audit explain, audit fix, audit info — CI-friendly exit codes and JSON output.\n\n\nDashboard\nNext.js web UI over the same CLI — scan local projects, browse findings with remediation detail, shared history.\n\n\nDemo\nIntentionally vulnerable LLM chatbot with planted findings for end-to-end testing.\n\n\n\nFully functional offline; the LLM layer only adds deeper, code-specific remediation on top of the built-in knowledge base.\nStack: Python, Next.js, TypeScript, OWASP/CWE knowledge base.\nSource: Utkarsh736/audit.\n\n\n\n Back to top"
   },
   {
-    "objectID": "apps/posts/rag-search-engine.html",
-    "href": "apps/posts/rag-search-engine.html",
+    "objectID": "projects/posts/workflow-agent.html",
+    "href": "projects/posts/workflow-agent.html",
+    "title": "Workflow Agent",
+    "section": "",
+    "text": "An AI agent that automates a daily research workflow.\nEvery day the agent:\n\nSearches arXiv for topics you care about.\nFilters out papers it has shown you before.\nSummarizes each new paper in 2–3 bullets.\nWrites a Markdown digest file.\n\nYou talk to the agent in plain English; it decides which tools to call.\nDesign choices\n\narXiv API over scraping\nSQLite for seen-paper memory (lookup, not vectors)\nGroq with tool calling (qwen/qwen3-8b-class models)\nRun-scoped store, streaming summarizer, rate limiting from day one\n\nPhase 1 (agent core) is complete. Later phases: evals, cost tracking, reliability, and deploy.\nStack: Python, Groq, SQLite, uv.\nSource: Utkarsh736/workflow-agent.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/posts/meaify.html",
+    "href": "projects/posts/meaify.html",
+    "title": "Meaify",
+    "section": "",
+    "text": "Upload a handwritten answer sheet → AI-assisted OCR → rubric grading → AI feedback → voice-enabled chatbot.\nBuilt with Next.js · TypeScript · Tailwind · Prisma + SQLite. Powered by Groq (free tier) with Gemini as failsafe and Hugging Face embeddings.\nFeatures\n\nVision OCR (Groq → Gemini fallback) on handwritten sheets\nHybrid rubric scoring — 0.6 × semantic similarity + 0.4 × keyword match (Porter-stemmer tolerant)\nAI feedback per question, regeneratable with one click\nVoice chatbot — Web Speech API with Groq Whisper fallback\nRubric manager — JSON rubrics under /rubrics/, easy to git-track\nGrading history — every submission persists via Prisma\n\n\nOpen live app ↗\nSource: Utkarsh736/meaify.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/posts/open-cricket-analytics.html",
+    "href": "projects/posts/open-cricket-analytics.html",
+    "title": "Open Cricket Analytics",
+    "section": "",
+    "text": "A small, end-to-end open-data project for ingesting Cricsheet match data, building clean CSV tables, and exploring descriptive cricket metrics.\nWPL is the initial dataset, not a hard-coded limit: the same parser and analytics functions support any Cricsheet JSON archive whose records conform to the published schema.\nWhat you get\n\nReusable Python package + scripts for download, parse, and stage-1/stage-2 tables\nMatches, deliveries, batting/bowling summaries, phase summaries, quality report\nStreamlit explorer for matches, scorecards, players, phase scoring, and tables\nJupyter notebook for deeper exploratory analysis\n\nNo ML model is trained yet — the focus is solid ingestion, honest metric definitions, and reproducible tables.\nStack: Python, uv, Pandas, Streamlit, Cricsheet data.\nSource: Utkarsh736/open-cricket-analytics.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/posts/rag-search-engine.html",
+    "href": "projects/posts/rag-search-engine.html",
     "title": "RAG Search Engine",
     "section": "",
-    "text": "Interactive demo of the rag-search-engine project.\n\nHybrid Search (BM25 + semantic embeddings with Reciprocal Rank Fusion)\nRAG + Citations powered by Gemini\nImage Search with CLIP\n\n\n\n\n\n\n Back to top"
+    "text": "Interactive demo of the rag-search-engine project.\n\nHybrid Search (BM25 + semantic embeddings with Reciprocal Rank Fusion)\nRAG + Citations powered by Gemini\nImage Search with CLIP\n\n\nStack: Python, BM25, Sentence Transformers, CLIP, Gemini API, Gradio, Hugging Face Spaces.\n\n\n\n Back to top"
   },
   {
-    "objectID": "apps/posts/chat-it.html",
-    "href": "apps/posts/chat-it.html",
+    "objectID": "projects/posts/chat-it.html",
+    "href": "projects/posts/chat-it.html",
     "title": "Chat It",
     "section": "",
     "text": "A lightweight conversational AI interface powered by the Vercel AI SDK.\nAsk questions, generate code, draft writing, or explore ideas — with fast streaming responses and a minimal UI.\nStack - Next.js App Router - Vercel AI SDK - Streaming chat UI - Deployed on Vercel\n\nOpen live app ↗\n\n\n\n Back to top"
@@ -408,22 +457,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Utkarsh736 — Machine Learning Engineer & Sports Analyst",
+    "title": "Utkarsh736 — Data Scientist & AI/ML Engineer",
     "section": "",
-    "text": "Hi, I’m Utkarsh\n\n\nI’m a machine learning engineer at Omdena and a sports analyst focused on cricket. By day I turn messy data into models that actually work — the rest of the time I’m following cricket, hockey, MMA, and the NFL.\n\nAbout me Explore apps\n\n\nGitHub LinkedIn Twitter HuggingFace Kaggle Bluesky DagsHub\n\n\n\n\n\n\n\n\nML Engineer · Cricket Analyst"
+    "text": "Hi, I’m Utkarsh\n\n\nData Scientist and AI/ML Engineer with 3+ years shipping computer vision, NLP, generative AI, and big-data systems. Currently focused on transformers, RAG, embedding fine-tuning, and LLM applications.\n\nAbout me Explore projects\n\n\nGitHub LinkedIn Twitter HuggingFace Kaggle Bluesky DagsHub\n\n\n\n\n\n\n\n\nData Scientist · AI/ML Engineer"
   },
   {
-    "objectID": "index.html#featured-apps",
-    "href": "index.html#featured-apps",
-    "title": "Utkarsh736 — Machine Learning Engineer & Sports Analyst",
-    "section": "Featured Apps",
-    "text": "Featured Apps\nSmall, useful tools — mostly Gradio apps deployed on Hugging Face Spaces."
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "Utkarsh736 — Data Scientist & AI/ML Engineer",
+    "section": "Featured Projects",
+    "text": "Featured Projects\nTools, labs, and production-minded experiments across CV, NLP, agents, and retrieval."
   },
   {
     "objectID": "index.html#latest-writing",
     "href": "index.html#latest-writing",
-    "title": "Utkarsh736 — Machine Learning Engineer & Sports Analyst",
+    "title": "Utkarsh736 — Data Scientist & AI/ML Engineer",
     "section": "Latest Writing",
-    "text": "Latest Writing\nNotes on machine learning, experiments, and sports analytics."
+    "text": "Latest Writing\nNotes on machine learning, transformers, and experiments."
   }
 ]

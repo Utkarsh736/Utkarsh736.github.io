@@ -1,13 +1,19 @@
 [
   {
-    "listing": "/apps/apps.html",
+    "listing": "/projects/projects.html",
     "items": [
-      "/apps/posts/chat-it.html",
-      "/apps/posts/rag-search-engine.html",
-      "/apps/posts/Asteroids.html",
-      "/apps/posts/StaticSiteGenerator.html",
-      "/apps/posts/Testing.html",
-      "/apps/posts/Bearify.html"
+      "/projects/posts/meaify.html",
+      "/projects/posts/audit.html",
+      "/projects/posts/vellum.html",
+      "/projects/posts/llm-serving-lab.html",
+      "/projects/posts/workflow-agent.html",
+      "/projects/posts/vlm-lab.html",
+      "/projects/posts/open-cricket-analytics.html",
+      "/projects/posts/chat-it.html",
+      "/projects/posts/rag-search-engine.html",
+      "/projects/posts/Asteroids.html",
+      "/projects/posts/StaticSiteGenerator.html",
+      "/projects/posts/Bearify.html"
     ]
   },
   {
@@ -21,12 +27,18 @@
   {
     "listing": "/index.html",
     "items": [
-      "/apps/posts/chat-it.html",
-      "/apps/posts/rag-search-engine.html",
-      "/apps/posts/Asteroids.html",
-      "/apps/posts/StaticSiteGenerator.html",
-      "/apps/posts/Testing.html",
-      "/apps/posts/Bearify.html",
+      "/projects/posts/meaify.html",
+      "/projects/posts/audit.html",
+      "/projects/posts/vellum.html",
+      "/projects/posts/llm-serving-lab.html",
+      "/projects/posts/workflow-agent.html",
+      "/projects/posts/vlm-lab.html",
+      "/projects/posts/open-cricket-analytics.html",
+      "/projects/posts/chat-it.html",
+      "/projects/posts/rag-search-engine.html",
+      "/projects/posts/Asteroids.html",
+      "/projects/posts/StaticSiteGenerator.html",
+      "/projects/posts/Bearify.html",
       "/blogs/posts/ViT_From_Scratch.html",
       "/blogs/posts/Transformer_From_Scratch.html",
       "/blogs/posts/Bear_Classifier.html"

@@ -2,15 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Utkarsh736">
-<meta name="dcterms.date" content="2024-06-22">
-<meta name="description" content="A minimal Gradio app packed in Docker and served on Hugging Face Spaces — a sandbox for deployment experiments.">
+<meta name="dcterms.date" content="2026-10-20">
+<meta name="description" content="Upload a handwritten answer sheet → vision OCR → hybrid rubric scoring → AI feedback → voice-enabled chatbot. Teacher-in-the-loop review and grading history.">
 
-<title>Gradio Docker Demo – Utkarsh736</title>
+<title>Meaify – Utkarsh736</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -46,14 +46,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3b2e33f50bba15e4d7a9a077a40d0d20.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-ee90b860b5052d30e58a1a4cfc2b2fde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-3b2e33f50bba15e4d7a9a077a40d0d20.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-36f619c4af5041e84ae20be23da0fb71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-9f059f1a3612394dac21d5bc7b98e09b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-36f619c4af5041e84ae20be23da0fb71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,13 +84,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Gradio Docker Demo – Utkarsh736">
-<meta property="og:description" content="A minimal Gradio app packed in Docker and served on Hugging Face Spaces — a sandbox for deployment experiments.">
-<meta property="og:image" content="https://utkarsh736.github.io/assets/Bear_Classifier/thumbnail.jpg">
+<meta property="og:title" content="Meaify – Utkarsh736">
+<meta property="og:description" content="Upload a handwritten answer sheet → vision OCR → hybrid rubric scoring → AI feedback → voice-enabled chatbot. Teacher-in-the-loop review and grading history.">
+<meta property="og:image" content="https://utkarsh736.github.io/projects/posts/assets/display.jpg">
 <meta property="og:site_name" content="Utkarsh736">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -277,8 +277,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Blogs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../apps/apps.html"> 
-<span class="menu-text">Apps</span></a>
+    <a class="nav-link" href="../../projects/projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
@@ -313,24 +313,27 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/Utkarsh736/meaify"><i class="bi bi-link-45deg"></i>Source on GitHub</a></li><li><a href="https://meaify.vercel.app"><i class="bi bi-link-45deg"></i>Live demo</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Gradio Docker Demo</h1>
-<p class="subtitle lead">A minimal Gradio app served from Docker — my playground for deployment experiments.</p>
+<h1 class="title">Meaify</h1>
+<p class="subtitle lead">AI-assisted handwritten exam evaluator — OCR, rubric scoring, and LLM feedback.</p>
   <div class="quarto-categories">
-    <div class="quarto-category">docker</div>
-    <div class="quarto-category">gradio</div>
+    <div class="quarto-category">OCR</div>
+    <div class="quarto-category">education</div>
+    <div class="quarto-category">Next.js</div>
+    <div class="quarto-category">LLM</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    A minimal Gradio app packed in Docker and served on Hugging Face Spaces — a sandbox for deployment experiments.
+    Upload a handwritten answer sheet → vision OCR → hybrid rubric scoring → AI feedback → voice-enabled chatbot. Teacher-in-the-loop review and grading history.
   </div>
 </div>
 
@@ -347,7 +350,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 22, 2024</p>
+      <p class="date">October 20, 2026</p>
     </div>
   </div>
   
@@ -359,11 +362,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This app is the same Gradio experience, but packaged with Docker instead of the standard Space setup — a clean sandbox for testing how containerized ML apps behave on Hugging Face infrastructure. Give it a spin below.</p>
-<div class="app-frame">
-<iframe src="https://utkarsh736-docker-gradio-demo.hf.space" height="520" loading="lazy" title="Docker Gradio demo — live">
-</iframe>
-</div>
+<p>Upload a handwritten answer sheet → AI-assisted OCR → rubric grading → AI feedback → voice-enabled chatbot.</p>
+<p>Built with <strong>Next.js · TypeScript · Tailwind · Prisma + SQLite</strong>. Powered by <strong>Groq</strong> (free tier) with <strong>Gemini</strong> as failsafe and <strong>Hugging Face</strong> embeddings.</p>
+<p><strong>Features</strong></p>
+<ul>
+<li><strong>Vision OCR</strong> (Groq → Gemini fallback) on handwritten sheets</li>
+<li><strong>Hybrid rubric scoring</strong> — 0.6 × semantic similarity + 0.4 × keyword match (Porter-stemmer tolerant)</li>
+<li><strong>AI feedback</strong> per question, regeneratable with one click</li>
+<li><strong>Voice chatbot</strong> — Web Speech API with Groq Whisper fallback</li>
+<li><strong>Rubric manager</strong> — JSON rubrics under <code>/rubrics/</code>, easy to git-track</li>
+<li><strong>Grading history</strong> — every submission persists via Prisma</li>
+</ul>
+<iframe src="https://meaify.vercel.app" width="100%" height="720" style="border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);" frameborder="0" allow="clipboard-write; microphone" loading="lazy" title="Meaify — live demo"></iframe>
+<p><a href="https://meaify.vercel.app">Open live app ↗</a></p>
+<p>Source: <a href="https://github.com/Utkarsh736/meaify">Utkarsh736/meaify</a>.</p>
 
 
 

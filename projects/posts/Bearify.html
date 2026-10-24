@@ -2,15 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Utkarsh736">
-<meta name="dcterms.date" content="2026-01-26">
-<meta name="description" content="A from-scratch Python static site generator that turns Markdown into a themed site — live demo of the Tolkien Fan Club sample.">
+<meta name="dcterms.date" content="2024-06-22">
+<meta name="description" content="A Gradio app to classify bears into ‘Teddy’, ‘Grizzly’, or ‘Black’ — served live from Hugging Face Spaces.">
 
-<title>Static Site Generator – Utkarsh736</title>
+<title>Bear Classifier – Utkarsh736</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -46,14 +46,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3b2e33f50bba15e4d7a9a077a40d0d20.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-ee90b860b5052d30e58a1a4cfc2b2fde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-3b2e33f50bba15e4d7a9a077a40d0d20.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-36f619c4af5041e84ae20be23da0fb71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-9f059f1a3612394dac21d5bc7b98e09b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-36f619c4af5041e84ae20be23da0fb71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,15 +81,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Static Site Generator – Utkarsh736">
-<meta property="og:description" content="A from-scratch Python static site generator that turns Markdown into a themed site — live demo of the Tolkien Fan Club sample.">
-<meta property="og:image" content="https://utkarsh736.github.io/assets/StaticSiteGenerator/thumbnail.png">
+<meta property="og:title" content="Bear Classifier – Utkarsh736">
+<meta property="og:description" content="A Gradio app to classify bears into ‘Teddy’, ‘Grizzly’, or ‘Black’ — served live from Hugging Face Spaces.">
+<meta property="og:image" content="https://utkarsh736.github.io/assets/Bear_Classifier/thumbnail.jpg">
 <meta property="og:site_name" content="Utkarsh736">
-<meta property="og:image:height" content="388">
-<meta property="og:image:width" content="1026">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -279,8 +278,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Blogs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../apps/apps.html"> 
-<span class="menu-text">Apps</span></a>
+    <a class="nav-link" href="../../projects/projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
@@ -316,25 +315,25 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/Utkarsh736/static-site-generator"><i class="bi bi-link-45deg"></i>Source on GitHub</a></li></ul></div></div>
+        
+    <div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://www.kaggle.com/datasets/anirudhg15/bears-fastai-2021"><i class="bi bi-link-45deg"></i>Dataset — Bears FastAI</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Static Site Generator</h1>
-<p class="subtitle lead">Markdown → static HTML, built from scratch in pure Python.</p>
+<h1 class="title">Bear Classifier</h1>
+<p class="subtitle lead">Bearify — a Gradio app that tells teddy, grizzly, and black bears apart.</p>
   <div class="quarto-categories">
-    <div class="quarto-category">python</div>
-    <div class="quarto-category">static-site</div>
-    <div class="quarto-category">markdown</div>
+    <div class="quarto-category">computer vision</div>
+    <div class="quarto-category">gradio</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    A from-scratch Python static site generator that turns Markdown into a themed site — live demo of the Tolkien Fan Club sample.
+    A Gradio app to classify bears into ‘Teddy’, ‘Grizzly’, or ‘Black’ — served live from Hugging Face Spaces.
   </div>
 </div>
 
@@ -351,7 +350,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 26, 2026</p>
+      <p class="date">June 22, 2024</p>
     </div>
   </div>
   
@@ -363,12 +362,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A static site generator written in pure Python (no external dependencies). It parses Markdown into a custom node tree, injects content into an HTML template, and copies static assets — then deploys to GitHub Pages. The live demo is a small Tolkien-themed sample site produced by the generator.</p>
+<p>Bearify is a lightweight image classifier built with fastai and deployed as a Gradio web app on Hugging Face Spaces. Pick or drop a photo of a bear and the model will call it a teddy, grizzly, or black bear — try it live below, then read the <a href="../../blogs/posts/Bear_Classifier.html">blog post</a> for the full build.</p>
 <div class="app-frame">
-<iframe src="https://utkarsh736.github.io/static-site-generator/" height="640" loading="lazy" title="Static Site Generator — live demo" style="width: 100%; border: none; border-radius: 8px;">
+<iframe src="https://utkarsh736-bearify.hf.space" height="520" loading="lazy" title="Bearify — live demo">
 </iframe>
 </div>
-<p>Built for the Boot.dev course. Supports headings, lists, blockquotes, code blocks, links, images, recursive nested content, and configurable base paths for GitHub Pages subdirectory hosting. Source: <a href="https://github.com/Utkarsh736/static-site-generator">Utkarsh736/static-site-generator</a>.</p>
+<p>The model behind the app is trained on the <a href="https://www.kaggle.com/datasets/anirudhg15/bears-fastai-2021">Bears FastAI dataset</a>.</p>
 
 
 
@@ -822,4 +821,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

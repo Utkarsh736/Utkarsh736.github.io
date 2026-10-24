@@ -1,55 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://utkarsh736.github.io/apps/posts/rag-search-engine.html</loc>
-    <lastmod>2026-09-20T14:44:45.158Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/workflow-agent.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/posts/Bearify.html</loc>
-    <lastmod>2026-09-20T14:44:45.158Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/rag-search-engine.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/posts/Testing.html</loc>
-    <lastmod>2026-09-20T14:44:45.158Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/vellum.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/apps.html</loc>
-    <lastmod>2026-09-20T14:44:45.157Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/Asteroids.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/blogs/posts/Bear_Classifier.html</loc>
-    <lastmod>2026-09-20T14:44:45.177Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/audit.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/blogs/posts/ViT_From_Scratch.html</loc>
-    <lastmod>2026-09-20T14:44:45.178Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/Bearify.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/index.html</loc>
-    <lastmod>2026-09-20T14:44:45.194Z</lastmod>
-  </url>
-  <url>
-    <loc>https://utkarsh736.github.io/blogs/blogs.html</loc>
-    <lastmod>2026-09-20T14:44:45.165Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/projects.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/blogs/posts/Transformer_From_Scratch.html</loc>
-    <lastmod>2026-09-20T14:44:45.178Z</lastmod>
+    <lastmod>2026-10-24T08:09:05.913Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/blogs/posts/ViT_From_Scratch.html</loc>
+    <lastmod>2026-10-24T08:09:05.914Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/index.html</loc>
+    <lastmod>2026-10-24T08:09:05.930Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/blogs/blogs.html</loc>
+    <lastmod>2026-10-24T08:09:05.900Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/blogs/posts/Bear_Classifier.html</loc>
+    <lastmod>2026-10-24T08:09:05.912Z</lastmod>
   </url>
   <url>
     <loc>https://utkarsh736.github.io/about.html</loc>
-    <lastmod>2026-09-20T14:44:45.157Z</lastmod>
+    <lastmod>2026-10-24T08:09:05.892Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/posts/chat-it.html</loc>
-    <lastmod>2026-09-20T14:44:45.158Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/StaticSiteGenerator.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/posts/Asteroids.html</loc>
-    <lastmod>2026-09-20T14:44:45.157Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/chat-it.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
   </url>
   <url>
-    <loc>https://utkarsh736.github.io/apps/posts/StaticSiteGenerator.html</loc>
-    <lastmod>2026-09-20T14:44:45.158Z</lastmod>
+    <loc>https://utkarsh736.github.io/projects/posts/open-cricket-analytics.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/projects/posts/llm-serving-lab.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/projects/posts/vlm-lab.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utkarsh736.github.io/projects/posts/meaify.html</loc>
+    <lastmod>2026-10-24T08:09:05.931Z</lastmod>
   </url>
 </urlset>

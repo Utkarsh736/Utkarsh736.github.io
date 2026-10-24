@@ -2,14 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-09-20">
-<meta name="description" content="A clean, streaming AI chatbot built with Next.js and the Vercel AI SDK">
+<meta name="author" content="Utkarsh736">
+<meta name="dcterms.date" content="2026-01-26">
+<meta name="description" content="A from-scratch Python static site generator that turns Markdown into a themed site — live demo of the Tolkien Fan Club sample.">
 
-<title>Chat It – Utkarsh736</title>
+<title>Static Site Generator – Utkarsh736</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -45,14 +46,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3b2e33f50bba15e4d7a9a077a40d0d20.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-ee90b860b5052d30e58a1a4cfc2b2fde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-3b2e33f50bba15e4d7a9a077a40d0d20.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-36f619c4af5041e84ae20be23da0fb71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-9f059f1a3612394dac21d5bc7b98e09b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-36f619c4af5041e84ae20be23da0fb71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,15 +84,15 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Chat It – Utkarsh736">
-<meta property="og:description" content="A clean, streaming AI chatbot built with Next.js and the Vercel AI SDK">
-<meta property="og:image" content="https://utkarsh736.github.io//assets/chat-it-thumb.png">
+<meta property="og:title" content="Static Site Generator – Utkarsh736">
+<meta property="og:description" content="A from-scratch Python static site generator that turns Markdown into a themed site — live demo of the Tolkien Fan Club sample.">
+<meta property="og:image" content="https://utkarsh736.github.io/assets/StaticSiteGenerator/thumbnail.png">
 <meta property="og:site_name" content="Utkarsh736">
-<meta property="og:image:height" content="384">
-<meta property="og:image:width" content="738">
+<meta property="og:image:height" content="388">
+<meta property="og:image:width" content="1026">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -278,8 +279,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Blogs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../apps/apps.html"> 
-<span class="menu-text">Apps</span></a>
+    <a class="nav-link" href="../../projects/projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
@@ -314,36 +315,43 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/Utkarsh736/static-site-generator"><i class="bi bi-link-45deg"></i>Source on GitHub</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Chat It</h1>
+<h1 class="title">Static Site Generator</h1>
+<p class="subtitle lead">Markdown → static HTML, built from scratch in pure Python.</p>
   <div class="quarto-categories">
-    <div class="quarto-category">AI</div>
-    <div class="quarto-category">chatbot</div>
-    <div class="quarto-category">Next.js</div>
-    <div class="quarto-category">Vercel</div>
+    <div class="quarto-category">python</div>
+    <div class="quarto-category">static-site</div>
+    <div class="quarto-category">markdown</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    A clean, streaming AI chatbot built with Next.js and the Vercel AI SDK
+    A from-scratch Python static site generator that turns Markdown into a themed site — live demo of the Tolkien Fan Club sample.
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Utkarsh736 </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 20, 2026</p>
+      <p class="date">January 26, 2026</p>
     </div>
   </div>
   
@@ -355,11 +363,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A lightweight conversational AI interface powered by the Vercel AI SDK.</p>
-<p>Ask questions, generate code, draft writing, or explore ideas — with fast streaming responses and a minimal UI.</p>
-<p><strong>Stack</strong> - Next.js App Router - Vercel AI SDK - Streaming chat UI - Deployed on Vercel</p>
-<iframe src="https://chat-it-rose.vercel.app" width="100%" height="700" style="border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);" frameborder="0" allow="clipboard-write" data-external="1"></iframe>
-<p><a href="https://chat-it-rose.vercel.app">Open live app ↗</a></p>
+<p>A static site generator written in pure Python (no external dependencies). It parses Markdown into a custom node tree, injects content into an HTML template, and copies static assets — then deploys to GitHub Pages. The live demo is a small Tolkien-themed sample site produced by the generator.</p>
+<div class="app-frame">
+<iframe src="https://utkarsh736.github.io/static-site-generator/" height="640" loading="lazy" title="Static Site Generator — live demo" style="width: 100%; border: none; border-radius: 8px;">
+</iframe>
+</div>
+<p>Built for the Boot.dev course. Supports headings, lists, blockquotes, code blocks, links, images, recursive nested content, and configurable base paths for GitHub Pages subdirectory hosting. Source: <a href="https://github.com/Utkarsh736/static-site-generator">Utkarsh736/static-site-generator</a>.</p>
 
 
 

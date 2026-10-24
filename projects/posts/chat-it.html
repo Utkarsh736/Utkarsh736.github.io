@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-09-17">
-<meta name="description" content="Hybrid search + RAG + CLIP image search over 5 000 movies">
+<meta name="dcterms.date" content="2026-09-20">
+<meta name="description" content="A clean, streaming AI chatbot built with Next.js and the Vercel AI SDK">
 
-<title>RAG Search Engine – Utkarsh736</title>
+<title>Chat It – Utkarsh736</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -45,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3b2e33f50bba15e4d7a9a077a40d0d20.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-ee90b860b5052d30e58a1a4cfc2b2fde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-3b2e33f50bba15e4d7a9a077a40d0d20.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-36f619c4af5041e84ae20be23da0fb71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-9f059f1a3612394dac21d5bc7b98e09b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-36f619c4af5041e84ae20be23da0fb71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,10 +83,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="RAG Search Engine – Utkarsh736">
-<meta property="og:description" content="Hybrid search + RAG + CLIP image search over 5 000 movies">
-<meta property="og:image" content="https://utkarsh736.github.io//assets/rag-search-engine/rag-demo_thumbnail.jpg">
+<meta property="og:title" content="Chat It – Utkarsh736">
+<meta property="og:description" content="A clean, streaming AI chatbot built with Next.js and the Vercel AI SDK">
+<meta property="og:image" content="https://utkarsh736.github.io//assets/chat-it-thumb.png">
 <meta property="og:site_name" content="Utkarsh736">
+<meta property="og:image:height" content="384">
+<meta property="og:image:width" content="738">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -276,8 +278,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Blogs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../apps/apps.html"> 
-<span class="menu-text">Apps</span></a>
+    <a class="nav-link" href="../../projects/projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
@@ -319,18 +321,18 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">RAG Search Engine</h1>
+<h1 class="title">Chat It</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">RAG</div>
-    <div class="quarto-category">search</div>
-    <div class="quarto-category">Gradio</div>
-    <div class="quarto-category">multimodal</div>
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">chatbot</div>
+    <div class="quarto-category">Next.js</div>
+    <div class="quarto-category">Vercel</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Hybrid search + RAG + CLIP image search over 5 000 movies
+    A clean, streaming AI chatbot built with Next.js and the Vercel AI SDK
   </div>
 </div>
 
@@ -341,7 +343,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 17, 2026</p>
+      <p class="date">September 20, 2026</p>
     </div>
   </div>
   
@@ -353,14 +355,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Interactive demo of the <a href="https://github.com/Utkarsh736/rag-search-engine">rag-search-engine</a> project.</p>
-<ul>
-<li><strong>Hybrid Search</strong> (BM25 + semantic embeddings with Reciprocal Rank Fusion)</li>
-<li><strong>RAG + Citations</strong> powered by Gemini</li>
-<li><strong>Image Search</strong> with CLIP</li>
-</ul>
-<iframe src="https://utkarsh736-rag-search-engine.hf.space" width="100%" height="720" frameborder="0" style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
+<p>A lightweight conversational AI interface powered by the Vercel AI SDK.</p>
+<p>Ask questions, generate code, draft writing, or explore ideas — with fast streaming responses and a minimal UI.</p>
+<p><strong>Stack</strong> - Next.js App Router - Vercel AI SDK - Streaming chat UI - Deployed on Vercel</p>
+<iframe src="https://chat-it-rose.vercel.app" width="100%" height="700" style="border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);" frameborder="0" allow="clipboard-write" data-external="1"></iframe>
+<p><a href="https://chat-it-rose.vercel.app">Open live app ↗</a></p>
 
 
 
